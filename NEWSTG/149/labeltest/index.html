@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-9">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>[STG] QA Test Site - SYNALIO</title>
+    <!-- Chat bot script paste below -->
+
+    <script src="//synalio.stg.resola.net/api/chatbox?appid=e45cfbe0e20046afb979ed1b634e827f" type="text/javascript"></script>
+
+
+    <!-- n-Analytics -->
+    <script>!function(){!function(t,e,n){(t.NanalyticsObject=n)in t||(t[n]=function(){(t[n].q=t[n].q||[]).push(arguments)},t[n].ep=e);var a=t.document.getElementsByTagName("script")[0],o=t.document.createElement("script"),i=1e17*Math.random();o.type="text/javascript",o.async=!0,o.src="https://sdk."+e+"/v1/web.js?sid="+i,a.parentNode.insertBefore(o,a)}(window,"n-analytics.io","Nanalytics");var t="_rslgvry",e="_rslgvry_conv_cnt",n=/^((?!chrome|android|crios).)*safari/i.test(navigator.userAgent);function a(t){var e=null,n=t+"=",a=document.cookie,o=a.indexOf(n);if(-1!=o){var i=o+n.length,r=a.indexOf(";",i);-1==r&&(r=a.length),e=decodeURIComponent(a.substring(i,r))}return e}var o=function(){var e=n?localStorage.getItem(t):a(t);e||(e="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(t){var e=16*Math.random()|0;return("x"==t?e:3&e|8).toString(16)}),n?localStorage.setItem(t,e):function t(e,n,o,i){var r=n+"="+o+";max-age="+(i||63072e3)+";path=/;";if(t.domain)e.cookie=r+"domain=."+t.domain;else{var c=location.hostname.split(".");c.length>2&&c.shift(),t.domain=c.join("."),e.cookie=r+"domain=."+t.domain,a(n)!=o&&(t.domain=location.hostname,e.cookie=r+"domain=."+t.domain)}}(document,t,e,63072e3));return e}();Nanalytics("setup","NA-201",(new Date).getTime()),Nanalytics("config","itp_recovery",!0),Nanalytics("send","pageview",{customer_id:o,app_unique_id:"e45cfbe0e20046afb979ed1b634e827f",chatbot_talk:((n?localStorage.getItem(e):a(e))||0).toString()})}();</script>
+
+
+    <!-- Conversion Calculate -->
+    <script src="https://synalio.stg.resola.net/analytics/js/e45cfbe0e20046afb979ed1b634e827f/" type="text/javascript"></script>
+
+    <!-- satori new js -->
+    <script>
+    var satori = (function (){
+  function getCookie(name) {
+    var result = null;
+
+    var cookieName = name + '=';
+    var allcookies = document.cookie;
+    var position = allcookies.indexOf(cookieName);
+    if (position != -1) {
+      var startIndex = position + cookieName.length;
+
+      var endIndex = allcookies.indexOf(';', startIndex);
+      if (endIndex == -1) {
+        endIndex = allcookies.length;
+      }
+
+      result = decodeURIComponent(
+        allcookies.substring(startIndex, endIndex));
+    }
+
+    return result;
+  }
+
+  return {
+    onLoad: function () {
+      var st_segs = getCookie("st_segs");
+      if (st_segs === null || !st_segs.length) {
+        return;
+      }
+      const array = st_segs.split(',');
+      synalio.addExtVal("st_segs", array);
+    },
+  }
+
+})();
+if (window.synalio) {
+  satori.onLoad();
+} else {
+  window.addEventListener("load", satori.onLoad, true);
+}
+</script>
+<style>
+    body {font-family: monospace;}
+    </style>
+
+    </head>
+<body>
+    <div id="divtitle" style="background-color: #ffc24d;"><H1><font color="#805e03">STG</font> QA Test site - SYNALIO, cid: 149 , QA with sceanrio v2</H1>
+    </div>
+    <div id="subtitle">
+      <h2>Analytics event test page</h2>
+      <p>Hello world, This is only for <font color="#cf7113"><b>STG</b></font>!!! Make sure what environment are you testing!</p>
+      <h3 style="background-color: #ede695">cid: 149 | app: QA_Labeltest</h3>
+    </div>
+    <hr>
+    <div id="link">
+      <section><b> Test link list : </b></section>
+      <br>
+      <a href="https://eugenechangresola.github.io/WebbotPages/STG/SYNALIO/149/labeltest/labeltest.html">1. Go to label test main page (chat bot embedded)</a>
+      <br>
+      <a href="https://eugenechangresola.github.io/WebbotPages/STG/SYNALIO/149/labeltest/custom.html">2. Go to CUSTOM CVP test page </a>
+        </div>
+    <div id="campaign">
+        <!-- Campaign Here -->
+
+        <script src="https://synalio.stg.resola.net/api/campaignjs/e45cfbe0e20046afb979ed1b634e827f" type="text/javascript"></script>
+      
+    </div>
+</body>
+</html>
