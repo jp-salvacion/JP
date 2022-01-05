@@ -1,0 +1,67 @@
+{
+  "type": "template",
+  "altText": "カルーセル動的設定",
+  "template": {
+      "type": "carousel",
+      "columns": [
+          {
+            "thumbnailImageUrl": "https://example.com/bot/images/item1.jpg",
+            "imageBackgroundColor": "#FFFFFF",
+            "title": "あいうえお",
+            "text": "テスト１",
+            "defaultAction": {
+                "type": "uri",
+                "label": "View detail",
+                "uri": "http://example.com/page/123"
+            },
+            "actions": [
+                {
+                    "type": "uri",
+                    "label": "Link1",
+                    "uri": "https://www.google.com/"
+                },
+                {
+                    "type": "uri",
+                    "label": "Link2",
+                    "uri": "https://www.google.com/search?q=resola"
+                },
+                {
+                    "type": "uri",
+                    "label": "View detail",
+                    "uri": "http://example.com/page/111"
+                }
+            ]
+          },
+          {
+            "thumbnailImageUrl": "https://example.com/bot/images/item2.jpg",
+            "imageBackgroundColor": "#000000",
+            "title": "さしすせそ",
+            "text": "テスト２",
+            "defaultAction": {
+                "type": "uri",
+                "label": "View detail",
+                "uri": "http://example.com/page/222"
+            },
+            "actions": [
+                {
+                    "type": "uri",
+                    "label": "Link1",
+                    "uri": "https://www.google.com/"
+                },
+                {
+                    "type": "uri",
+                    "label": "Link2",
+                    "uri": "https://www.google.com/search?q=resola"
+                },
+                {
+                    "type": "uri",
+                    "label": "View detail",
+                    "uri": "http://example.com/page/111"
+                }
+            ]
+          }
+      ],
+      "imageAspectRatio": "rectangle",
+      "imageSize": "cover"
+  }
+}

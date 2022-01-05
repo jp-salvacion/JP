@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-9">
+    <title>[Dev][SYNALIO]QA Test Site for SYNALIO on Dev</title>
+    <!-- Chat bot設置スクリプト -->
+    <script src="//synalio.dev.resola.net/api/chatbox?appid=e777904b2bc84328b55342a7614f6071&mp=l&p=l" type="text/javascript"></script>
+
+    <!-- 行動データ取得用スクリプト -->
+    <script>!function(){!function(t,e,n){(t.NanalyticsObject=n)in t||(t[n]=function(){(t[n].q=t[n].q||[]).push(arguments)},t[n].ep=e);var a=t.document.getElementsByTagName("script")[0],o=t.document.createElement("script"),i=1e17*Math.random();o.type="text/javascript",o.async=!0,o.src="https://sdk."+e+"/v1/web.js?sid="+i,a.parentNode.insertBefore(o,a)}(window,"n-analytics.io","Nanalytics");var t="_rslgvry",e="_rslgvry_conv_cnt",n=/^((?!chrome|android|crios).)*safari/i.test(navigator.userAgent);function a(t){var e=null,n=t+"=",a=document.cookie,o=a.indexOf(n);if(-1!=o){var i=o+n.length,r=a.indexOf(";",i);-1==r&&(r=a.length),e=decodeURIComponent(a.substring(i,r))}return e}var o=function(){var e=n?localStorage.getItem(t):a(t);e||(e="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(t){var e=16*Math.random()|0;return("x"==t?e:3&e|8).toString(16)}),n?localStorage.setItem(t,e):function t(e,n,o,i){var r=n+"="+o+";max-age="+(i||63072e3)+";path=/;";if(t.domain)e.cookie=r+"domain=."+t.domain;else{var c=location.hostname.split(".");c.length>2&&c.shift(),t.domain=c.join("."),e.cookie=r+"domain=."+t.domain,a(n)!=o&&(t.domain=location.hostname,e.cookie=r+"domain=."+t.domain)}}(document,t,e,63072e3));return e}();Nanalytics("setup","NA-201",(new Date).getTime()),Nanalytics("config","itp_recovery",!0),Nanalytics("send","pageview",{customer_id:o,app_unique_id:"e777904b2bc84328b55342a7614f6071",chatbot_talk:((n?localStorage.getItem(e):a(e))||0).toString()})}();</script>
+
+    <!-- コンバージョン計測スクリプト -->
+    <script src="https://synalio.dev.resola.net/analytics/js/e777904b2bc84328b55342a7614f6071/" type="text/javascript"></script>
+</head>
+<body>
+    <div id="divtitle">
+        <H1 style="background-color: #ffa500;">QA Test site for REBOT on Develop Environment</H1>
+    <hr>
+    Hello world, This site only for testing on DEV Env.
+    <br>
+    </div>
+    <div id="campaign">
+        <H1>Campaign Test</H1>
+        <H3>Campaign folder should display campaign popup properly</H3>
+                <!-- Compaign code here -->
+                <script>(function(r,e,b,o,t,j,s){r.RebotCampaignObject=t;r[t]=r[t]||function(){(r[t].q=r[t].q||[]).push(arguments)},r[t].t =1*new Date();
+                        r[t].v = '1.0.0';j= e.createElement(b),s=e.getElementsByTagName(b)[0];j.async=!0;j.src=o;s.parentNode.insertBefore(j, s)})(window, document, 'script', 'https://dev.rebot.resola.net/static/campaign.js', 'rb');
+                        rb('host', 'https://synalio.dev.resola.net');
+                        rb('uid', 'e777904b2bc84328b55342a7614f6071');
+                      </script>
+    </div>
+    <section id="section-1" class="fruits-section">
+        <div class="apple">
+          <h2>Green Apple</h2>
+          <img src="img/apple.png">
+        </div>
+        <div class="banana">
+          <h2>Yellow Banana</h2>
+          <img src="img/banana.png">
+        </div>
+      </section>
+      <section id="section-2" class="vegetable-section">
+        <div class="tomato">
+          <h2>Red Tomato</h2>
+          <img src="img/tomato.png">
+        </div>
+        <div class="onion">
+          <h2>White Onion</h2>
+          <img src="img/onion.png">
+        </div>
+      </section>
+</body>
+</html>

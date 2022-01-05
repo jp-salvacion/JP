@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-9">
+    <title>[PROD][pep][embedded] QA Test Site </title>
+    <!-- Chat bot script paste below -->
+    <!-- <script src="//stage.rebot.jp/api/chatbox?appid=762739263eff43f391c4a4a11cc1cf9b&e=1" type="text/javascript"></script> -->
+    <script type="text/javascript">
+    function loadRebot() {
+        var loaderScript = document.createElement('script');
+        loaderScript.setAttribute('src', 'https://app.pep.work/api/chatbox?appid=b1ef055e04a04af2bfdf5a057ba74d91&e=1');
+        (document.head || document.body || document.documentElement).appendChild(loaderScript);
+    }
+    if (document.readyState == 'complete') {
+         loadRebot();
+    } else {
+         self.addEventListener('load', loadRebot);
+    }
+</script>
+    <!-- N-analytics行動データ -->
+
+    <!-- End N-analytics -->
+
+</head>
+<body>
+    <div id="divtitle"><H1>PEP Web QA Test site on [PROD]</H1>
+        <H2 style="color: red;">PROD EMBEDDED Mode Chatbot<H2>
+          <hr>
+          Hello world, This is only for <font color="red">PROD</font>!!! Make sure what environment are you testing!
+          <br />
+      </div>
+      <hr>
+      <div id="synalio-chat">EMBEDDED Chatbot is placed here~~
+        </div>
+    </body>
+</html>

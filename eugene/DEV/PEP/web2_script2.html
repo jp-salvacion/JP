@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-9">
+    <title>[Dev][PEP]QA Test Site for REBOT by WEB2 app</title>
+    <!-- Chat bot設置スクリプト -->
+    <!-- <script src="//dev.pep.resola.net/api/chatbox?appid=e7dfdfaffc1b4b849a47b4c74733486d" type="text/javascript"></script> -->
+    <script>
+      function loadRebot() {
+        var loaderScript = document.createElement('script');
+        loaderScript.setAttribute('src', 'https://dev.pep.resola.net/api/chatbox?appid=e7dfdfaffc1b4b849a47b4c74733486d&p=l&mp=l');
+        (document.head || document.body || document.documentElement).appendChild(loaderScript);
+      }
+      if (document.readyState == 'complete') {
+        loadRebot();
+      } else {
+        self.addEventListener('load', loadRebot);
+      }
+    </script>
+    <!-- 行動データ取得用スクリプト -->
+
+    <!-- コンバージョン計測スクリプト -->
+
+</head>
+<body>
+    <div id="divtitle">
+        <H1>QA Test site for PEP on Develop Environment (App:web2)</H1>
+    <hr>
+    Hello <h3>PEP</h3> world, This site only for testing on DEV Env.
+    <br>
+    <strong>Web2 is using new design chat window</strong>
+    </div>
+    <div id="campaign">
+        <H1>Campaign Test</H1>
+                <!-- Compaign code here -->
+
+    </div>
+</body>
+</html>

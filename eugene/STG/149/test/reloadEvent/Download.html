@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>[STG] QA Test Site - SYNALIO</title>
+    <!-- Chat bot script paste below -->
+    <script src="//synalio.stg.resola.net/api/chatbox?appid=91f9674aeb504ca9b8da504f1fd872ae" type="text/javascript"></script>
+
+    <!-- n-Analytics -->
+  <script>!function(){!function(t,e,n){(t.NanalyticsObject=n)in t||(t[n]=function(){(t[n].q=t[n].q||[]).push(arguments)},t[n].ep=e);var a=t.document.getElementsByTagName("script")[0],o=t.document.createElement("script"),i=1e17*Math.random();o.type="text/javascript",o.async=!0,o.src="https://sdk."+e+"/v1/web.js?sid="+i,a.parentNode.insertBefore(o,a)}(window,"n-analytics.io","Nanalytics");var t="_rslgvry",e="_rslgvry_conv_cnt",n=/^((?!chrome|android|crios).)*safari/i.test(navigator.userAgent);function a(t){var e=null,n=t+"=",a=document.cookie,o=a.indexOf(n);if(-1!=o){var i=o+n.length,r=a.indexOf(";",i);-1==r&&(r=a.length),e=decodeURIComponent(a.substring(i,r))}return e}var o=function(){var e=n?localStorage.getItem(t):a(t);e||(e="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(t){var e=16*Math.random()|0;return("x"==t?e:3&e|8).toString(16)}),n?localStorage.setItem(t,e):function t(e,n,o,i){var r=n+"="+o+";max-age="+(i||63072e3)+";path=/;";if(t.domain)e.cookie=r+"domain=."+t.domain;else{var c=location.hostname.split(".");c.length>2&&c.shift(),t.domain=c.join("."),e.cookie=r+"domain=."+t.domain,a(n)!=o&&(t.domain=location.hostname,e.cookie=r+"domain=."+t.domain)}}(document,t,e,63072e3));return e}();Nanalytics("setup","NA-201",(new Date).getTime()),Nanalytics("config","itp_recovery",!0),Nanalytics("send","pageview",{customer_id:o,app_unique_id:"91f9674aeb504ca9b8da504f1fd872ae",chatbot_talk:((n?localStorage.getItem(e):a(e))||0).toString()})}();</script>
+
+    <!-- Conversion Calculate -->
+    <script src="https://synalio.stg.resola.net/analytics/js/91f9674aeb504ca9b8da504f1fd872ae/" type="text/javascript"></script>
+    <!-- Converion custom script -->
+    <script>synalioEvent({'event_type':'custom', 'name': 'CVP_カスタムスクリプト獲得', 'price':0})</script>
+    <!-- satori new js -->
+
+    <style>
+
+    </style>
+
+    </head>
+<body>
+<div id="divtitle" style="background-color: #ff876f;">
+<h1><span color="#805e03" style="color: #805e03;">STG</span> QA Test site - SYNALIO, cid: 149 , QA with sceanrio v2</h1>
+<br /> <span>app: QA_sample2</span></div>
+<p></p>
+<div><button onclick="changeUrl('about.html')">about</button> <button onclick="changeUrl('products.html')">products</button> <button onclick="changeUrl('FAQ.html')">FAQ</button> <button onclick="changeUrl('Download.html')">Download</button></div>
+<script>// <![CDATA[
+function changeUrl(url) {
+      ///////////////////////////////////////////////////
+      // This to simulate react-router behavior
+      const nextURL = "http://eugenetest.web.fc2.com/STG/SYNALIO/149/test/reloadEvent/" + url; // << You test site url
+      const nextTitle = 'My new page title';
+      const nextState = { additionalInformation: 'Updated the URL with JS' };
+      // This will create a new entry in the browser's history, without reloading
+      window.history.pushState(nextState, nextTitle, nextURL);
+      // This will replace the current entry in the browser's history, without reloading
+      window.history.replaceState(nextState, nextTitle, nextURL);
+      // End of simulate
+
+
+      // Client need to call this function when url change by react-router.
+      synalio.reloadEvent();
+    }
+// ]]></script>
+<hr />
+<div id="page_content" style="background-color: #ff876f; padding: 1vh;">
+<h3>FAQ</h3>
+<span> ----------</span></div>
+<div id="compaign"><!-- Compaign Here -->
+<script src="https://synalio.stg.resola.net/api/campaignjs/91f9674aeb504ca9b8da504f1fd872ae"></script>
+</div>
+</body>
+</html>

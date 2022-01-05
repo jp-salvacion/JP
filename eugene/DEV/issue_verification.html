@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-9">
+    <!-- auto redirect code -->
+    <!--
+    < meta http-equiv="Refresh" content="1; url='https://www.google.co.jp'" />
+    -->
+    <title>[Dev]QA Test Site for REBOT on Dev</title>
+    <!-- Chat bot設置スクリプト -->
+    <script src="//rebot.dev.resola.net/api/chatbox?appid=40df08178d494534b70844d4c36b8d57" type="text/javascript"></script>
+
+    <!-- 行動データ取得用スクリプト -->
+    <script>!function(){!function(t,e,n){(t.NanalyticsObject=n)in t||(t[n]=function(){(t[n].q=t[n].q||[]).push(arguments)},t[n].ep=e);var a=t.document.getElementsByTagName("script")[0],o=t.document.createElement("script"),i=1e17*Math.random();o.type="text/javascript",o.async=!0,o.src="https://sdk."+e+"/v1/web.js?sid="+i,a.parentNode.insertBefore(o,a)}(window,"n-analytics.io","Nanalytics");var t="_rslgvry",e="_rslgvry_conv_cnt",n=/^((?!chrome|android|crios).)*safari/i.test(navigator.userAgent);function a(t){var e=null,n=t+"=",a=document.cookie,o=a.indexOf(n);if(-1!=o){var i=o+n.length,r=a.indexOf(";",i);-1==r&&(r=a.length),e=decodeURIComponent(a.substring(i,r))}return e}var o=function(){var e=n?localStorage.getItem(t):a(t);e||(e="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(t){var e=16*Math.random()|0;return("x"==t?e:3&e|8).toString(16)}),n?localStorage.setItem(t,e):function t(e,n,o,i){var r=n+"="+o+";max-age="+(i||63072e3)+";path=/;";if(t.domain)e.cookie=r+"domain=."+t.domain;else{var c=location.hostname.split(".");c.length>2&&c.shift(),t.domain=c.join("."),e.cookie=r+"domain=."+t.domain,a(n)!=o&&(t.domain=location.hostname,e.cookie=r+"domain=."+t.domain)}}(document,t,e,63072e3));return e}();Nanalytics("setup","NA-201",(new Date).getTime()),Nanalytics("config","itp_recovery",!0),Nanalytics("send","pageview",{customer_id:o,app_unique_id:"40df08178d494534b70844d4c36b8d57",chatbot_talk:((n?localStorage.getItem(e):a(e))||0).toString()})}();</script>
+
+    <!-- コンバージョン計測スクリプト -->
+    <script src="https://rebot.dev.resola.net/analytics/js/40df08178d494534b70844d4c36b8d57/" type="text/javascript"></script>
+
+    <style>
+       #divtitle {background-color: #603943;color: #E0B1B1;padding: 2vh;}
+       body {font-family: monospace;}
+    </style>
+</head>
+<body>
+    <div id="divtitle">
+        <H1>QA Test site for REBOT on Develop Environment - ONLY For verification</H1>
+        <H3>cid: 1 | app: QA_web_0824</h3>
+    </div>
+    <span> Hello world, This site only for testing on DEV Env. </span>
+    <div id="campaign">
+        <H3>Campaign Test</H3>
+          <!-- Compaign code here -->
+          <script src="https://rebot.dev.resola.net/api/campaignjs/40df08178d494534b70844d4c36b8d57" type="text/javascript"></script>
+    </div>
+    <a href="https://www.google.co.jp">Click here to google search</a>
+
+</body>
+</html>

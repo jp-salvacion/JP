@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-9">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>[STG] QA Test Site for REBOT {QA_web2}</title>
+    <!-- Chat bot script paste below -->
+    <script src="//stg.synalio.resola.net/api/chatbox?appid=1c27421ca63041e8b304160661f9e3a7" type="text/javascript"></script>
+
+
+    <!-- n-Analytics -->
+    <script>var synalytics=function(){!function(e,n,t){(e.NanalyticsObject=t)in e||(e[t]=function(){(e[t].q=e[t].q||[]).push(arguments)},e[t].ep=n);var a=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script"),i=1e17*Math.random();r.type="text/javascript",r.async=!0,r.src="https://sdk."+n+"/v1/web.js?sid="+i,a.parentNode.insertBefore(r,a)}(window,"n-analytics.io","Nanalytics");var e="_rslgvry",n="_rslgvry_conv_cnt",t="r_window",a=/^((?!chrome|android|crios).)*safari/i.test(navigator.userAgent),r="*";function i(e){var n=null,t=e+"=",a=document.cookie,r=a.indexOf(t);if(-1!=r){var i=r+t.length,o=a.indexOf(";",i);-1==o&&(o=a.length),n=decodeURIComponent(a.substring(i,o))}return n}function o(){return a?localStorage.getItem(e):i(e)}function c(e,n,t,a,r){var o=n+"="+t+";max-age="+(a||63072e3)+";path=/;";if(r)e.cookie=o;else if(c.domain)e.cookie=o+"domain=."+c.domain;else{var s=location.hostname.split(".");s.length>2&&s.shift(),c.domain=s.join("."),e.cookie=o+"domain=."+c.domain,i(n)!=t&&(c.domain=location.hostname,e.cookie=o+"domain=."+c.domain)}}function s(n){if(a)localStorage.setItem(e,n);else{c(document,e,n,63072e3)}}var u=function(){var e=o();return e||s(e="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(e){var n=16*Math.random()|0;return("x"==e?n:3&n|8).toString(16)})),e}();function _(e,n){var t=window.navigator,a=new Date,r=a.getHours()+Math.floor((a.getMinutes()+n)/60);return function(e){var n,t=1;if(e)for(t=0,n=e.length-1;0<=n;n--){var a=e.charCodeAt(n);t=0!=(a=266338304&(t=(t<<6&268435455)+a+(a<<14)))?t^a>>21:t}return t}([e,t.userAgent,t.language||"",a.getTimezoneOffset(),a.getYear(),a.getDate()+Math.floor(r/24),(24+r)%24,(60+a.getMinutes()+n)%60].join("."))}function f(e,n,t,a){e.addEventListener(n,t,!!a)}function d(e){if(e&&"undefined"!==e)return decodeURIComponent(e)}function l(e){if(e&&"undefined"!==e)return/^\d+$/.exec(e)?Number(e):void 0}function m(e){var n=o();if(!n)return e;var a=/(.*)([?&#])(?:_sy=[^&#]*)(?:&?)(.*)/.exec(e);a&&a.length>=3&&(e=a[1]+(a[3]?a[2]+a[3]:""));var r=0,c=i(t);null!=c&&null!=c&&(r="on"===c?1:2);var s,u=n+"."+r;if(window.Nanalytics){var f=(s={},document.cookie.split(/\s*;\s*/).forEach(function(e){var n=e.split("="),t=n[0].trim(),a=n[1];switch(t){case"__na_s_i":s.si=d(a);break;case"__na_s_t":s.sst=l(a);break;case"__na_s_n":s.sn=l(a);break;case"__na_u_i":s.uid=d(a);break;case"__na_c_s":s.src=d(a);break;case"__na_c_m":s.md=d(a);break;case"__na_c_c":s.cp=d(a);break;case"__na_c_k":s.kw=d(a)}}),s);u=u+"."+["uid","si","sst","sn"].map(function(e){return f[e]||""}).join("_")}var m="_sy="+_(u,0)+"."+u,g=e.indexOf("?");a=e.indexOf("#");var x=-1==g?"?":"&";return(e=-1==a?e+(x+m):e.substring(0,a)+x+m+e.substring(a)).replace(/&+_sy=/,"&_sy=")}function g(e){("http:"==e.protocol||"https:"==e.protocol)&&function(e,n){if(n.indexOf(document.location.hostname)>=0||document.location.hostname.indexOf(n)>=0)return!1;e=e.split(",");for(var t=0;t<e.length;t++)if(e[t]instanceof RegExp){if(e[t].test(n))return!0}else{var a=e[t].trim();if(n.indexOf(a)>=0)return!0}return!1}(r,e.hostname||"")&&e.href&&(e.href=m(e.href))}function x(e){try{for(var n=(e=e||window.event).target||e.srcElement,t={},a=100;n&&0<a;){if(n.href&&n.nodeName.match(/^a(?:rea)?$/i)){t=n;break}n=n.parentNode,a--}g(t)}catch(e){console.error(e)}}function v(){var e,n=(e=(e=window.location.search).match(/(?:&|#|\\?)_sy=([^&#]*)/))&&2==e.length?e[1]:"";if(n){var a=n.indexOf("."),r=n.substring(0,a),i=n.substring(a+1);if(r&&i)if(r==_(i,0)||r==_(i,-1)||r==_(i,-2)){a=i.indexOf(".");var o=i.substring(0,a);s(o),u=o;var f=i.substring(a+1);a=f.indexOf(".");var d=f.substring(0,a);"1"!==d&&"2"!==d||c(document,t,"1"===d?"on":"off",1800),function(e){var n=e.split("_");if(4==n.length){var t=(new Date).getTime(),a=location.hostname,r=location.href,i=document;c(i,"__na_u_i",n[0],0,a),c(i,"__na_s_i",n[1],0,a),c(i,"__na_s_t",n[2],0,a),c(i,"__na_s_n",n[3],0,a),c(i,"__na_p_t",t,0,a),c(i,"__na_s_c",encodeURIComponent(r),0,a),Object.defineProperty(document,"referrer",{value:r})}else console.warn("Invalid parameter length:",n.length)}(f.substring(a+1))}}}return function(e){"1"==e&&(f(document,"mousedown",x,!1),f(document,"keyup",x,!1),v())}("0"),Nanalytics("setup","NA-201",(new Date).getTime()),Nanalytics("config","itp_recovery",!0),Nanalytics("send","pageview",{customer_id:u,app_unique_id:"1c27421ca63041e8b304160661f9e3a7",chatbot_talk:((a?localStorage.getItem(n):i(n))||0).toString()}),{getUrl:function(e){var n=document.createElement("a");return n.href=e,g(n),n.href}}}();</script>
+
+    <!-- Conversion Calculate> -->
+    <script src="https://stg.synalio.resola.net/analytics/js/1c27421ca63041e8b304160661f9e3a7/" type="text/javascript"></script>
+
+    <style>
+    .footer-section {background-color: #CC0028; padding: 5px;}
+      </style>
+
+    </head>
+<body>
+    <div id="divtitle"><H1><font color="yellow">STG</font> QA Test site for REBOT on [WEB2]</H1>
+    <hr>
+    Hello world, This is only for <font color="yellow"><H3>STG</H3></font>!!! Make sure what environment are you testing!
+    <br>
+    </div>
+    <div id="compaign"><H3>Compaign here</H3>
+        <!-- Compaign Here -->
+        <script src="https://stg.synalio.resola.net/api/campaignjs/1c27421ca63041e8b304160661f9e3a7" type="text/javascript"></script>
+    </div>
+    <section id="section-1" class="head-section">
+      <div>
+        任天堂純正
+          型番 	名称 	備考
+          HVC-001 	ファミリーコンピュータ 	1983年（昭和58年）7月15日発売。本体カラーは白と赤。1993年（平成5年）12月1日には一部の機能を廃止し、小型化した「AV仕様ファミリーコンピュータ（Newファミコン）」も発売された。AV仕様ファミリーコンピュータについては後述。
+          HVC-002 	ACアダプタ 	ファミコン本体附属。AV仕様ファミリーコンピュータ、スーパーファミコン、スーパーファミコンJr.、バーチャルボーイ（ACアダプタタップが別途必要）に流用可能。
+          HVC-003 	RFスイッチ 	ファミコン本体附属。テレビとRF接続する為に使用。スーパーファミコンに流用可能。オプション使用でAV仕様ファミリーコンピュータ、スーパーファミコンJr.、NINTENDO64にも使用可能。
+          HVC-004 	75Ω / 300Ω変換器 	75Ω同軸ケーブルを300Ωフィーダ線に変換する。スーパーファミコンでも使用可能。
+          HVC-005 	光線銃シリーズガン 	ファミリーコンピュータ用の光線銃。
+          HVC-006 	光線銃シリーズホルスター 	ガンを腰に下げるホルスター。
+          HVC-007 	キーボード 	ファミリーベーシックに附属するキーボード。
+          HVC-008 	データレコーダ 	対応ソフトのデータをカセットテープに保存できる。
+          HVC-012 	ファミリーコンピュータ ロボット 	ゲームと連動して動かせるロボット。光線銃の技術を応用したもの。
+          HVC-021 	ディスクカード 	ファミリーコンピュータ ディスクシステムの記録媒体。クイックディスクがもとになっている。書き換えができ、通常の黄色のものとシャッターが付いている青色のもの等がある。
+          HVC-022 	ディスクドライブ 	ファミリーコンピュータ ディスクシステムの読み込み装置。専用ACアダプタ、もしくは単二乾電池6本で駆動する。
+          HVC-023 	RAMアダプタ 	ディスクドライブとファミリーコンピュータ本体を接続する機器。
+          HVC-025 	ディスクドライブ専用ACアダプタ 	ディスクドライブの電源の一つ。DC端子が現在主流のタイプではない特殊なACアダプタ。
+          HVC-026 	RF延長コード 	RFケーブルを2メートル延長することができる。
+          HVC-027 	カードクリーナー 	ディスクカードをクリーニングする機器。
+          HVC-028 	カートリッジ 	ディスクカードをクリーニングする機器。
+          HVC-029 	クリーニングスプレー 	クリーニングカードに吹きかけて使用する洗浄液。
+          HVC-030 	クリーニングカード 	ディスクドライブのディスクヘッドをクリーニングする機器。
+          HVC-031 	3Dシステムスコープ 	対応ソフトの映像を立体的に見ることができる。
+          HVC-032 	3Dシステムアダプタ 	3Dシステムとファミリーコンピュータを接続するアダプタ。
+          HVC-035 	ネットワークアダプタ 	ディスクシステムを利用して、ファミリーコンピュータネットワークシステムに接続できる。
+          HVC-037 	ネットワークアダプタ専用ACアダプタ 	ネットワークアダプタの電源。専用ACアダプタ。
+          HVC-050 	通信アダプタ 	ファミリーコンピュータネットワークシステムに接続でき、株取引や馬券購入などが可能。
+          HVC-051 	通信コントローラ 	通信アダプタに附属するコントローラ。横長でテンキー状のボタンが付いているのが特徴。通常のゲームソフトにも使用できる。
+          HVC-053 	モジュラーケーブル 	電話線。市販品で代用可能。NINTENDO64のモデムや、ニンテンドーゲームキューブのモデムアダプタにも附属している。
+          HVC-054 	テレフォンスイッチ 	電話線を分岐させることができる機器。市販品で代用可能。
+          HVC-BS 	ファミリーベーシック 	ファミリーコンピュータで簡単なプログラムの作成などが出来る機器。1984年（昭和59年）6月21日発売。
+          任天堂純正・AV仕様ファミリーコンピュータ関連
+          型番 	名称 	備考
+          HVC-101 	AV仕様ファミリーコンピュータ 	通称Newファミコン。コントローラが取り外せるようになり、マイクが廃止された。AV出力になり、安定した画質が出力できるようになった。なお、テレビとの接続はスーパーファミコンなどと共通のケーブルを使用するが、モノラルケーブルとステレオケーブルしか使用できない。RF出力にはRFモジュレータを使用する。
+          HVC-102 	コントローラ 	本体専用のコントローラ。本体に2つ同梱。初代ファミリーコンピュータには使用できない。初代ファミリーコンピュータ専用のものと大きく形状が変わり、スーパーファミコン同様、I / IIコントローラの区別がなくなった他、マイクが削除されている。
+          HVC-103 	RFモジュレータ 	AV仕様ファミリーコンピュータ専用のRFモジュレータ。RFスイッチを接続する為に使用する。
+          SHVC-007 	モノラルAVケーブル 	本体とテレビを接続する為のケーブル。スーパーファミコン、NINTENDO64、ニンテンドーゲームキューブと共用。本来はスーパーファミコンの周辺機器。
+          SHVC-008 	ステレオAVケーブル 	本体とテレビを接続する為のケーブル。このケーブルを使用してもステレオ音声にはならない。スーパーファミコン、NINTENDO64、ニンテンドーゲームキューブと共用。本来はスーパーファミコンの周辺機器。
+          NUS-009 	RFスイッチUV 	RFスイッチの改良版。スーパーファミコン、NINTENDO64と共用。本来はNINTENDO64の周辺機器。
+      </div>
+    </section>
+    <hr>
+    <section id="section-2" class="title-section">
+      <div>
+        バリエーション
+
+    ファミコンテレビC1
+    ツインファミコン
+    編集ファミコン - ファミコンタイトラーの別名もある。
+    任天堂VS.システム
+    AV仕様ファミリーコンピュータ
+    ファミコンボックス - 後述
+    復刻版 - 後述
+
+      AV仕様ファミリーコンピュータ
+      AV仕様ファミリーコンピュータ（HVC-101）と専用コントローラ（HVC-102）
+      AV仕様ファミリーコンピュータの全体
+      AV仕様ファミリーコンピュータ用RFモジュレータ (HVC-103)
+
+      1993年12月1日には新型機AV仕様ファミリーコンピュータ（エーブイしようファミリーコンピュータ）が発売された。
+
+      この名称は他のゲーム機ではすでに主流となっていたコンポジットビデオ出力によるテレビ接続が可能となったことに由来する。製品の箱にはAV仕様ファミコンの略称が記載された。さらにテレビCMで用いられたニューファミコンの通称もあり、一般にはこの名で呼ばれることが多い。
+
+      当初は10月をメドに発売される予定だったが、RF出力からビデオ出力への仕様変更により延期された。北米にて先行発売されたNES2では逆にAV出力が省かれ、RF出力のみとされた。
+
+      AV仕様ファミリーコンピュータはコストダウンを図った廉価機として発売されたものの、ディスクシステムなど従来の周辺機器がほぼ全て使用でき、取り扱いも容易となったことからレトロゲームの愛好者からは珍重された。中古市場ではAV仕様ファミリーコンピュータの方が台数が少なく高値な場合が多い。
+
+      ACアダプタとRFスイッチは旧型機やスーパーファミコンとの共用が可能との理由で別売とされた。コントローラやAVケーブルなど旧型機に使用できないAV仕様ファミリーコンピュータ専用周辺機器にはNEW FFマークが付けられた。任天堂以外から発売されたNEW FFマーク付き周辺機器にはNewホリコマンダー等がある。
+
+      2003年（平成15年）9月をもってスーパーファミコンの廉価機「スーパーファミコンジュニア」とともに製造出荷を終えた。
+
+      旧型機（HVC-001）との主な変更点は以下のとおり。
+
+      本体とコントローラのデザイン
+          NESと同様薄い灰色を基調とし、スイッチやボタン類には赤色、濃い灰色、黒色が配色された。コントローラはスーパーファミコンのように丸みと立体感を持たせAボタンの位置を変更するなどより操作しやすいように改良された。これらのデザインはカセット差込口を除きNES2と共通する。
+      映像・音声出力
+          コンポジットビデオ出力に対応し、煩わしいRF接続が不要となった。テレビとの接続にはスーパーファミコン用のモノラルAVケーブルまたはステレオAVケーブルを使用する。使用するテレビがステレオ対応テレビ、または使用するケーブルがステレオAVケーブルの場合も音声はモノラルで出力される[64]。また、S端子ケーブル、RGBケーブルは使用できない[64]。RF出力端子は搭載されておらず、RF接続するには別売部品のRFモジュレータ（HVC-103）が必要となる。
+      カセット挿入部
+          カセット挿入部のフタはカセットの抜き差し動作と連動し自動開閉するようになった。旧型機に搭載されたカセットイジェクタ機構は削除されたため、カセットは直接手で引き抜かなければならない。
+      コントローラ接続端子
+          本体前面には新型コントローラを接続するための端子部を新たに装備した。この端子形状はNESと同一である。旧型機の本体前面に存在した拡張端子は本体側面に用意され、連射コントローラ、外部記憶装置など周辺機器との互換性は保たれた。
+      コントローラの機能
+          コントローラは本体からの取り外しが可能となり、I / IIコントローラの区別がなくなった。旧型機のIIコントローラに搭載されていたマイク機能は削除された。
+
+      最後に製造されたAV仕様ファミリーコンピュータは任天堂が保管し、2003年（平成15年）から2004年（平成16年）にかけて開催されたテレビゲームの展覧会『レベルX』では「ラスト・ファミリーコンピュータ」の名前で展示された。この本体の製造年月は2003年（平成15年）9月25日、製造番号はNH11033309である。
+      ファミコンボックス
+      ファミコンボックスの例。
+
+      ファミコンボックスは、任天堂が開発し、1986年に交通公社トラベランド興業（のちのJTBトラベランド）より販売された業務用向けファミリーコンピュータ。
+
+      本体内に最大15個のファミコンソフトを内蔵する（交換可能）。主にホテルや旅館に設置されており、本体側面に設置されているコインボックスにコインを入れると、本体に内蔵されたファミコンソフトを10分または20分間（ディップスイッチの設定による）遊ぶことができる。制限時間内であれば、リセットボタンを押すことで他のゲームに切り替えることができる。
+
+      制限時間1分前には時間切れを知らせるブザーが鳴らされ、さらにコインを入れるとプレー時間が追加される。コインを追加しない場合はゲームの進捗にかかわらず「Time Up」と表示される画面に切り替わり、強制終了される。課金方式は設置者により他に2種類（フロントなどで客用の鍵を貸し出して運営する「ビジターキー方式」、および「CATV方式」）あるほか、フリープレイモードがあり、これらに設定した場合は制限時間はない。プレー中以外は内蔵されたソフトのデモ画面を順番に繰り返して表示する。
+
+      附属のコントローラと光線銃はNESから流用され、ファミコンボックスのソフトもNESと同じ形状のカセットになっている（ただし、NESとの互換性はない）。 シャープ版の「ファミコンステーション」もあり、メニュー画面の任天堂ロゴが「SHARP」の文字に変更されているなどの違いがある。
+
+      2013年現在でも、佐渡汽船のカーフェリー内や一部の旅館などでファミコンボックスが稼動しており、実際に遊ぶことが出来る[65]。
+
+      類似品として北米市場には “Nintendo M82” が存在するが、こちらは店頭でゲームをテストプレーするための販促用デモ機であった。
+
+      1990年には後継機として、業務用向けスーパーファミコンのスーパーファミコンボックスがリリースされた。
+      復刻版
+
+      2001年発売のNINTENDO64用ソフト『どうぶつの森』ではゲーム内で入手出来る家具として「ファミコン」があり、プレイヤーの自宅に置くと一部のファミコンゲームがプレイ可能[66]。続編のニンテンドーゲームキューブ用ソフト『どうぶつの森+』、『どうぶつの森e+』でもファミコン家具は継続された。
+      ファミコンミニ
+      詳細は「ファミコンミニ」を参照
+
+      2004年にはゲームボーイアドバンス向けにファミコンソフトを移植したシリーズファミコンミニが展開された。第1弾と第2弾がある。
+      バーチャルコンソール
+      詳細は「バーチャルコンソール」を参照
+
+      2006年発売のWiiでは、ファミコンなどかつて発売された一部のコンピューターゲームをダウンロード購入し、遊ぶことの出来るサービスバーチャルコンソールが展開された。 2011年にはニンテンドー3DS、2013年にはWii Uでも配信された。
+      ファミリーコンピュータ Nintendo Switch Online
+      詳細は「ファミリーコンピュータ Nintendo Switch Online」を参照
+
+      Nintendo Switchではオンラインサービス「Nintendo Switch Online」が2018年9月に有料化されたことにあわせて、専用ソフト『ファミリーコンピュータ Nintendo Switch Online』がオンラインサービスの加入者向けにダウンロード可能となっている。ファミコンゲームが収録（サービス開始時は20本）されており、オンラインで対戦や協力プレイが可能。また、同ソフト専用としてファミコンのコントローラを実物大に再現した「ファミリーコンピュータ コントローラー」がオンラインサービス加入者限定で通信販売されている[67]。
+      ニンテンドークラシックミニ ファミリーコンピュータ
+      詳細は「ニンテンドークラシックミニ ファミリーコンピュータ」を参照
+
+      ファミリーコンピュータを当時のデザインのまま小型化した、任天堂公式の復刻版が2016年（平成28年）11月10日に発売された[68][69]。ロムカセットを差して遊ぶことは出来ないが、当時のゲームのうち30種類が標準で内蔵されている。
+
+      海外では日本版とは別にNintendo Entertainment Systemを模した製品も発売されている[70][71]。商品名は、米国では「NES Classic Edition」、欧州では「Nintendo Classic Mini」として発売されており、国内版と海外版は一部収録タイトルが異なる[72]。
+
+      また、2018年7月7日には集英社発行の漫画雑誌『週刊少年ジャンプ』の創刊50周年を記念し、同誌連載作品が原作となったゲームや同誌が制作に関わったゲーム20作品を収録した「ニンテンドークラシックミニ ファミリーコンピュータ 週刊少年ジャンプ50周年記念バージョン」が発売された[73]。
+      </div>
+    </section>
+    <footer id="foot" class="footer-section">
+      <button name="togglebutton" onclick="synalio.toggle(0)">open chat window</button>
+      </footer>
+</body>
+</html>
