@@ -1,0 +1,183 @@
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "13:9",
+        "aspectMode": "cover",
+        "url": "https://www.mukogawa-u.ac.jp/images/topHero-slide01.jpg"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "大学公式サイト",
+            "wrap": true,
+            "weight": "bold",
+            "size": "lg"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "武庫川女子大学公式サイトに、新型コロナウイルス関連の最新情報がＵＰされました",
+                "wrap": true,
+                "weight": "regular",
+                "size": "sm",
+                "flex": 0
+              }
+            ],
+            "margin": "md"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "大学公式サイト",
+              "uri": "https://www.mukogawa-u.ac.jp/"
+            },
+            "style": "link",
+            "height": "sm"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "13:9",
+        "aspectMode": "cover",
+        "url": "https://zaigakusei.mukogawa-u.ac.jp/wp-content/uploads/2022/01/教務課.png"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "wrap": true,
+            "weight": "bold",
+            "size": "lg",
+            "text": "教務課よりお知らせ"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "wrap": true,
+                "weight": "regular",
+                "size": "sm",
+                "flex": 0,
+                "text": "活動制限レベル 1.5 プラスへの変更に伴う試験・授業対応に関するお願いをinfo@MUSESへUPしました。"
+              }
+            ],
+            "margin": "md"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "定期試験及び追・再試験",
+              "uri": "https://zaigakusei.mukogawa-u.ac.jp/wp-content/uploads/2022/01/試験.pdf"
+            },
+            "style": "link",
+            "height": "sm"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "集中講義及び特別教育科目",
+              "uri": "https://zaigakusei.mukogawa-u.ac.jp/wp-content/uploads/2022/01/特別学期.pdf"
+            },
+            "style": "link",
+            "height": "sm"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "13:9",
+        "aspectMode": "cover",
+        "url": "https://zaigakusei.mukogawa-u.ac.jp/wp-content/uploads/2022/01/19767492-ff70311dbce1ff3cc4ec98e77f51c7ae.png"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "学生課よりお知らせ",
+            "wrap": true,
+            "weight": "bold",
+            "size": "lg"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "活動制限レベル1.5プラスに伴う学友会活動の方針をinfo@MUSESへUPしました。",
+                "wrap": true,
+                "weight": "regular",
+                "size": "sm",
+                "flex": 0
+              }
+            ],
+            "margin": "md"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "学友会活動",
+              "uri": "https://zaigakusei.mukogawa-u.ac.jp/wp-content/uploads/2022/01/20220126活動レベル引き上げに伴う学友会活動の方針について.pdf"
+            },
+            "style": "link",
+            "height": "sm"
+          }
+        ]
+      }
+    }
+  ]
+}
