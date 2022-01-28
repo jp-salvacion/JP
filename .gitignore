@@ -1,0 +1,6 @@
+# ignore directories
+
+robot/
+python/
+selenium/
+cypress/
