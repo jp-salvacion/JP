@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-9">
+    <title>link test page</title>
+      <style>
+        body {font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif }
+        div.divtitle {background-color: #48aaad; padding: 1em;}
+        table {width: 100%;text-align: center;border-collapse:collapse;}
+        td {width: 50%;padding: 5em;margin: 0px;border-width: 0px;}
+        td#rebot {background-color: #7899EF;}
+        td#synalio {background-color: #fc9403;}
+        td#pep {background-color: #4340a0;}
+        td#teijin {background-color: #b58241;}
+        #rebot-env {visibility: hidden;padding-top:10px}
+        #synalio-env {visibility: hidden;padding-top:10px}
+        #pep-env {visibility: hidden;padding-top:10px}
+        #teijin-env {visibility: hidden;padding-top:10px}
+        td:hover {opacity: 0.85;}
+        td#rebot:hover > #rebot-env {visibility: visible;}
+        td#synalio:hover > #synalio-env {visibility: visible;}
+        td#pep:hover > #pep-env {visibility: visible;}
+        td#teijin:hover > #teijin-env {visibility: visible;}
+      </style>
+      </head>
+    <body>
+      <div id class="divtitle">
+        <h1>Eugene web test landing page</h1>
+        </div>
+        <div class id="confirmbutton"><button style="padding:10px;margin-top:10px" onclick="confirmmessage()">confirm</button>
+          <script>
+            function confirmmessage(){
+              confirm("please confirm!");
+            }
+          </script>
+        </div>
+        <br />
+        <br />
+        <table>
+          <tbody>
+            <tr>
+              <td class id="rebot"><strong> REBOT </strong>
+                  <div class id="rebot-env">
+                    <a href="http://eugenechangresola.github.io/WebbotPages/DEV">DEV</a>
+                    |
+                    <a href="http://eugenechangresola.github.io/WebbotPages/STG">STG</a>
+                    |
+                    <a href="http://eugenechangresola.github.io/WebbotPages/PROD">PROD</a>
+                  </div>
+                </td>
+              <td class id="synalio"><strong> SYNALIO </strong>
+                <div class id="synalio-env">
+                  <a href="http://eugenechangresola.github.io/WebbotPages/DEV/SYNALIO">DEV</a>
+                  |
+                  <a href="http://eugenechangresola.github.io/WebbotPages/STG/SYNALIO">STG</a>
+                  |
+                  <a href="http://eugenechangresola.github.io/WebbotPages/PROD/SYNALIO">PROD</a>
+                </div>
+              </td>
+          </tr>
+          <tr>
+            <td class id="pep"><strong> PEP </strong>
+              <div class id="pep-env">
+                <a href="http://eugenechangresola.github.io/WebbotPages/DEV/PEP">DEV</a>
+                |
+                <a href="http://eugenechangresola.github.io/WebbotPages/STG/PEP">STG</a>
+                |
+                <a href="http://eugenechangresola.github.io/WebbotPages/PROD/PEP">PROD</a>
+              </div>
+            </td>
+            <td class id="teijin"><strong> TEIJIN </strong>
+              <div class id="teijin-env">
+                <a href="http://eugenechangresola.github.io/WebbotPages/Teijin/DEV">DEV</a>
+                |
+                <a href="http://eugenechangresola.github.io/WebbotPages/Teijin/STG">Teijin-DEV</a>
+                |
+                <a href="http://eugenechangresola.github.io/WebbotPages/Teijin/PROD">PROD</a>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <footer>Created by Eugene</footer>
+    </body>
+  </html>
