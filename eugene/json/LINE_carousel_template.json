@@ -1,0 +1,47 @@
+{
+  "type": "template",
+  "altText": "シナリオ Carousel API",
+  "template": {
+      "type": "carousel",
+      "columns": [
+          {
+            "thumbnailImageUrl": "https://s3-ap-northeast-1.amazonaws.com/rebot-staging-line-resized/138/5ce71ea9b4a048638f1aaa218abba6ca.png/origin",
+            "imageBackgroundColor": "#FFFFFF",
+            "title": "カル１",
+            "text": "カルーセル１",
+            "defaultAction": {
+                "type": "uri",
+                "label": "View detail",
+                "uri": "https://www.google.com/search?q=line%20carousel%20default%20actions"
+            },
+            "actions": [
+                {
+                    "type": "postback",
+                    "label": "メニュー",
+                    "data": "メニューに戻る"
+                }
+            ]
+          },
+          {
+            "thumbnailImageUrl": "https://s3-ap-northeast-1.amazonaws.com/rebot-staging-line-resized/138/5ce71ea9b4a048638f1aaa218abba6ca.png/origin",
+            "imageBackgroundColor": "#000000",
+            "title": "かる２",
+            "text": "かるーせる２",
+            "defaultAction": {
+                "type": "uri",
+                "label": "View detail",
+                "uri": "https://www.google.com/search?q=line%20carousel%20default%20actions"
+            },
+            "actions": [
+                {
+                    "type": "uri",
+                    "label": "リンク",
+                    "uri": "http://www.google.co.jp/search?q=resola"
+                }
+            ]
+          }
+      ],
+      "imageAspectRatio": "rectangle",
+      "imageSize": "cover"
+  }
+}
