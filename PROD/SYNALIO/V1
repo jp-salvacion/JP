@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-9">
+    <title>PROD SYNALIO V1 Site</title>
+    </head>
+<body> 
+    <div id="divtitle"><H1>PROD SYNALIO V1 Site</H1>
+    <hr>
+    Hello world, This is only for <font color="red">PROD SYNALIO V1 SYNALIO 2</font>!
+    <br>
+    </div>
+    <div id="synalio-chat">
+    <script src="https://rebot.jp/api/chatbox?appid=81a27d31aaf24653bbc1927ab47e621f" type="text/javascript"></script>
+    </div>
+</body>
+</html>
