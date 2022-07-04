@@ -11,7 +11,6 @@
     <!-- For gathering and analysis action data // CROSS DOMAIN ENABLED // -->
     <script>var synalytics=function(){l="n-analytics.io",m="Nanalytics",((k=window).NanalyticsObject=m)in k||(k[m]=function(){(k[m].q=k[m].q||[]).push(arguments)},k[m].ep=l),n=k.document.getElementsByTagName("script")[0],o=k.document.createElement("script"),o.type="text/javascript",o.async=!0,o.src="https://sdk."+l+"/v1/web.js?sid="+1e17*Math.random(),n.parentNode.insertBefore(o,n);var k,l,m,n,o,p,q="https://synalio.stg.resola.net".replace("https://","").replace("http://",""),r="_rslgvry",b="_rslgvry_conv_cnt",s="r_window",e=/^((?!chrome|android|crios).)*safari/i.test(navigator.userAgent),f="1";function g(g){var c=null,d=g+"=",a=document.cookie,e=a.indexOf(d);if(-1!=e){var f=e+d.length,b=a.indexOf(";",f);-1==b&&(b=a.length),c=decodeURIComponent(a.substring(f,b))}return c}function h(){return e?localStorage.getItem(r):g(r)}function t(a,d,e,f,h){var b=d+"="+e+";max-age="+(f||63072e3)+";path=/;";if(h){a.cookie=b;return}if(t.domain)a.cookie=b+"domain=."+t.domain;else{var c=location.hostname.split(".");c.length>2&&c.shift(),t.domain=c.join("."),a.cookie=b+"domain=."+t.domain,g(d)!=e&&(t.domain=location.hostname,a.cookie=b+"domain=."+t.domain)}}function i(a){e?localStorage.setItem(r,a):t(document,r,a,63072e3)}var a,j=((a=h())||i(a="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(b){var a=16*Math.random()|0;return("x"==b?a:3&a|8).toString(16)})),a);function u(e,b){var c=window.navigator,a=new Date,d=a.getHours()+Math.floor((a.getMinutes()+b)/60);return function(d){var b,a=1;if(d)for(a=0,b=d.length-1;0<=b;b--){var c=d.charCodeAt(b);a=0!=(c=266338304&(a=(a<<6&268435455)+c+(c<<14)))?a^c>>21:a}return a}([e,c.userAgent,c.language||"",a.getTimezoneOffset(),a.getYear(),a.getDate()+Math.floor(d/24),(24+d)%24,(60+a.getMinutes()+b)%60].join("."))}function c(a,b,c,d){a.addEventListener(b,c,!!d)}function v(a){if(a&&"undefined"!==a)return decodeURIComponent(a)}function w(a){if(a&&"undefined"!==a)return/^\d+$/.exec(a)?Number(a):void 0}function x(a){("http:"==a.protocol||"https:"==a.protocol)&&function(a,b){if(b.indexOf(q)>=0)return!0;if(b.indexOf(document.location.hostname)>=0||document.location.hostname.indexOf(b)>=0)return!1;a=a.split(",");for(var c=0;c<a.length;c++)if(a[c]instanceof RegExp){if(a[c].test(b))return!0}else{var d=a[c].trim();if(b.indexOf(d)>=0)return!0}return!1}("eugenechangresola.github.io,jp-salvacion.github.io,eugenetest.web.fc2.com",a.hostname||"")&&a.href&&(a.href=function(b){var e=h();if(!e)return b;var a=/(.*)([?&#])(?:_sy=[^&#]*)(?:&?)(.*)/.exec(b);a&&a.length>=3&&(b=a[1]+(a[3]?a[2]+a[3]:""));var f=0,d=g(s);null!=d&& void 0!=d&&(f="on"===d?1:2);var c=e+"."+f;if(window.Nanalytics){var i,m=(i={},document.cookie.split(/\s*;\s*/).forEach(function(d){var c=d.split("="),e=c[0].trim(),a=c[1],b="__na_";switch(e){case b+"s_i":i.si=v(a);break;case b+"s_t":i.sst=w(a);break;case b+"s_n":i.sn=w(a);break;case b+"u_i":i.uid=v(a);break;case b+"c_s":i.src=v(a);break;case b+"c_m":i.md=v(a);break;case b+"c_c":i.cp=v(a);break;case b+"c_k":i.kw=v(a)}}),i);c=c+"."+["uid","si","sst","sn"].map(function(a){return m[a]||""}).join("_")}var j="_sy="+u(c,0)+"."+c,l=b.indexOf("?");a=b.indexOf("#");var k=-1==l?"?":"&";return(b=-1==a?b+(k+j):b.substring(0,a)+k+j+b.substring(a)).replace(/&+_sy=/,"&_sy=")}(a.href))}function d(b){try{for(var a=(b=b||window.event).target||b.srcElement,c={},d=100;a&&0<d;){if(a.href&&a.nodeName.match(/^a(?:rea)?$/i)){c=a;break}a=a.parentNode,d--}x(c)}catch(e){console.error(e)}}return"1"==f&&(c(document,"mousedown",d,!1),c(document,"keyup",d,!1),function(){var c,d=(c=(c=window.location.search).match(/(?:&|#|\\?)_sy=([^&#]*)/))&&2==c.length?c[1]:"";if(d){var a=d.indexOf("."),e=d.substring(0,a),b=d.substring(a+1);if(e&&b&&!(e!=u(b,0)&&e!=u(b,-1)&&e!=u(b,-2))){a=b.indexOf(".");var h=b.substring(0,a);i(h),j=h;var f=b.substring(a+1);a=f.indexOf(".");var g=f.substring(0,a);("1"===g||"2"===g)&&t(document,s,"1"===g?"on":"off",1800);var k=f.substring(a+1);!function(i){var a=i.split("_"),e=1,f=e+1,g=f+1;if(a.length!=g+1){console.warn("Invalid parameter length:",a.length);return}var j=new Date().getTime(),b=location.hostname,h=location.href,c=document,d="__na_";t(c,d+"u_i",a[0],0,b),t(c,d+"s_i",a[e],0,b),t(c,d+"s_t",a[f],0,b),t(c,d+"s_n",a[g],0,b),t(c,d+"p_t",j,0,b),t(c,d+"s_c",encodeURIComponent(h),0,b),Object.defineProperty(document,"referrer",{value:h})}(k)}}}()),Nanalytics("setup","NA-201",new Date().getTime()),Nanalytics("config","itp_recovery",!0),Nanalytics("send","pageview",{customer_id:j,app_unique_id:"598ba753f27743828f7b7160f3f5b808",chatbot_talk:((e?localStorage.getItem(b):g(b))||0).toString()}),{getUrl:function(b){var a=document.createElement("a");return a.href=b,x(a),a.href}}}()</script>
 
-
     <!-- Covertion Settings -->
     <script src="https://synalio.stg.resola.net/analytics/js/598ba753f27743828f7b7160f3f5b808/" type="text/javascript"></script>
     <style>
@@ -19,29 +18,15 @@
     </style>
     </head>
 <body>
-    <div id="divtitle">
-      <H1>SYNALIO - QA CROSS Domain Test site on [STG Env]</H1>
-    </div>
+    <div id="divtitle"><H1>SYNALIO - QA CROSS Domain Test site on [STG Env]</H1></div>
     <hr>
     <span>Hello world, This is only for <font color="red">STGuction</font>!!! Make sure what environment are you testing</span>
     <br>
     <div id="divsubtitle" class="Test_Configuraiton">
-      <h2>domain : EUGENE</h2>
       <ul class="list_style">
         <li>Env : STG</li>
         <li>CID : 149</li>
         <li>APP : QA_WEB_CROSSTRACKING</li>
-      </ul>
-    </div>
-    <hr>
-    <div id="link_list" class="Link_List">
-      <h2>Link List</h2>
-      <ul>
-        <li>eugene : https://eugenechangresola.github.io/WebbotPages/eugene/STG/SYNALIO/149/CROSSTEST/EUGENE/eugene.html</li>
-        <li>JP : https://jp-salvacion.github.io/JP/eugene/STG/SYNALIO/149/CROSSTEST/JP.html</li>
-        <li>eugene test: https://eugenetest.web.fc2.com/eugene/STG/SYNALIO/149/CROSSTEST/eugenetest.html</li>
-        <li>Home index: https://jp-salvacion.github.io/JP/eugene/STG/SYNALIO/149/CROSSTEST/</li>
-        <li>Thanks : https://eugenetest.web.fc2.com/eugene/STG/SYNALIO/149/CROSSTEST/THANKS/thanks.html</li>
       </ul>
     </div>
     <div id="user_id"></div>
