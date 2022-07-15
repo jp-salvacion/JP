@@ -37,7 +37,9 @@
           </script>
       </div>
       <div>
-        <span id"UID"></span>
+        <span id="UID1"></span>
+        <br>
+        <span id="UID2"></span>
       </div>
     <div id="campaign">
       <!-- Campaign -->
@@ -53,11 +55,14 @@
         var pattern1 = "_rslgvry";
         var pattern2 = " _rslgvry";  // 正規表現の条件
         if( cArray[0] == pattern1 || cArray[0] == pattern2 ){  // keyになる文字列が正規表現にマッチしたら
-          var text = document.getElementById('UID');
-          text.textContent = cArray[1];
+          var text1 = document.getElementById('UID1');
+          text1.textContent = cArray[1];
           console.log(cArray[1]);
           }
         }
+        var uid2 = localStorage.getItem('_rslgvry');
+        var text2 = document.getElementById('UID2');
+        text2.textContent = uid2;
     </script>
 </body>
 </html>

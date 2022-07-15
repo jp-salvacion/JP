@@ -76,7 +76,10 @@ if (window.synalio) {
         <script src="https://synalio.stg.resola.net/api/campaignjs/de5bb3d97e84424ca1d782d6555e48b9" type="text/javascript"></script>
     </div>
     <div>
-      <span id="UID">
+      <span id="UID1">
+      </span>
+      <br>
+      <span id="UID2">
       </span>
     </div>
     <script>
@@ -94,6 +97,9 @@ if (window.synalio) {
           console.log(cArray[1]);
           }
         }
+        var uid2 = localStorage.getItem('_rslgvry');
+        var text2 = document.getElementById('UID2');
+        text2.textContent = uid2;
     </script>
 </body>
 </html>
