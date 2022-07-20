@@ -66,6 +66,10 @@ if (window.synalio) {
       <br>
       <h3> activity tags (specified domains no CROSS domain) & SATORI embedded <h3>
     </div>
+    <div>
+      <span id="UID1"></span>
+      <span id="UID2"></span>
+    </div>
     <div id="linklist">
       <a href="page1.html">to PAGE 1 </a>
       <br>
@@ -75,5 +79,25 @@ if (window.synalio) {
         <!-- Compaign Here -->
         <script src="https://synalio.stg.resola.net/api/campaignjs/de5bb3d97e84424ca1d782d6555e48b9" type="text/javascript"></script>
     </div>
+    <!-- Script for get and output user id -->
+    <script type="text/javascript">
+        var cookies = document.cookie;
+        var cookiesArray = cookies.split(';');
+
+        for(var c of cookiesArray){
+        var cArray = c.split('=');
+
+        var pattern1 = "_rslgvry";
+        var pattern2 = " _rslgvry";  // 正規表現の条件
+        if( cArray[0] == pattern1 || cArray[0] == pattern2 ){  // keyになる文字列が正規表現にマッチしたら
+          var text1 = document.getElementById('UID1');
+          text1.textContent = cArray[1];
+          console.log(cArray[1]);
+          }
+        }
+        var uid2 = localStorage.getItem('_rslgvry');
+        var text2 = document.getElementById('UID2');
+        text2.textContent = uid2;
+    </script>
 </body>
 </html>
