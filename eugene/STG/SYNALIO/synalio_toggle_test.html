@@ -13,6 +13,13 @@
 
     <!-- Conversion Calculate -->
     <script src="https://synalio.stg.resola.net/analytics/js/e777904b2bc84328b55342a7614f6071/" type="text/javascript"></script>
+    <script type="text/javascript">
+         toggleChatWindow.onOpenClick(event);
+         $('#synalio-iframe').contents().find('[data-val="修理依頼・エラー検索"]').click();
+         setTimeout(function(){
+         $('#synalio-iframe').contents().find('[data-val="エラー番号で調べる"]').click();
+             },3000);
+        </script>
     </head>
 <body>
     <div id="divtitle" style="background-color: #ffc24d;"><H1><font color="#805e03">STG</font> QA Test site - SYNALIO</H1>
@@ -25,7 +32,8 @@
         <script src="https://synalio.stg.resola.net/api/campaignjs/e777904b2bc84328b55342a7614f6071" type="text/javascript"></script>
     </div>
     <div id="trigger">
-      <button name="trigger" onclick="synalio.toggle(0)">SYNALIO TOGGLE Button</button>
+      <button name="trigger" onclick="toggleChatWindow">Client toggle Event</button>
+      <button name="trigger" onclick="synalio.toggle(0)">open chat bot</button>
     </div>
     <h3>任天堂ファミコンの紹介</h3>
     <div style="padding-left: 50px;">
