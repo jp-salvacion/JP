@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-9">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>[STG] QA Test Site - SYNALIO V2 </title>
+    <!-- Chat bot script paste below -->
+    <script src="https://synalio.stg.resola.net/api/chatbox?appid=de5bb3d97e84424ca1d782d6555e48b9" type="text/javascript"></script>
+
+    <!-- n-Analytics -->
+    <script>var synalytics=function(){!function(e,n,t){(e.NanalyticsObject=t)in e||(e[t]=function(){(e[t].q=e[t].q||[]).push(arguments)},e[t].ep=n);var a=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script"),i=1e17*Math.random();r.type="text/javascript",r.async=!0,r.src="https://sdk."+n+"/v1/web.js?sid="+i,a.parentNode.insertBefore(r,a)}(window,"n-analytics.io","Nanalytics");var e="_rslgvry",n="_rslgvry_conv_cnt",t="r_window",a=/^((?!chrome|android|crios).)*safari/i.test(navigator.userAgent),r="*";function i(e){var n=null,t=e+"=",a=document.cookie,r=a.indexOf(t);if(-1!=r){var i=r+t.length,o=a.indexOf(";",i);-1==o&&(o=a.length),n=decodeURIComponent(a.substring(i,o))}return n}function o(){return a?localStorage.getItem(e):i(e)}function c(e,n,t,a,r){var o=n+"="+t+";max-age="+(a||63072e3)+";path=/;";if(r)e.cookie=o;else if(c.domain)e.cookie=o+"domain=."+c.domain;else{var s=location.hostname.split(".");s.length>2&&s.shift(),c.domain=s.join("."),e.cookie=o+"domain=."+c.domain,i(n)!=t&&(c.domain=location.hostname,e.cookie=o+"domain=."+c.domain)}}function s(n){if(a)localStorage.setItem(e,n);else{c(document,e,n,63072e3)}}var u=function(){var e=o();return e||s(e="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(e){var n=16*Math.random()|0;return("x"==e?n:3&n|8).toString(16)})),e}();function _(e,n){var t=window.navigator,a=new Date,r=a.getHours()+Math.floor((a.getMinutes()+n)/60);return function(e){var n,t=1;if(e)for(t=0,n=e.length-1;0<=n;n--){var a=e.charCodeAt(n);t=0!=(a=266338304&(t=(t<<6&268435455)+a+(a<<14)))?t^a>>21:t}return t}([e,t.userAgent,t.language||"",a.getTimezoneOffset(),a.getYear(),a.getDate()+Math.floor(r/24),(24+r)%24,(60+a.getMinutes()+n)%60].join("."))}function f(e,n,t,a){e.addEventListener(n,t,!!a)}function d(e){if(e&&"undefined"!==e)return decodeURIComponent(e)}function l(e){if(e&&"undefined"!==e)return/^\d+$/.exec(e)?Number(e):void 0}function m(e){var n=o();if(!n)return e;var a=/(.*)([?&#])(?:_sy=[^&#]*)(?:&?)(.*)/.exec(e);a&&a.length>=3&&(e=a[1]+(a[3]?a[2]+a[3]:""));var r=0,c=i(t);null!=c&&null!=c&&(r="on"===c?1:2);var s,u=n+"."+r;if(window.Nanalytics){var f=(s={},document.cookie.split(/\s*;\s*/).forEach(function(e){var n=e.split("="),t=n[0].trim(),a=n[1];switch(t){case"__na_s_i":s.si=d(a);break;case"__na_s_t":s.sst=l(a);break;case"__na_s_n":s.sn=l(a);break;case"__na_u_i":s.uid=d(a);break;case"__na_c_s":s.src=d(a);break;case"__na_c_m":s.md=d(a);break;case"__na_c_c":s.cp=d(a);break;case"__na_c_k":s.kw=d(a)}}),s);u=u+"."+["uid","si","sst","sn"].map(function(e){return f[e]||""}).join("_")}var m="_sy="+_(u,0)+"."+u,g=e.indexOf("?");a=e.indexOf("#");var x=-1==g?"?":"&";return(e=-1==a?e+(x+m):e.substring(0,a)+x+m+e.substring(a)).replace(/&+_sy=/,"&_sy=")}function g(e){("http:"==e.protocol||"https:"==e.protocol)&&function(e,n){if(n.indexOf(document.location.hostname)>=0||document.location.hostname.indexOf(n)>=0)return!1;e=e.split(",");for(var t=0;t<e.length;t++)if(e[t]instanceof RegExp){if(e[t].test(n))return!0}else{var a=e[t].trim();if(n.indexOf(a)>=0)return!0}return!1}(r,e.hostname||"")&&e.href&&(e.href=m(e.href))}function x(e){try{for(var n=(e=e||window.event).target||e.srcElement,t={},a=100;n&&0<a;){if(n.href&&n.nodeName.match(/^a(?:rea)?$/i)){t=n;break}n=n.parentNode,a--}g(t)}catch(e){console.error(e)}}function v(){var e,n=(e=(e=window.location.search).match(/(?:&|#|\\?)_sy=([^&#]*)/))&&2==e.length?e[1]:"";if(n){var a=n.indexOf("."),r=n.substring(0,a),i=n.substring(a+1);if(r&&i)if(r==_(i,0)||r==_(i,-1)||r==_(i,-2)){a=i.indexOf(".");var o=i.substring(0,a);s(o),u=o;var f=i.substring(a+1);a=f.indexOf(".");var d=f.substring(0,a);"1"!==d&&"2"!==d||c(document,t,"1"===d?"on":"off",1800),function(e){var n=e.split("_");if(4==n.length){var t=(new Date).getTime(),a=location.hostname,r=location.href,i=document;c(i,"__na_u_i",n[0],0,a),c(i,"__na_s_i",n[1],0,a),c(i,"__na_s_t",n[2],0,a),c(i,"__na_s_n",n[3],0,a),c(i,"__na_p_t",t,0,a),c(i,"__na_s_c",encodeURIComponent(r),0,a),Object.defineProperty(document,"referrer",{value:r})}else console.warn("Invalid parameter length:",n.length)}(f.substring(a+1))}}}return function(e){"1"==e&&(f(document,"mousedown",x,!1),f(document,"keyup",x,!1),v())}("0"),Nanalytics("setup","NA-201",(new Date).getTime()),Nanalytics("config","itp_recovery",!0),Nanalytics("send","pageview",{customer_id:u,app_unique_id:"de5bb3d97e84424ca1d782d6555e48b9",chatbot_talk:((a?localStorage.getItem(n):i(n))||0).toString()}),{getUrl:function(e){var n=document.createElement("a");return n.href=e,g(n),n.href}}}();</script>
+
+    <!-- Conversion Calculate -->
+    <script src="https://synalio.stg.resola.net/analytics/js/de5bb3d97e84424ca1d782d6555e48b9/" type="text/javascript"></script>
+    <script type="text/javascript">
+         toggleChatWindow.onOpenClick(event);
+         $('#synalio-iframe').contents().find('[data-val="修理依頼・エラー検索"]').click();
+         setTimeout(function(){
+         $('#synalio-iframe').contents().find('[data-val="エラー番号で調べる"]').click();
+             },3000);
+        </script>
+    </head>
+<body>
+    <div id="divtitle" style="background-color: #ffc24d;"><H1><font color="#805e03">STG</font> QA Test site - SYNALIO V2</H1>
+    <hr>
+    Hello world, This is only for <font color="yellow"><H3>STG</H3></font>!!! Make sure what environment are you testing!
+    <br>
+        </div>
+    <div id="subdivtitle">
+      <ul>
+        <li>ENV: STG</li>
+        <li>CID: 149</li>
+        <li>APP: QA</li>
+      </ul>
+        </div>
+    <div id="compaign"><H3>Compaign here</H3>
+        <!-- Compaign Here -->
+        <script src="https://synalio.stg.resola.net/api/campaignjs/de5bb3d97e84424ca1d782d6555e48b9" type="text/javascript"></script>
+    </div>
+    <div id="trigger">
+      <button name="trigger" onclick="toggleChatWindow">Client toggle Event</button>
+      <button name="trigger" onclick="synalio.toggle(0)">open chat bot</button>
+    </div>
+    <h3>任天堂ファミコンの紹介</h3>
+    <div style="padding-left: 50px;">
+      ファミリーコンピュータ（Family Computer）は、任天堂より1983年（昭和58年）7月15日に発売された家庭用ゲーム機[5]。型番はHVC-001。HVCはHome Video Computerの略である。日本国内での略称・略記はファミコン・FC。任天堂の公式表記では、JISの表記ルールにのっとり「コンピュータ」と末尾の長音を伸ばしていない[6]。当時の発売価格は14,800円。
+      日本国外では中華民国（台湾）・香港でも一部を現地仕様に合わせた上で発売された。一方で北米のアメリカ合衆国及びカナダ、ヨーロッパのEC加盟諸国（当時）、オーストラリア、韓国[注釈 2]では主要部分の仕様が同一の“Nintendo Entertainment System”（ニンテンドーエンターテインメントシステム、略称：NES）として発売されている。ファミリーコンピュータとNESはカセットや周辺機器の接続部分の機械的な仕様の違いでお互いの互換性はない。また、ファミリーコンピュータには搭載されてない「海賊版対策回路」が組み込まれている。
+      また、2016年（平成28年）に30本のソフトウェアを内蔵し、オリジナルの筐体を小型化したデザインで復刻した「ニンテンドークラシックミニ ファミリーコンピュータ」が発売された。日本国外では同様のコンセプトで“Nintendo Classic Mini”（欧州）/“NES Classic Edition”（北米）が販売されている。
+      </br>
+      ゲーム&ウオッチの事業を成功させた任天堂が、その利益を投入して開発した家庭用ゲーム機である。当時アーケードゲームで人気を博していた『ドンキーコング』が見劣りなく家庭で遊べる程度の性能を目標に設定して開発された[7]。
+      1981年（昭和56年）3月、シャープがオーブンレンジの発売を受けて「ファミコン」を民生用電気機械器具（家電）の区分で商標登録し、1983年（昭和58年）10月には娯楽用具の区分でも商標登録。その後、娯楽用具の区分での「ファミコン」商標を任天堂に譲渡した。そのため、家電区分での「ファミコン」商標はシャープが今も保持している[8]。
+      開発は1981年（昭和56年）11月[7]頃より、当時業務用ゲーム事業の縮小によって[9]手の空いていた開発第二部[7]（上村雅之らアーケードゲームの開発陣）が行った。開発開始の直前にコレコ社がコレコビジョンの試作品を任天堂に持ち込んでおり、その性能に開発第二部の技術者たちは驚くとともに、今後開発すべき製品のイメージとしてコレコビジョンを据えた[10]。「ファミリーコンピュータ」の名前は上村が付けた（上村が名称を妻に伝えたところ、妻は「日本人はファミコンて略すに決まってる」と言ったという）。本体にえんじ色が使われているのは当時の社長の山内溥が好きな色だったためで、社長命令により決定[11][12][13]。8ビットCPUを搭載し[5]、ゲーム機本体のスロットに差し込むロムカセットを交換することにより様々なゲームを楽しむことができる。当初はアーケードゲームが家庭でできることをセールスポイントにしており、製品パッケージにも「家庭用カセット式ビデオゲーム」と銘打たれていた。
+      本体と同時発売したローンチタイトルは『ドンキーコング』、『ドンキーコングJR.』、『ポパイ』の3本[5]であるが、ほどなくして『五目ならべ 連珠』と『麻雀』が発売され、その名の通り「家族みんなで楽しめる[14]」ラインアップが揃った。その直後に発売された『マリオブラザーズ』の後は2か月以上新作が途絶えていたものの、既出のアクションゲーム4本は全てアーケード版で実績のある移植作であり、雑誌評価でも好評価を得ていた[注釈 3]。アーケードですでに知名度のあるソフトウェアを移植するこの手法は宣伝費の削減に貢献した[7]。当時、汎用ICを搭載していることが多かった他社のゲーム機やパソコン等と比較して、グラフィック面に特化して設計されており、1980年代前半のアーケードゲームと比べてもあまり遜色のないグラフィックを高いフレームレートで描画できた（例：『スーパーマリオブラザーズ』）。
+      販売状況は発売当初こそPPUのバグの発覚による出荷停止があり振るわなかったものの[9][注釈 4]、徐々に人気化し1年間で300万台以上を販売した[9]。1985年（昭和60年）には『スーパーマリオブラザーズ』を発売。この作品は大ヒットとなり本体の販売にも大きく貢献し、家庭用ゲーム機の市場を大幅に拡大させていった。同年、アメリカでNESとして発売され、アタリショック以来冷え込んでいたアメリカのテレビゲーム産業を復活させた[注釈 5]。
+      最終的な出荷台数は日本国外版にあたるNESも合わせて、全世界累計で約6,291万台を記録した。内訳は日本国内で約1,935万台、日本国外で約4,356万台である。
+      その後、ファミリーコンピュータの一部のゲームソフトはWii・Wii U・ニンテンドー3DSの配信サービスであるバーチャルコンソールでもプレイ可能になった[
+      </br>
+      当時の家庭用ゲーム機としては群を抜く高性能を備えており、本体の記憶域についても「複雑なゲームに耐えるよう、巨大なスペースを持っている」と評された[14]。コストと性能のバランスを考慮した上で汎用性を割り切った設計になっている。[18]
+      主記憶は、アプリケーションのROMカートリッジによる供給を前提に、16KbitのSRAMで構成されている。音源は、デューティ比の変更が可能な矩形波と、ノイズ、三角波、DPCMが使用可能になっており、当時の低価格帯の汎用音源[注釈 7]を搭載したハードウエアよりも高い表現力を有しており、カートリッジ側とミキシング可能になった拡張スロットは、さらにその拡張も可能にしていた。
+      また、NTSC信号を直接生成し、スプライトを含むキャラクターに対し、カラーで制御が可能になっているカスタムチップによる設計は、汎用チップで構成された低価格帯のコンピュータや、ゲーム機に対し、その発売されたソフトウエアも相まって、特にキャラクタが多く動くリアルタイムゲームの実行という目的において大きな優位性を示した[注釈 8]。
+      仕様は下記の通り[19]。
+      <a name="仕様">仕様詳細</a>
+    ロムカセット（カートリッジ）によりゲーム内容を交換できる方式である。
+    CPU：リコー製RP2A03（MOS 6502にサウンド用DACおよびDMA転送機能を追加し、BCD演算機能を削除したカスタムチップ。1.79MHz動作。8bit。）
+    音源：pAPU 上記のとおり、CPUに組み込まれている。下記の項目に詳述。
+    ビデオ用PPU：リコー製 RP2C02
+        ラスタ検出可能（0番スプライトの表示ラインによる）
+    ワーキングRAM：2kバイト（16kビットSRAM）
+    VRAM：2kバイト（16kビットSRAM）
+    表示画素数：横256ドット×240ライン（表示可能な範囲外を含む）
+        本機はVRAM上の理論値240ラインのうち上下端の数ラインはRF出力ではまともに表示できず、実質的には224ラインほどが有効[注釈 9]。それを見越して本機はVRAM上の仮想的な上下端の数ラインに異常な表示が出ることを許容した設計になっている。エミュレーションで再現される場合には表示範囲の制限はないため、上下の異常な表示を隠すため縦を二進法で切りの良い224ラインとすることもある[注釈 10]。
+    色表示性能：52色から56色まで諸説（数え方による）
+        RGBでの指定ではなく、NTSC信号を直接生成する方式のため、与えるパラメータは64種であるものの、（有彩色12色相+無彩色2系統）×4種類（彩度と輝度の組み合わせ）という構成。表示色の数が中途半端になるのは、無彩色の一部が重複しているため。
+        ファミリーベーシックの取扱説明書では52色と記述がある。
+        最終的に宮本茂が色を選択したと取れるドキュメントや記事もあるが、実際の仕様は色を一色ずつ選んで指定するようにはなっておらず、「色」を選択したのではなく、52色という色表現の選択幅を決定したとするのが正しいと考えられる。
+    同時発色数：25色
+        スプライト用、BG用それぞれ4パレットで、1パレットは4色で構成されるが、うち1つは全パレット共通色（スプライトの場合は透明色）となる。8パレット×3色+共通1色=25色
+    スプライト（オブジェクト）：サイズ8×8ドットまたは8×16ドット1画面中に64枚表示可能（水平には8枚まで）
+        スプライトのキャラクターパターン（グラフィック）は64種類定義できる。
+        スプライトは、水平・垂直反転可能。
+        スプライトの表示位置は、BGの手前か後ろかを選べる。
+    BG画面：256×240の領域を2画面（追加VRAMにより最大4画面）
+        BGキャラクターはスプライトと同じく8×8ドットを256個。ただし、スプライトとは別にBGキャラクタセットを持てる。
+        色は16×16ドットの範囲ごとにパレットで指定。
+        内部的には256×240の領域を4つタイル状に並べた画面を構成し、そのうちスクロールレジスタによって指定された256×224の領域が表示できる。ただし、本体内のVRAMは2領域分しか用意されていないので、ロムカセット内の結線によって縦または横方向、単一画面にミラーされる。したがって、ロムカセットごとに縦スクロールをするか横スクロールをするかによって、都合のよい方を選択している。ソフトから切り替えられるようにしたロムカセットもある（下記MMCの項を参照）。また、ロムカセット内にVRAMを追加し、4領域をすべて使用することもできる。中にはキャラクタROMを256×224の領域として使用できるロムカセット[20]もある。
+        前述の制約から、カートリッジ側での拡張機能を使わずに上下左右にスクロールするゲームは、ミラーされている方向へのスクロールの際は、画面端でBGキャラクターの描き換えがチラついて見える。
+        PPUの制約から、テレビへの信号出力とBG面の描き換えを同時に行えない。このため、通常はVSYNC期間中にBG面の描き換えを行うが、一度のVSYNC割り込み期間内で描き換えられるのは32キャラクターに制限されている。このため、『ウィザードリィ』のような画面全体のキャラクター描き換えによる擬似3D視点タイプのゲームでは、テレビへの信号出力を止め（ブランクの信号を出力）、その間に画面全体を描き換える。このため、画面を描き換える度に画面全体がチラつく。なお、描き換え時にティアリングが発生しても問題ない場合はこの限りではない。
+    ACアダプタ端子、RF出力端子
+        コンポジットビデオ端子は発売当時は装備していたテレビが少数だったこともあり、搭載されなかった。基板から出る映像信号にアンプ回路を組み込み配線を引き出すことで、容易にコンポジット映像信号を出力させることが出来る。
+        RGBは出力していない（サードパーティ製の専用基板を取り付ける改造が必要[21]。）。
+    1ch / 2chチャンネルセレクトスイッチ（RF出力先）、ゲーム / テレビ切り替えスイッチ
+    初期にはなかったが、後にこれらの機能を説明するための漫画「これがファミリーコンピュータだ!! ファミリーコンピュータ編」が同梱されるようになった。
+    15ピン拡張コネクタ - ジョイスティック、キーボード、光線銃などが接続可能、独自規格。初期を除きカバーが附属。
+    カートリッジイジェクトスイッチ、電源スイッチ（スライド式）、リセットボタン、コントローラ×2（本体筐体内コネクタにて接続）
+    外形寸法：幅150mm×奥行き220mm×高さ60mm
+    重量：620g
+      </br>
+      <a name="EOF">END</a>
+    </div>
+    <div id="img-trigger" style="position: fixed; bottom:150px; right:2px;">
+      <img src="/WebbotPages/IMG/ninja_fukiya.png" onclick="synalio.toggle(0)" />
+    </div>
+</body>
+</html>
