@@ -17,16 +17,16 @@
     <script type="text/javascript">
          function clientbutton(){
          toggleChatWindow.onOpenClick(event);
-         $('#pep-iframe').contents().find('[data-val="修理依頼・エラー検索"]').click();
+         $('#synalio-iframe').contents().find('[data-val="修理依頼・エラー検索"]').click();
          setTimeout(function(){
-         $('#pep-iframe').contents().find('[data-val="エラー番号で調べる"]').click();
+         $('#synalio-iframe').contents().find('[data-val="エラー番号で調べる"]').click();
          },3000);
        }
         function pepbutton(){
           pep.toggle(0);
-          $('#pep-iframe').contents().find('[data-val="シナリオ アクショングループ"]').click();
+          $('#synalio-iframe').contents().find('[data-val="シナリオ アクショングループ"]').click();
           setTimeout(function(){
-          $('#pep-iframe').contents().find('[data-val="AAA"]').click();
+          $('#synalio-iframe').contents().find('[data-val="AAA"]').click();
           },3000);
         }
         </script>
