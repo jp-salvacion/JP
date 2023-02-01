@@ -11,10 +11,165 @@
     <hr>
     Hello world, This is only for <font color="red">STG PEP FAQ</font>!
     <br>
-    <h3>AUTOMATION Test - New Design Chat Bot</h3>
+    <h3>AUTOMATION Test - New Design Chat Bot : SCENARIO V1</h3>
     </div>
     <div id='campaign'>
-      <script src="https://faq.stg.resola.net/api/campaignjs/1ab233824d2d4693a36913166e404762" type="text/javascript"></script>
+
+      <!-- In FAQ STG campaign is not supported -->
+      <!-- <script src="https://faq.stg.resola.net/api/campaignjs/1ab233824d2d4693a36913166e404762" type="text/javascript"></script> -->
     </div>
+    <div class="indexarea">
+          <section>
+  <h2 id="index1">viewportとは？</h2>
+  <p>viewport（ビューポート）とは、一言でいうと、表示領域のことです。<span class="bold">今このページを見ている範囲がviewportです。</span>正確に言うと、HTMLファイルのheadタグ内に記述するmeta要素のname属性値を指します。</p>
+  <p>WEBサイトの制作者は、meta要素のviewportで指定することで、PC・モバイルなどの表示領域を指定できます。</p>
+  <p>実際に指定するときは、head要素内にmeta要素のname属性を「viewport」と記述します。</p>
+  <p>viewportは、Google推奨のレスポンシブWEBデザイン適用時には、必要不可欠のhtmlタグです。</p>
+  <p>ユーザーがサイトを訪れた際、「このサイト見づらいな」と感じたら、自然とサイトを閉じてしまうことでしょう。</p>
+  <p>viewportは、サイトのファーストインプレッションを決める重要な役割を果たします。ユーザーに直接見えない部分ではありますが、正しく設定し、見やすいサイトを構築していきましょう。</p>
+  </section>
+  <section>
+  <h2 id="index2">HTMLのmeta viewportの正しい設定とその意味</h2>
+  <blockquote><p>&lt;head&gt;<br>
+  &lt;meta name=”viewport” content=”width=device-width,initial-scale=1″&gt;<br>
+  &lt;/head&gt;</p></blockquote>
+  <p>Googleは、現時点でこちらの記述を推奨しています。表示領域の幅を指定する方法もありますが、現在は端末画面の幅に合わせることを推奨しています。</p>
+  <p>「width=device-width」を記述することで、表示領域の幅を、PCやスマホなどの端末画面の幅に合わせられます。</p>
+  <p>また、「initial-scale=1」は初期のズーム倍率を表します。1に設定することで、初めに表示された時の違和感をなくします。</p>
+  <p>これらの設定にすることで、どのデバイスでも表示領域が合わせられ、ズームの倍率もページ全てが見える癖のない初期ズーム倍率になります。</p>
+  <p>したがって、この記述が一番問題が起こりにくい、最新の内容と言えます。</p>
+  <blockquote><p>&lt;head&gt;<br>
+  &lt;meta name=”viewport” content=”width=320″&gt;<br>
+  &lt;/head&gt;</p></blockquote>
+  <p>また、応急措置として、上記のように特定の幅に設定する方法もあります。表示がうまくいかない時などには有効ですが、こちらはGoogle非推奨の方法です。</p>
+  <p>先ほどの「width=device-width」とは違って、どのサイズの画面でも同じサイズの表示になります。</p>
+  <p>つまり、大きな画面で見たときには余白が生まれてしまい、小さな画面だと見切れる領域が生まれることがあります。</p>
+  </section>
+  <section>
+  <h2 id="index3">メディアクエリを指定している場合のviewportの正しい設定は？</h2>
+  <blockquote><p>&lt;head&gt;<br>
+  &lt;meta name=”viewport” content=”width=device-width,initial-scale=1″&gt;<br>
+  &lt;/head&gt;</p></blockquote>
+  <p>メディアクエリとは、レスポンシブWEBデザインを作るときに必要な要素です。</p>
+  <p>メディアクエリを指定している時のviewportの設定も、上記の形で問題ありません。この形であれば、基本的に立ち上げているブラウザ・デバイスの横幅に指定されます。</p>
+  </section>
+  <section>
+  <h2 id="index4">viewportで設定可能な要素</h2>
+  <p>ここからは、viewportで設定可能な要素を説明します。</p>
+  <p>以下で説明する要素を理解することで、より見やすいサイト設計ができるようになります。</p>
+  <section>
+  <h3 id="index5">width（横幅）</h3>
+  <p>widthは、表示領域の幅を決めるプロパティです。「device-width」を指定すると、端末の幅に合わせられます。</p>
+  <p>設定は、200〜1万の間で可能です。一般的には、980がデフォルトといわれていますが、例外もあるので、必ず確認するようにしましょう。</p>
+  <p>widthを指定するときは、親要素の幅を子要素がはみ出ないようにしましょう。</p>
+  <p><em class="isActive">この設定にしてしまうと、ページの領域を超えて無駄な要素が広がってしまうので、レイアウトが崩れてしまう可能性があります。</em></p>
+  <p>また、widthは最大と最小の指定ができます。</p>
+  <p>最小幅をmin-width、最大幅をmax-widthで指定します。</p>
+  <p>min-widthは、これ以上小さくならないように設定ができるので、widthを％で指定した時などにセットで使うと効果を発揮します。</p>
+  <p>これは、「PCではちょうどいいけど、スマホで見るときには小さい」といった問題を解決できます。</p>
+  <p>一方、max-widthはこれ以上大きくならない幅を指定できます。「スマートフォンではちょうどいいけれど、PCで見るときには小さすぎる」といった問題を解決してくれます。</p>
+  </section>
+  <section>
+  <h3 id="index6">height（縦幅）</h3>
+  <p>heightは、表示領域の高さを指定するプロパティです。</p>
+  <p>デフォルト時の表示は、widthと端末のアスペクト比から自動算出されます。pxで指定するときは、233〜1万の間で設定することができます。</p>
+  </section>
+  <section>
+  <h3 id="index7">initial-scale （初期倍率）</h3>
+  <p>initial-scaleは、ページロードした時の倍率を指します。minimum-scale〜maximum-scaleで指定可能で、デフォルトは表示領域にページがフィットするよう、自動算出されるようになっています。</p>
+  <p>initial-scaleを指定しない場合は、initial-scale＝1となります。</p>
+  </section>
+  <section>
+  <h3 id="index8">maximum-scale（最大倍率）とminimum-scale（最小倍率）</h3>
+  <p>maximum-scaleは最大拡大倍率、minimum-scaleは最小縮小倍率を示しています。</p>
+  <p>これらを指定することで、拡大・縮小した時の上限・下限を設定できます。</p>
+  <p>maximum-scaleのデフォルトは5.0で、minimum-scaleのデフォルトは0.25になります。</p>
+  <p>なお、initial-scaleとminimum-scaleは、同時に設定できないようになっています。その理由は、設定してしまうと縮小できなくなってしまうからです。</p>
+  </section>
+  <section>
+  <h3 id="index9">user-scalable （ズーム操作の可否）</h3>
+  <p>user-scalableは、ユーザーがズームできるかを指定できる要素です。デフォルトはuser-scalable=yesになっており、yesで許可、no（または0）でズームができないよう指定できます。</p>
+  </section>
+  </section>
+  <section>
+  <h2 id="index10">viewportが効かない原因と対策</h2>
+  <p>viewportが機能しない原因は、主に「viewportのタグや記載場所の誤り」「メディアクエリの記述ミス」「キャッシュが残っている」といったことが、考えられます。</p>
+  <p>基本的に、以下に書かれている対策をすれば解決できるので、ぜひ試してみてください。</p>
+  <section>
+  <h3 id="index11">viewportのタグや記載場所に誤りがある</h3>
+  <blockquote><p>&lt;head&gt;<br>
+  &lt;meta name=”viewport” content=”width=device-width,initial-scale=1″&gt;<br>
+  &lt;/head&gt;</p></blockquote>
+  <p>viewportは、&lt;head&gt;と&lt;/head&gt;の間に記載しなければ、機能しません。</p>
+  <p>headタグの中には、WEBページのさまざまな情報や設定を書きます。タグ内の情報は、サイトに直接表示されるものではありません。</p>
+  <p>あくまでも、サイト内の設定を作るためのタグだということを覚えておきましょう。</p>
+  <p>Googleは、width=device-widthを推奨しています。では、widthに値を入れると、どのようなことが起こるでしょう。</p>
+  <p>widthに値を入力してしまうと、初期の横幅が指定されてしまうため、Google推奨のレスポンシブWEBデザインができません。</p>
+  <p>また、initial-scale=2.0とした場合は、初期倍率が2倍に設定されてしまうため、サイト全体を閲覧できていない状態になってしまいます。</p>
+  <p>viewportのタグは、正しい場所に記載するようにしましょう。</p>
+  </section>
+  <section>
+  <h3 id="index12">メディアクエリの記述にミスがある</h3>
+  <p>メディアクエリの記述にミスがあると、正しく表示されない可能性があります。</p>
+  <p>例えば、「@media screen and (max–width: 479px)」というCSSがあり、どこかに余計な半角スペースや誤字脱字があったとします。</p>
+  <p>このような小さなミスがあるだけで、viewportは表示されなくなる可能性があります。</p>
+  <p>基本的にGoogle推奨のレスポンシブwebデザインであれば問題ないので、特別なことは求められません。</p>
+  <p>したがって、メディアクエリの書き方を紹介しているサイトからコピペして数値だけ変えるなど、ミスの少ない方法で対応するようにしましょう。</p>
+  </section>
+  <section id="chatbot">
+  <h3 id="index13">キャッシュの消去</h3>
+  <p>CSSの記述に誤字脱字、文法の間違いなどがあると、指示が通らないことがあります。また、間違いがないにもかかわらず、CSSが反映されないケースがあります。</p>
+  <p>このような場合、ブラウザのキャッシュデータを更新できていないことが原因として考えられます。</p>
+  <p>キャッシュとは、過去に閲覧したWEBサイトのデータやファイルデータを一時保存し、ブラウザに再表示させる機能のことです。</p>
+  <p>WEBサイトを最新の状態でブラウザに表示させるには、キャッシュを常に最新状態にしておく必要があります。</p>
+  <p>viewportがうまく機能しない場合は、キャッシュを削除してみましょう。</p>
+  <p>Google Chromeの場合は、「Shiftキー＋ブラウザの再読み込みボタン」で削除できます。</p>
+  <p>Macの場合は、「Shift＋command＋r」で削除できます。</p>
+  </section>
+  </section>
+  <section>
+  <h2 id="index14">まとめ</h2>
+  <p>今回は、「viewportとは何か」「HTMLのmeta要素の正しい書き方と意味」を解説していきました。</p>
+  <p>viewportを正しく機能させることで、ユーザーがわかりやすいサイトを作ることができます。</p>
+  <p>サイトを作っているときにわからなくなってしまったら、こちらのページを参考にしてみてください。</p>
+  </section>
+
+
+  <dl class="serviceAppealSingle">
+  	<dt>SEO対策でビジネスを加速させる<span>「SEO Dash! byGMO」</span></dt>
+  	<dd>
+  		<div class="appealServiceImg">
+  	<img src="https://gmotech.jp/semlabo/wp-content/uploads/2022/09/SEO-DASH-1.png" alt="seo-dash!bygmo" width="500" height="314" data-src="https://gmotech.jp/semlabo/wp-content/uploads/2022/09/SEO-DASH-1.png" loading="lazy" class=" lazyloaded"><noscript><img src="https://gmotech.jp/semlabo/wp-content/uploads/2022/09/SEO-DASH-1.png" alt="seo-dash!bygmo" width="500" height="314" data-eio="l"></noscript></div>
+  		<div class="appealContents">
+  			<p>SEO対策でこんな思い込みしていませんか？</p>
+  		<ul>
+  			<li><span class="bold">大きいキーワードボリュームが取れないと売上が上がらない・・</span></li>
+  			<li><span class="bold">コンサルに頼んでもなかなか改善しない</span></li>
+  			<li><span class="bold">SEOはコンテンツさえ良ければ上がる</span></li>
+  		</ul>
+  		<p>大事なのは自社にあったビジネス設計です。<span class="br">
+  		御社の課題解決に直結するSEO施策をご提案します</span></p>
+  			<p class="buttonDl seo-button"><a id="seoAppeal" href="https://seo-dash.net/?utm_source=weblabo&amp;utm_medium=banner" target="_blank" rel="noopener" 　onclick="ga('send', 'event', '/seo/', 'https://seo-dash.net/', 'webrabo_seo_top');">無料資料請求はこちら</a></p></div>
+  	</dd>
+
+  </dl>
+
+  <dl class="author">
+  <dt>プロフィール</dt>
+         <dd>
+         <div class="author_img">
+           <img src="https://gmotech.jp/semlabo/wp-content/uploads/2021/11/profile-oosawa-150x150.jpg" width="150" height="150" alt="大澤 健人（おおさわ けんと）" class="avatar avatar-150 wp-user-avatar wp-user-avatar-150 alignnone photo lazyloaded" data-src="https://gmotech.jp/semlabo/wp-content/uploads/2021/11/profile-oosawa-150x150.jpg" loading="lazy"><noscript><img src="https://gmotech.jp/semlabo/wp-content/uploads/2021/11/profile-oosawa-150x150.jpg" width="150" height="150" alt="大澤 健人（おおさわ けんと）" class="avatar avatar-150 wp-user-avatar wp-user-avatar-150 alignnone photo" data-eio="l" /></noscript></div>
+         <dl>
+         <dt>
+           <span class="company">GMO TECH株式会社</span>                  <span class="name"><span class="author_name">大澤 健人（おおさわ けんと）</span><span class="author_site"><a href="https://www.facebook.com/kento.ohsawa" target="_blank"><img src="https://gmotech.jp/semlabo/wp-content/themes/sem_Lab/img/black_facebook.png" alt="大澤 健人（おおさわ けんと）のFacebook" width="30" height="30" data-src="https://gmotech.jp/semlabo/wp-content/themes/sem_Lab/img/black_facebook.png" loading="lazy" class=" lazyloaded"><noscript><img src="https://gmotech.jp/semlabo/wp-content/themes/sem_Lab/img/black_facebook.png" alt="大澤 健人（おおさわ けんと）のFacebook" width="30" height="30" data-eio="l"></noscript></a></span></span>
+         </dt>
+         <dd>
+         2012年より一貫して検索エンジン領域のコンサルティング業務に従事。
+  2017年にGMO TECH社に参画。営業組織の構築、新商材開発、マーケティング部門立ち上げをおこなう。
+  現在、MEOコンサルティング、SEOコンサルティング、運用型広告などSEM領域全体を統括し、
+  お客様の期待を超える価値提供を行うため日々、組織運営・グロースに奔走している。       </dd></dl>
+         </dd>
+  </dl>
+                 </div>
 </body>
 </html>
