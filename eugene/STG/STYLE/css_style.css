@@ -2,6 +2,14 @@ body {
     font-family: 'Abel', sans-serif;
     }
 
+pre {
+  background-color:cornsilk;
+  color: darkgray;
+  padding: 1vh;
+  margin: 0;
+  border-radius: 1.2em 1.2em 1.2em 1.2em;
+}
+
 #divtitle {
     background-color: #A5B4C5;
     }
