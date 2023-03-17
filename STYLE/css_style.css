@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/earlyaccess/nicomoji.css");
+@import url("https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c");
+
+body {
+    font-family: 'M PLUS Rounded 1c';
+    }
+
+pre {
+  background-color:#f5ede1;
+  color: #58585b;
+  padding: 1vh;
+  margin: 0;
+  border-radius: 1.2em 1.2em 1.2em 1.2em;
+}
+
+#divtitle {
+    background-color: #ccebef;
+    }
+
+#divtitle_PEP {
+    background-color: #745484;
+    }
+
+#divtitle_SYNALIO {
+  background-color: #f4a04c;
+ }
+
+#divtitle_MP {
+  background-color: #f7bb7f;
+ }
+
+#compaign {
+  padding: 1.2em 1.2em 1.2em 1.2em 1.2em;
+  font-family: "Nico Moji";
+}
+
+#campaign {
+  padding: 1.2em 1.2em 1.2em 1.2em 1.2em;
+  font-family: "Nico Moji";
+}
