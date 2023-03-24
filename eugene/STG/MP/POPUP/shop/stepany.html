@@ -64,5 +64,8 @@
       var text2 = document.getElementById('UID2');
       text2.textContent = uid2;
       </script>
+      <div style="padding:3vh;">
+        <button onclick="Analytics.track("site.order.completed", {orderId: "12345678-buy-0000001",});">CONVERSION-BUY</button>
+        </div>
 </body>
 </html>
