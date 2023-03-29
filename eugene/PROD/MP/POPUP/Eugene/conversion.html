@@ -9,47 +9,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../STYLE/css_style.css">
     <!-- POPUP Developer mode : ignore start MA time -->
-    <!-- <script>
-      localStorage.setItem("_ecdebug", "true");
-      localStorage.setItem("_ecDebugTargetAll", true);
-      localStorage.setItem("_ecDebugStartAt", true);
-    </script> -->
       <!-- MP POPUP script -->
-      <script type="text/javascript" id="">
-          !function (t, e, n) {
-          window.mpTrackerName = e;
-          var c, a;
-          window[window.mpTrackerName] = (a = {data: [], custom: {}}, function () {
-            for (var t = function (t) {
-              return function () {
-              return a.data.push([t].concat(Array.prototype.slice.call(arguments, 0)))
-            }
-          }, e = "track page identify".split(" "), n = 0; n < e.length; n++) a[e[n]] = t(e[n])
-          }(), a.set = function () {
-          var t = arguments[0], e = {};
-          e[t] = arguments[1], a.custom = Object.assign(a.custom, e)
-          }, a.init = function (t) {
-          a.v = "1.0.0", a.trackerName = e, a.options = t || {}
-          }, (n = document.createElement("script")).type = "text/javascript",n.onload=function(){self=oldSelf}, n.async = !0, n.src = "https://sdk.synalioec.com/1/core.min.js", (c = document.getElementsByTagName("script")[0]).parentNode.insertBefore(n, c), a)
-          }(0, "mpAnalytics");
+    <script type="text/javascript" id="">
+        !function (t, e, n) {
+        window.mpTrackerName = e;
+        var c, a;
+        window[window.mpTrackerName] = (a = {data: [], custom: {}}, function () {
+          for (var t = function (t) {
+            return function () {
+            return a.data.push([t].concat(Array.prototype.slice.call(arguments, 0)))
+          }
+        }, e = "track page identify".split(" "), n = 0; n < e.length; n++) a[e[n]] = t(e[n])
+        }(), a.set = function () {
+        var t = arguments[0], e = {};
+        e[t] = arguments[1], a.custom = Object.assign(a.custom, e)
+        }, a.init = function (t) {
+        a.v = "1.0.0", a.trackerName = e, a.options = t || {}
+        }, (n = document.createElement("script")).type = "text/javascript",n.onload=function(){self=oldSelf}, n.async = !0, n.src = "https://sdk.synalioec.com/1/core.min.js", (c = document.getElementsByTagName("script")[0]).parentNode.insertBefore(n, c), a)
+        }(0, "mpAnalytics");
 
-          var Analytics = window["mpAnalytics"];
-          // required
-          Analytics.init({
-            organizationId: "00000000000040008000000000000000",
-            projectId: "043859f0f608444b85227928397919c7",
-            plugins: ["popup"]
-          })
+        var Analytics = window["mpAnalytics"];
+        // required
+        Analytics.init({
+          organizationId: "00000000000040008000000000000000",
+          projectId: "043859f0f608444b85227928397919c7",
+          plugins: ["popup"]
+        })
 
 
-          Analytics.page({})
-        </script>
+        Analytics.page({})
+      </script>
     </head>
 <body>
-    <div id="divtitle" style="background-color: #fdd089; padding-top: 1vh; padding-bottom: 1vh;">
+    <div id="divtitle" style="background-color: orange; padding-top: 1vh; padding-bottom: 1vh;">
       <H1 style="color: white;">PROD QA Test site - MP / POPUP</H1>
     </div>
-    <h2 style="color: #9ebbba"> # FOR User Scenario Test # </h2>
+    <h2 style="color: #0c5daf;"> FOR Eugene testing </h2>
     <hr>
     <span>Hello world, This is only for <font color="orange"><H3>PROD</H3></font>!!! Make sure what environment are you testing!</span>
     <h2> Test App Configuration </h2>
