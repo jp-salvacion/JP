@@ -26,7 +26,7 @@
     </div>
     <hr>
     <span>Hello world, This is only for <font color="yellow"><H3>STG</H3></font>!!! Make sure what environment are you testing!</span>
-    <h1> For Client Scenario Test - BUY CVP BUTTON PAGE </h1>
+    <h1> For Client Scenario Test - PURCHASED FINISHED CVP PAGE </h1>
     <h2> Test App Configuration </h2>
     <pre>
       - OID : ba000000000040008000000000000000
@@ -34,10 +34,7 @@
       - MAAID :
     </pre>
     <div>
-      <a href="purchased.html">
-      <h2> BUY 1 GET 1 FREE here!</h2>
-       <span>Move to purchased page from here</span>
-      </a>
+      <h2>  <font color="red">Thank you for buying our stuff!!</font> </h2>
      </div>
     <div id="userid">
         <h3> USER ID : </h3>
@@ -64,8 +61,8 @@
       var text2 = document.getElementById('UID2');
       text2.textContent = uid2;
       </script>
-      <div style="padding:3vh;">
-        <button onclick="window.mpAnalytics.track('site.order.completed', {orderId: '12345678-buy-0000001',});">CONVERSION-BUY</button>
+      <div style="padding:5vh;">
+        <button onclick="window.mpAnalytics.track('cv.custom.finished', {orderId: '12345678-buy-0000001',});">CONVERSION-PURCHASED!!</button>
         </div>
 </body>
 </html>
