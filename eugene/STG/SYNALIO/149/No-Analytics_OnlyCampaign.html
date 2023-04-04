@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>[STG] QA Test Site - SYNALIO</title>
+    <!-- Chat bot script paste below -->
+    <script src="//synalio.stg.resola.net/api/chatbox?appid=de5bb3d97e84424ca1d782d6555e48b9" type="text/javascript"></script>
+    <!-- Link main source style sheet -->
+    <link rel="stylesheet" type="text/css" href="/STYLE/css_style.css">
+
+
+    <!-- n-Analytics -->
+
+
+    <!-- Conversion Calculate -->
+    <script src="https://synalio.stg.resola.net/analytics/js/de5bb3d97e84424ca1d782d6555e48b9/" type="text/javascript"></script>
+    <!-- Converion custom script -->
+    <script>synalioEvent({'event_type':'custom', 'name': 'CVP_カスタムスクリプト獲得', 'price':0})</script>
+    <!-- satori new js -->
+    <script>
+    var satori = (function (){
+  function getCookie(name) {
+    var result = null;
+
+    var cookieName = name + '=';
+    var allcookies = document.cookie;
+    var position = allcookies.indexOf(cookieName);
+    if (position != -1) {
+      var startIndex = position + cookieName.length;
+
+      var endIndex = allcookies.indexOf(';', startIndex);
+      if (endIndex == -1) {
+        endIndex = allcookies.length;
+      }
+
+      result = decodeURIComponent(
+        allcookies.substring(startIndex, endIndex));
+    }
+
+    return result;
+  }
+
+  return {
+    onLoad: function () {
+      var st_segs = getCookie("st_segs");
+      if (st_segs === null || !st_segs.length) {
+        return;
+      }
+      const array = st_segs.split(',');
+      synalio.addExtVal("st_segs", array);
+    },
+  }
+
+})();
+if (window.synalio) {
+  satori.onLoad();
+} else {
+  window.addEventListener("load", satori.onLoad, true);
+}
+</script>
+
+    </head>
+<body>
+    <div id="divtitle" style="background-color: #ffc24d;"><H1><font color="#805e03">STG</font> QA Test site - SYNALIO, cid: 149 , QA with sceanrio v2</H1>
+    <hr>
+    Hello world, This is only for <font color="yellow"><H3>STG</H3></font>!!! Make sure what environment are you testing!
+    <br>
+    <h3> activity tags (specified domains no CROSS domain) & SATORI embedded <h3>
+    </div>
+    <div id="linklist">
+      <a href="page1.html">to PAGE 1 </a>
+      <br>
+      <a href="page2.html">to PAGE 2 </a>
+      <br>
+      <a href="issue/menu&price/">to menu&price path</a>
+      <br>
+      <a href="https://www.google.co.jp/search?q=resola">Google search - Resola</a>
+    </div>
+    <div id="compaign"><H3>Compaign here</H3>
+        <!-- Compaign Here -->
+        <h2> Warning ! This page NOT embedded N-Analytics</h2>
+        <script src="https://synalio.stg.resola.net/api/campaignjs/de5bb3d97e84424ca1d782d6555e48b9" type="text/javascript"></script>
+    </div>
+    <div id="userid">
+        <h3> USER ID : </h3>
+        <span id="UID1"></span>
+        <br />
+        <span id="UID2"></span>
+        </div>
+    <script>
+      var cookies = document.cookie;
+      var cookiesArray = cookies.split(';');
+
+      for(var c of cookiesArray){
+      var cArray = c.split('=');
+
+      var pattern1 = "_rslgvry";
+      var pattern2 = " _rslgvry";  // 正規表現の条件
+      if( cArray[0] == pattern1 || cArray[0] == pattern2 ){  // keyになる文字列が正規表現にマッチしたら
+        var text1 = document.getElementById('UID1');
+        text1.textContent = cArray[1];
+        console.log(cArray[1]);
+        }
+      }
+      var uid2 = localStorage.getItem('_rslgvry');
+      var text2 = document.getElementById('UID2');
+      text2.textContent = uid2;
+      </script>
+
+</body>
+</html>
