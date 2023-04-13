@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/earlyaccess/nicomoji.css");
+@import url("https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c");
+@import url("https://fonts.googleapis.com/css?family=Hina+Mincho");
+@import url("https://fonts.googleapis.com/css?family=Rubik");
+@import url("https://fonts.googleapis.com/css?family=Tilt+Prism");
+
+body {
+    font-family: 'Rubik', 'M PLUS Rounded 1c', 'Hina Mincho', sans-serif;
+    }
+
+pre {
+  background-color:#f5ede1;
+  color: #58585b;
+  padding: 1vh;
+  margin: 0;
+  border-radius: 1.2em 1.2em 1.2em 1.2em;
+  width: fit-content;
+  block-size: fit-content;
+}
+
+#divtitle {
+    background-color: #ccebef;
+    padding: 0.2vh;
+    }
+
+#divtitle_PEP {
+    background-color: #745484;
+    }
+
+#divtitle_SYNALIO {
+  background-color: #f4a04c;
+ }
+
+#divtitle_MP {
+  background-color: #f7bb7f;
+ }
+
+#compaign {
+  padding: 1.2em 1.2em 1.2em 1.2em 1.2em;
+  font-family: "Tilt Prism";
+}
+
+#campaign {
+  padding: 1.2em 1.2em 1.2em 1.2em 1.2em;
+  font-family: "Tilt Prism";
+}
+
+#userid {
+  padding: 0.5vh;
+  background-color: #ccd6db;
+  width: fit-content;
+  block-size: fit-content;
+}
