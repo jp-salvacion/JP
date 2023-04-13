@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/earlyaccess/nicomoji.css");
 @import url("https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c");
+@import url("https://fonts.googleapis.com/css?family=Hina+Mincho");
+@import url("https://fonts.googleapis.com/css?family=Rubik");
+@import url("https://fonts.googleapis.com/css?family=Tilt+Prism");
 
 body {
-    font-family: 'M PLUS Rounded 1c';
+    font-family: 'Rubik', 'M PLUS Rounded 1c', 'Hina Mincho', sans-serif;
     }
 
 pre {
@@ -11,10 +14,13 @@ pre {
   padding: 1vh;
   margin: 0;
   border-radius: 1.2em 1.2em 1.2em 1.2em;
+  width: fit-content;
+  block-size: fit-content;
 }
 
 #divtitle {
     background-color: #ccebef;
+    padding: 0.2vh;
     }
 
 #divtitle_PEP {
@@ -31,10 +37,17 @@ pre {
 
 #compaign {
   padding: 1.2em 1.2em 1.2em 1.2em 1.2em;
-  font-family: "Nico Moji";
+  font-family: "Tilt Prism";
 }
 
 #campaign {
   padding: 1.2em 1.2em 1.2em 1.2em 1.2em;
-  font-family: "Nico Moji";
+  font-family: "Tilt Prism";
+}
+
+#userid {
+  padding: 0.5vh;
+  background-color: #ccd6db;
+  width: fit-content;
+  block-size: fit-content;
 }
