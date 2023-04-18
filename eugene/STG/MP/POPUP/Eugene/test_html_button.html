@@ -157,6 +157,42 @@
           <div>PCパソコン</div>
           <div>MOBILEモバイル</div>
           </div>
+        <hr>
+        <div id="selecbox_area">
+        <h3> SELECTBOX test area</h3>
+          <form>
+            <label for"device-select"> Choose the devie and type:</label>
+            <select name="post" id="select_device">
+              <option value="">--Please select the test device and type--</option>
+              <option value="PC_ID" id="PCパソコン">For PC ID matched</option>
+              <option value="MOBILE_ID" id="MOBILEモバイル">For MOBILE ID matched</option>
+              <option value="PC_CLASS" class="PCパソコン">For PC CLASS matched</option>
+              <option value="MOBILE_CLASS" class="MOBILEモバイル">For MOBILE CLASS matched</option>
+              <option value="PCパソコン">PCパソコン</option>
+              <option value="MOBILEモバイル">MOBILEモバイル</option>
+              </select>
+            </form>
+          </div>
+          <hr>
+        <div id="radio_area">
+            <h3> Radio button area</h3>
+            <fieldset>
+              <legend> Select device and type in radio button : </legend>
+              <div>
+                <input type="radio" id="PCパソコン" name="device_type" value="For PC ID matched">
+                <label for="PCパソコン">For PC ID matched</label>
+                </div>
+              <div>
+                <input type="radio" id="MOBILEモバイル" name="device_type" value="For MOBILE ID matched">
+                <label for="MOBILEモバイル">For MOBILE ID matched</label>
+                </div>
+              <div>
+                <input type="radio" id="etcその他" name="device_type" value="etcその他">
+                <label for="etcその他">etcその他</label>
+                </div>
+              </fieldset>
+            </div>
       </div>
+
 </body>
 </html>
