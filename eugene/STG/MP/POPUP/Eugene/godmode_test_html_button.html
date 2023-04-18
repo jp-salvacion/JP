@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[STG/QC] QA Test Site for MP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/STYLE/css_style.css">
+    <!-- POPUP Developer mode : ignore start MA time -->
+    <script>
+      localStorage.setItem("_ecdebug", "true");
+      localStorage.setItem("_ecDebugStartAt", true);
+      //localStorage.setItem("_rslgvry", "79e135e7-fba8-4e40-bb08-247bdbaaca7c");
+      //document.cookie = "_rslgvry=79e135e7-fba8-4e40-bb08-247bdbaaca7c";
+      </script>
+      <!-- MP POPUP script -->
+    <script type="text/javascript" id="">!function(t,e,n){
+        window.mpTrackerName=e;var c,a;window[window.mpTrackerName]=(a={data:[],custom:{}},function(){for(var t=function(t){return function(){return a.data.push([t].concat(Array.prototype.slice.call(arguments,0)))}},e="track page identify".split(" "),n=0;n<e.length;n++)a[e[n]]=t(e[n])}(),a.set=function(){var t=arguments[0],e={};e[t]=arguments[1],a.custom=Object.assign(a.custom,e)},a.init=function(t){a.v="1.0.0",a.trackerName=e,a.options=t||{}},(n=document.createElement("script")).type="text/javascript",
+        n.async=!0,n.src="https://sdk.mpdev.io/1/core.min.js",(c=document.getElementsByTagName("script")[0]).parentNode.insertBefore(n,c),a)}(0,"mpAnalytics");var Analytics=window["mpAnalytics"];
+        Analytics.init({
+          organizationId:"ba000000000040008000000000000000",  // dev
+          projectId:"ba9d31a3da474eb79a7eab7f09c6e418",
+          plugins:["popup"]
+        });
+        Analytics.page({});
+      </script>
+      <style>
+      button {
+        margin: 1vh;
+        align-items: center;
+        background-color: #fee6e3;
+        border: 2px solid #111;
+        border-radius: 8px;
+        box-sizing: border-box;
+        color: #111;
+        cursor: pointer;
+        display: flex;
+        font-family: Inter,sans-serif;
+        font-size: 16px;
+        height: 48px;
+        justify-content: center;
+        line-height: 24px;
+        max-width: 100%;
+        padding: 0 25px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+      }
+
+      button:after {
+        background-color: #111;
+        border-radius: 8px;
+        content: "";
+        display: block;
+        height: 48px;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        top: -2px;
+        transform: translate(8px, 8px);
+        transition: transform .2s ease-out;
+        z-index: -1;
+      }
+
+      button:hover:after {
+        transform: translate(0, 0);
+      }
+
+      button:active {
+        background-color: #ffdeda;
+        outline: 0;
+      }
+
+      button:hover {
+        outline: 0;
+      }
+      img {
+        width: 128px;
+        height: 128px;
+      }
+        </style>
+    </head>
+<body>
+    <div id="divtitle"><H1><font color="yellow">STG/QC</font> QA Test site - MP / POPUP</H1>
+    </div>
+    <h1 style="color: #0c5daf;"> FOR Eugene tesing </h1>
+    <hr>
+    <span>Hello world, This is only for <font color="yellow"><H3>STG</H3></font>!!! Make sure what environment are you testing!</span>
+    <h2> Test App Configuration </h2>
+    <pre>
+      - OID : ba000000000040008000000000000000
+      - PID : ba9d31a3da474eb79a7eab7f09c6e418
+      - MAAID :
+    </pre>
+    <h3> PATH: MP > POPUP (GOD MODE Debugger and Ignore MA Time setting) <h3>
+    <div id="userid">
+        <h3> USER ID : </h3>
+        <span id="UID1"></span>
+        <br />
+        <span id="UID2"></span>
+        </div>
+    <script>
+      var cookies = document.cookie;
+      var cookiesArray = cookies.split(';');
+
+      for(var c of cookiesArray){
+      var cArray = c.split('=');
+
+      var pattern1 = "_rslgvry";
+      var pattern2 = " _rslgvry";  // 正規表現の条件
+      if( cArray[0] == pattern1 || cArray[0] == pattern2 ){  // keyになる文字列が正規表現にマッチしたら
+        var text1 = document.getElementById('UID1');
+        text1.textContent = cArray[1];
+        console.log(cArray[1]);
+        }
+      }
+      var uid2 = localStorage.getItem('_rslgvry');
+      var text2 = document.getElementById('UID2');
+      text2.textContent = uid2;
+      </script>
+      <hr>
+      <div id="test_html_id_area">
+        <div id="button_area">
+          <h3> Button area</h3>
+          <button id="PCパソコン">For PC ID matched</button>
+          <button id="MOBILEモバイル">For MOBILE ID matched</button>
+          <button class="PCパソコン">For PC CLASS matched</button>
+          <button class="MOBILEモバイル">For MOBILE CLASS matched</button>
+          <button>PCパソコン</button>
+          <button>MOBILEモバイル</button>
+          </div>
+        <hr>
+        <div id="image_area">
+          <h3> Image area</h3>
+          <img src="img/button_pc.png" id="PCパソコン" alt="PC ID matched"><pre>For PC ID matched</pre>
+          <img src="img/button.png" id="MOBILEモバイル" alt="MOBILE ID matched"><pre>For MOBILE ID matched</pre>
+          <img src="img/button_pc.png" class="PCパソコン" alt="PC ID matched"><pre>For PC CLASS matched</pre>
+          <img src="img/button.png" class="MOBILEモバイル" alt="MOBILE ID matched"><pre>For MOBILE CLASS matched</pre>
+          </div>
+        <hr>
+        <div id="a_tag_area">
+          <h3> A Tag link area</h3>
+          <ul>
+            <li><a href="test_html_button.html" id="PCパソコン" target="_blank">For PC ID matched</a></li>
+            <li><a href="test_html_button.html" id="MOBILEモバイル" target="_blank">For MOBILE ID matched</a></li>
+            <li><a href="test_html_button.html" class="PCパソコン" target="_blank">For PC CLASS matched</a></li>
+            <li><a href="test_html_button.html" class="MOBILEモバイル" target="_blank">For MOBILE CLASS matched</a></li>
+            <li><a href="test_html_button.html" target="_blank">PCパソコン</a></li>
+            <li><a href="test_html_button.html" target="_blank">MOBILEモバイル</a></li>
+            </ul>
+          </div>
+        <hr>
+        <div id="div_area">
+          <h3>DIV elements with test ID</h3>
+          <div id="PCパソコン">For PC ID matched</div>
+          <div id="MOBILEモバイル">For MOBILE ID matched</div>
+          <div class=""="PCパソコン">For PC CLASS matched</div>
+          <div class="MOBILEモバイル">For MOBILE CLASS matched</div>
+          <div>PCパソコン</div>
+          <div>MOBILEモバイル</div>
+          </div>
+      </div>
+</body>
+</html>
