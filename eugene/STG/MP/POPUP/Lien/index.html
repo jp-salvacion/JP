@@ -13,10 +13,10 @@
     //  localStorage.setItem("_ecdebug", "true");
      // localStorage.setItem("_ecDebugTargetAll", true);
      // localStorage.setItem("_ecDebugStartAt", true);
-     // localStorage.setItem("_rslgvry", "29043cc5-b784-482c-811e-cfd215100000");
-    //  document.cookie = "_rslgvry=29043cc5-b784-482c-811e-cfd215100000; path=/";
+      localStorage.setItem("_rslgvry", "29043cc5-b784-482c-811e-cfd21516befc");
+      document.cookie = "_rslgvry=29043cc5-b784-482c-811e-cfd21516befc";
       </script>
-    <!-- MP POPUP script -->
+      <!-- MP POPUP script -->
     <script type="text/javascript" id="">!function(t,e,n){
         window.mpTrackerName=e;var c,a;window[window.mpTrackerName]=(a={data:[],custom:{}},function(){for(var t=function(t){return function(){return a.data.push([t].concat(Array.prototype.slice.call(arguments,0)))}},e="track page identify".split(" "),n=0;n<e.length;n++)a[e[n]]=t(e[n])}(),a.set=function(){var t=arguments[0],e={};e[t]=arguments[1],a.custom=Object.assign(a.custom,e)},a.init=function(t){a.v="1.0.0",a.trackerName=e,a.options=t||{}},(n=document.createElement("script")).type="text/javascript",
         n.async=!0,n.src="https://sdk.mpdev.io/1/core.min.js",(c=document.getElementsByTagName("script")[0]).parentNode.insertBefore(n,c),a)}(0,"mpAnalytics");var Analytics=window["mpAnalytics"];
@@ -40,31 +40,31 @@
       - PID : ba9d31a3da474eb79a7eab7f09c6e418
       - MAAID :
     </pre>
-    <h3> PATH: MP > POPUP (Vanilla - no debugger scripts) <h3>
+    <h3> PATH: MP > POPUP (GOD MODE 3 Debug Parameters embedded) <h3>
     <div id="userid">
         <h3> USER ID : </h3>
         <span id="UID1"></span>
         <br />
         <span id="UID2"></span>
         </div>
-   // <script>
-   //   var cookies = document.cookie;
-    //  var cookiesArray = cookies.split(';');
+    <script>
+      var cookies = document.cookie;
+      var cookiesArray = cookies.split(';');
 
-    //  for(var c of cookiesArray){
-    //  var cArray = c.split('=');
+      for(var c of cookiesArray){
+      var cArray = c.split('=');
 
-   //   var pattern1 = "_rslgvry";
-    //  var pattern2 = " _rslgvry";  // 正規表現の条件
-    //  if( cArray[0] == pattern1 || cArray[0] == pattern2 ){  // keyになる文字列が正規表現にマッチしたら
-    //    var text1 = document.getElementById('UID1');
-    //    text1.textContent = cArray[1];
-    //    console.log(cArray[1]);
-    //    }
-    //  }
-    //  var uid2 = localStorage.getItem('_rslgvry');
-    //  var text2 = document.getElementById('UID2');
-    //  text2.textContent = uid2;
-    //  </script>
+      var pattern1 = "_rslgvry";
+      var pattern2 = " _rslgvry";  // 正規表現の条件
+      if( cArray[0] == pattern1 || cArray[0] == pattern2 ){  // keyになる文字列が正規表現にマッチしたら
+        var text1 = document.getElementById('UID1');
+        text1.textContent = cArray[1];
+        console.log(cArray[1]);
+        }
+      }
+      var uid2 = localStorage.getItem('_rslgvry');
+      var text2 = document.getElementById('UID2');
+      text2.textContent = uid2;
+      </script>
 </body>
 </html>
