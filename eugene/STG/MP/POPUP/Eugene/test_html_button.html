@@ -119,9 +119,9 @@
       <hr>
       <div id="test_html_id_area">
         <div id="button_area">
-          <h3> Button area</h3>
-          <button for="PCパソコン">For PC ID matched</button>
-          <button for="MOBILEモバイル">For MOBILE ID matched</button>
+          <h3> Button area - Target test area </h3>
+          <button id="PCパソコン">For PC ID matched</button>
+          <button id="MOBILEモバイル">For MOBILE ID matched</button>
           <button class="PCパソコン">For PC CLASS matched</button>
           <button class="MOBILEモバイル">For MOBILE CLASS matched</button>
           <button>PCパソコン</button>
@@ -130,7 +130,7 @@
         <hr>
         <div id="image_area">
           <h3> Image area</h3>
-          <img src="img/button_pc.png" id="PCパソコン" alt="PC ID matched"><pre>For PC ID matched</pre>
+          <img src="img/button_pc.png" for="PCパソコン" alt="PC ID matched"><pre>For PC ID matched</pre>
           <img src="img/button.png" for="MOBILEモバイル" alt="MOBILE ID matched"><pre>For MOBILE ID matched</pre>
           <img src="img/button_pc.png" class="PCパソコン" alt="PC ID matched"><pre>For PC CLASS matched</pre>
           <img src="img/button.png" class="MOBILEモバイル" alt="MOBILE ID matched"><pre>For MOBILE CLASS matched</pre>
@@ -165,7 +165,7 @@
             <select name="post" id="select_device">
               <option value="">--Please select the test device and type--</option>
               <option value="PC_ID" for="PCパソコン">For PC ID matched</option>
-              <option value="MOBILE_ID" id="MOBILEモバイル">For MOBILE ID matched</option>
+              <option value="MOBILE_ID" for="MOBILEモバイル">For MOBILE ID matched</option>
               <option value="PC_CLASS" class="PCパソコン">For PC CLASS matched</option>
               <option value="MOBILE_CLASS" class="MOBILEモバイル">For MOBILE CLASS matched</option>
               <option value="PCパソコン">PCパソコン</option>
