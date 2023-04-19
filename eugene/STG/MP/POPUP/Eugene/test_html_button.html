@@ -120,8 +120,8 @@
       <div id="test_html_id_area">
         <div id="button_area">
           <h3> Button area</h3>
-          <button id="PCパソコン">For PC ID matched</button>
-          <button id="MOBILEモバイル">For MOBILE ID matched</button>
+          <button for="PCパソコン">For PC ID matched</button>
+          <button for="MOBILEモバイル">For MOBILE ID matched</button>
           <button class="PCパソコン">For PC CLASS matched</button>
           <button class="MOBILEモバイル">For MOBILE CLASS matched</button>
           <button>PCパソコン</button>
@@ -130,8 +130,8 @@
         <hr>
         <div id="image_area">
           <h3> Image area</h3>
-          <img src="img/button_pc.png" for="PCパソコン" alt="PC ID matched"><pre>For PC ID matched</pre>
-          <img src="img/button.png" id="MOBILEモバイル" alt="MOBILE ID matched"><pre>For MOBILE ID matched</pre>
+          <img src="img/button_pc.png" id="PCパソコン" alt="PC ID matched"><pre>For PC ID matched</pre>
+          <img src="img/button.png" for="MOBILEモバイル" alt="MOBILE ID matched"><pre>For MOBILE ID matched</pre>
           <img src="img/button_pc.png" class="PCパソコン" alt="PC ID matched"><pre>For PC CLASS matched</pre>
           <img src="img/button.png" class="MOBILEモバイル" alt="MOBILE ID matched"><pre>For MOBILE CLASS matched</pre>
           </div>
@@ -140,7 +140,7 @@
           <h3> A Tag link area</h3>
           <ul>
             <li><a href="test_html_button.html" for="PCパソコン" target="_blank">For PC ID matched</a></li>
-            <li><a href="test_html_button.html" id="MOBILEモバイル" target="_blank">For MOBILE ID matched</a></li>
+            <li><a href="test_html_button.html" for="MOBILEモバイル" target="_blank">For MOBILE ID matched</a></li>
             <li><a href="test_html_button.html" class="PCパソコン" target="_blank">For PC CLASS matched</a></li>
             <li><a href="test_html_button.html" class="MOBILEモバイル" target="_blank">For MOBILE CLASS matched</a></li>
             <li><a href="test_html_button.html" target="_blank">PCパソコン</a></li>
@@ -151,7 +151,7 @@
         <div id="div_area">
           <h3>DIV elements with test ID</h3>
           <div for="PCパソコン">For PC ID matched</div>
-          <div id="MOBILEモバイル">For MOBILE ID matched</div>
+          <div for="MOBILEモバイル">For MOBILE ID matched</div>
           <div class=""="PCパソコン">For PC CLASS matched</div>
           <div class="MOBILEモバイル">For MOBILE CLASS matched</div>
           <div>PCパソコン</div>
@@ -161,7 +161,7 @@
         <div id="selecbox_area">
         <h3> SELECTBOX test area</h3>
           <form>
-            <label for"device-select"> Choose the devie and type:</label>
+            <label for"device_select"> Choose the devie and type:</label>
             <select name="post" id="select_device">
               <option value="">--Please select the test device and type--</option>
               <option value="PC_ID" for="PCパソコン">For PC ID matched</option>
@@ -183,7 +183,7 @@
                 <label for="PCパソコン">For PC ID matched</label>
                 </div>
               <div>
-                <input type="radio" id="MOBILEモバイル" name="device_type" value="For MOBILE ID matched">
+                <input type="radio" for="MOBILEモバイル" name="device_type" value="For MOBILE ID matched">
                 <label for="MOBILEモバイル">For MOBILE ID matched</label>
                 </div>
               <div>
@@ -196,7 +196,7 @@
         <div id="input_button_area">
           <h3> input tag button type </h3>
           <input type="button" for="PCパソコン" value="For PC ID matched">
-          <input type="button" id="MOBILEモバイル" value="For MOBILE ID matched">
+          <input type="button" for="MOBILEモバイル" value="For MOBILE ID matched">
           <input type="button" class="PCパソコン" value="For PC CLASS matched">
           <input type="button" class="MOBILEモバイル" value="For MOBILE CLASS matched">
           <input type="button" value="PCパソコン">
