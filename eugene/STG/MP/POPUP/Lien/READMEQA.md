@@ -18,4 +18,4 @@ This assessment’s goal is to measure the candidate's knowledge with test cases
 1. Create a repository on your Github account. Name your repository as resola-qa-challenge-yourname
 2. Code. Commit and Push as many times as you want, only the last Pull Request will be graded
 3. All manual deliverables should be added to a "Reports" folder in root of project.
-4. Create a Pull Request in your private repo and invite us as reviewer   => Need Michael confirm his account
+4. Create a Pull Request in your private repo and invite vuanhduc2685@gmail.com as reviewer
