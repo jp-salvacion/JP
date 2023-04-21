@@ -6,7 +6,7 @@ This assessment’s goal is to measure the candidate's knowledge with test cases
 2. For the USS APIs https://resola.stoplight.io/docs/resola/YXBpOjQ0MTc1MzE1-uss
 
 ## Deliverables
-1. Create a test plan
+1. Create a test plan for this assignment
 2. Create a series of manual test cases that cover APIs from the above list. Make sure that you give detailed instructions for each test case (step preconditions, steps to execute test case, expected results, etc). You can use any format you prefer.
 3. API Automate using Postman (the more, the better) of the previously created test cases.
 4. Write documentation on how to run tests with the chosen tool (README.md)
