@@ -43,41 +43,45 @@
     <!-- removed original campaign script -->
       </div>
     <a href="https://www.google.co.jp">Click here to google search</a>
+    <h3> TEST TARGET is DIV tag </h3>
     <br />
     <hr style="border-style: dotted;border-width: 1px;">
-    <div id="linklist" style="padding:1vh;">
+    <div id="linklist" style="padding:1vh;display: none;">
       <h3> LINK LIST : GTM embedded test </h3>
       <ul>
-          <li><a href="gtm_a_tag.html">TARGET ELEMENT = A tag</a></li>
           <li><a href="gtm_div.html">TARGET ELEMENT = DIV tag</a></li>
           <li><a href="gtm_button.html">TARGET ELEMENT = BUTTON tag</a></li>
           <li><a href="gtm_img.html">TARGET ELEMENT = IMG tag</a></li>
           <li><a href="gtm_input_button.html">TARGET ELEMENT = INPUT TYPE BUTTON tag</a></li>
       </ul>
     </div>
-    <div style="display: none;">
+    <div>
       <h2> = Test elements area for ID : LOGIN = </h2>
       <br />
+      <br />
+      <a id="login" href="goal.html">login ID in A tag</a>
       <div id="login"><a href="goal.html">login div : go to goal page</a></div>
       <br />
-      <div><button id="login" onclick="location.href='goal.html'">login button: go to goal</button></div>
+      <div><button onclick="location.href='goal.html'">login button: go to goal</button></div>
       <br />
-      <div><a href="goal.html"><img id="login" src="src/image.png" alt="login id image" style="width: 96px;"></a></div>
+      <div><a href="goal.html"><img src="src/image.png" alt="login id image" style="width: 96px;"></a></div>
       <br />
-      <div><input type="button" id="login" onclick="location.href='goal.html'" value="input type button : go to goal"></div>
+      <div><input type="button" onclick="location.href='goal.html'" value="input type button : go to goal"></div>
       <br />
       </div>
     <hr style="border-style: dotted;border-width: 1px;">
-    <div style="display: none;">
+    <div>
       <h2> = Test elements area for ID : newEntry = </h2>
       <br />
+      <br />
+      <a id="newentry" href="goal.html">newentry ID in A tag</a>
       <div id="newentry"><a href="goal.html?">newentry div : go to goal page</a></div>
       <br />
-      <div><button id="newentry" onclick="location.href='goal.html'">newentry button: go to goal</button></div>
+      <div><button onclick="location.href='goal.html'">newentry button: go to goal</button></div>
       <br />
-      <div><a href="goal.html"><img id="newentry" src="src/image.png" alt="newentry id image" style="width: 96px;"></a></div>
+      <div><a href="goal.html"><img src="src/image.png" alt="newentry id image" style="width: 96px;"></a></div>
       <br />
-      <div><input type="button" id="newentry" onclick="location.href='goal.html'" value="newentry input type button : go to goal"></div>
+      <div><input type="button" onclick="location.href='goal.html'" value="newentry input type button : go to goal"></div>
       <br />
     </div>
   </body>
