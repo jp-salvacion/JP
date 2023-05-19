@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[DEV] QA Test Site for MP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://jp-salvacion.github.io/JP/STYLE/css_style.css">
+    <!-- auto redirect code -->
+    <!--
+    < meta http-equiv="Refresh" content="1; url='https://www.google.co.jp'" />
+    -->
+    <title>[Dev]QA Test Site for REBOT on Dev</title>
+    <!-- Chat bot設置スクリプト -->
+    
+
+    <!-- 行動データ取得用スクリプト -->
+    
+
+    <!-- コンバージョン計測スクリプト -->
+    
+
+    <!-- MP POPUP script -->
+    <script type="text/javascript" id="">!function(t,e,n){
+        window.mpTrackerName=e;var c,a;window[window.mpTrackerName]=(a={data:[],custom:{}},function(){for(var t=function(t){return function(){return a.data.push([t].concat(Array.prototype.slice.call(arguments,0)))}},e="track page identify".split(" "),n=0;n<e.length;n++)a[e[n]]=t(e[n])}(),a.set=function(){var t=arguments[0],e={};e[t]=arguments[1],a.custom=Object.assign(a.custom,e)},a.init=function(t){a.v="1.0.0",a.trackerName=e,a.options=t||{}},(n=document.createElement("script")).type="text/javascript",
+        n.async=!0,n.src="https://sdk.mpdev.io/1/core.min.js",(c=document.getElementsByTagName("script")[0]).parentNode.insertBefore(n,c),a)}(0,"mpAnalytics");var Analytics=window["mpAnalytics"];
+        Analytics.init({
+          organizationId:"00000000000040008000000000000000",  // dev
+          projectId:"329d31a3da474eb79a7eab7f09c6e418",
+          plugins:["ecbeing", "shopserve", "makeshop", "eccube4", "popup", "anonymousid-attach",
+            "synalio-chatbot", "synalio-campaign", "synalio-analytics", "synalio-nanalytics"]
+        });
+        Analytics.set('synalioChatbotCid', '149')
+        Analytics.set('synalioChatbotApp', 'QA')
+        Analytics.set('synalioChatbotUniqueId', 'de5bb3d97e84424ca1d782d6555e48b9')
+         
+        Analytics.set('synalioCampaignCid', '149')
+        Analytics.set('synalioCampaignApp', 'QA')
+        Analytics.set('synalioCampaignUniqueId', 'de5bb3d97e84424ca1d782d6555e48b9') 
+        // login, newentry: buttons id, separate by ","
+        Analytics.set('anonymousIdAttachElemenentIds', 'login, newentry');
+        Analytics.page({});  
+      </script>
+
+    <style>
+       #divtitle {background-color: #603943;color: #E0B1B1;padding: 2vh;}
+       body {font-family: monospace;}
+    </style>
+</head>
+<body>
+    <div id="divtitle">
+        <H1>QA Test site for REBOT on Develop Environment</H1>        
+        </div>
+    <div id="configuration">
+        <pre>
+            <ul>
+                <li>ENV: DEV</li>
+                <li>CID: 1</li>
+                <li>APP: </li>
+                <li>OID: 00000000000040008000000000000000</li>
+                <li>PID: 329d31a3da474eb79a7eab7f09c6e418</li>
+                <li>MAID: </li>
+                </ul>
+            </pre>
+        </div>
+    <span> Hello world, This site only for testing on DEV Env. </span>
+    <div id="campaign">
+      <!-- removed original campaign script -->
+    </div>
+    <a href="https://www.google.co.jp">Click here to google search</a>
+    <h3> TEST TARGET is img element </h3>
+    <div>        
+        <h2> = Test elements area for ID : LOGIN = </h2>
+        <br />
+        <div><a href="goal.html">login div : go to goal page</a></div>
+        <br />
+        <div><button onclick="location.href='goal.html'">login button: go to goal</button></div>
+        <br />
+        <div><a href="goal.html"><img id="login" src="src/image.png" alt="login id image" style="width: 96px;"></a></div>
+        <br />
+        <div><input type="button" onclick="location.href='goal.html" value="input type button : go to goal"></div>
+        <br />
+    </div>
+    <hr style="border-style: dotted;border-width: 1px;">
+    <div>        
+        <h2> = Test elements area for ID : newEntry = </h2>
+        <br />
+        <div><a href="goal.html?">newentry div : go to goal page</a></div>
+        <br />
+        <div><button onclick="location.href='goal.html'">newentry button: go to goal</button></div>
+        <br />
+        <div><a href="goal.html"><img id="newentry" src="src/image.png" alt="newentry id image" style="width: 96px;"></a></div>
+        <br />
+        <div><input type="button" onclick="location.href='goal.html" value="newentry input type button : go to goal"></div>
+        <br />
+    </div>
+</body>
+</html>
