@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>[PROD][SYNALIO Based] QA Test Site</title>
+    <!-- Chat bot script paste below -->
+    
+    <!-- For gathering and analysis action data -->
+    
+    <!-- Covertion Settings -->
+     <!-- MP POPUP script -->
+     <script type="text/javascript" id="">!function(t,e,n){
+      window.mpTrackerName=e;var c,a;window[window.mpTrackerName]=(a={data:[],custom:{}},function(){for(var t=function(t){return function(){return a.data.push([t].concat(Array.prototype.slice.call(arguments,0)))}},e="track page identify".split(" "),n=0;n<e.length;n++)a[e[n]]=t(e[n])}(),a.set=function(){var t=arguments[0],e={};e[t]=arguments[1],a.custom=Object.assign(a.custom,e)},a.init=function(t){a.v="1.0.0",a.trackerName=e,a.options=t||{}},(n=document.createElement("script")).type="text/javascript",
+      n.async=!0,n.src="https://sdk.synalioec.com/1/core.min.js",(c=document.getElementsByTagName("script")[0]).parentNode.insertBefore(n,c),a)}(0,"mpAnalytics");var Analytics=window["mpAnalytics"];
+      Analytics.init({
+        organizationId:"00000000000040008000000000000000",  // PROD
+        projectId:"043859f0f608444b85227928397919c7",
+        plugins:["ecbeing", "shopserve", "makeshop", "eccube4", "popup", "anonymousid-attach",
+          "synalio-chatbot", "synalio-campaign", "synalio-analytics", "synalio-nanalytics"]
+      });
+      Analytics.set('synalioChatbotCid', '1906')
+      Analytics.set('synalioChatbotApp', 'QA_WEB')
+      Analytics.set('synalioChatbotUniqueId', '1197834291c74fa08d92467b24359cd8')
+       
+      Analytics.set('synalioCampaignCid', '1906')
+      Analytics.set('synalioCampaignApp', 'QA_WEB')
+      Analytics.set('synalioCampaignUniqueId', '1197834291c74fa08d92467b24359cd8') 
+      // login, newentry: buttons id, separate by ","
+      Analytics.set('anonymousIdAttachElemenentIds', 'login, newentry');
+      Analytics.page({});  
+    </script>
+    </head>
+<body>
+    <div id="divtitle"><H1>SYNALIO OEM - QA Test site on [PROD Env]</H1>
+    <hr>
+    Hello world, This is only for <font color="red">Production</font>!!! Make sure what environment are you testing
+    <br>
+    </div>
+    <h2>Direct - Embedded integrated MP/SYNALIO Script test page</h2>
+    <div id="campaign">
+      <!-- Campaign -->
+      
+    </div>
+    <br />
+    <hr style="border-style: dotted;border-width: 1px;">
+    <div id="linklist" style="padding:1vh;">
+        <h3> LINK LIST : </h3>
+        <ul>
+            <li><a href="a_tag.html">TARGET ELEMENT = A tag</a></li>
+            <li><a href="div.html">TARGET ELEMENT = DIV tag</a></li>
+            <li><a href="divIndiv.html">TARGET ELEMENT = DIV in DIV tag</a></li>
+            <li><a href="button.html">TARGET ELEMENT = BUTTON tag</a></li>
+            <li><a href="img.html">TARGET ELEMENT = IMG tag</a></li>
+            <li><a href="input_button.html">TARGET ELEMENT = INPUT TYPE BUTTON tag</a></li>
+        </ul>
+    </div>
+    <div style="display: none;">
+        <h2> = Test elements area for ID : LOGIN = </h2>
+        <br />
+        <div id="login"><a href="goal.html">login div : go to goal page</a></div>
+        <br />
+        <div id="login">
+            <div id="div_2">
+                <a href="divIndiv.html">login div > div > a link</a>
+                </div>
+            </div>
+        <br />
+        <div><button id="login" onclick="location.href='goal.html'">login button: go to goal</button></div>
+        <br />
+        <div><a href="goal.html"><img id="login" src="src/image.png" alt="login id image" style="width: 96px;"></a></div>
+        <br />
+        <div><input type="button" id="login" onclick="location.href='goal.html'" value="input type button : go to goal"></div>
+        <br />
+    </div>
+    <hr style="border-style: dotted;border-width: 1px;">
+    <div style="display: none;">
+        <h2> = Test elements area for ID : newEntry = </h2>
+        <br />
+        <div id="newentry"><a href="goal.html?">newentry div : go to goal page</a></div>
+        <br />
+        <div id="newentry">
+            <div id="div_2">
+                <a href="divIndiv.html">newEntry div > div > a link</a>
+                </div>
+            </div>
+        <br />
+        <div><button id="newentry" onclick="location.href='goal.html'">newentry button: go to goal</button></div>
+        <br />
+        <div><a href="goal.html"><img id="newentry" src="src/image.png" alt="newentry id image" style="width: 96px;"></a></div>
+        <br />
+        <div><input type="button" id="newentry" onclick="location.href='goal.html'" value="newentry input type button : go to goal"></div>
+        <br />
+    </div>
+</body>
+</html>
