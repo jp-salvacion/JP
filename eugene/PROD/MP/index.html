@@ -55,6 +55,19 @@
       </script>
     </head>
 <body>
+  <div id="divtitle"><H1>SYNALIO OEM - QA Test site on [PROD Env]</H1>
+    <hr>
+    Hello world, This is only for <font color="red">Production</font>!!! Make sure what environment are you testing
+    <br>
+    <pre>
+      <h3>App Configuration:</h3>
+      <ul>
+        <li>- cid : 1287</li>
+        <li>- app : QA_WEB</li>
+        <li>- UID : <span id="UID1"></span> | <span id="UID2"></span></li>
+      </ul>
+    </pre>
+  </div>
   <script>
     var cookies = document.cookie;
     var cookiesArray = cookies.split(';');
@@ -74,18 +87,5 @@
     var text2 = document.getElementById('UID2');
     text2.textContent = uid2;
     </script>
-    <div id="divtitle"><H1>SYNALIO OEM - QA Test site on [PROD Env]</H1>
-      <hr>
-      Hello world, This is only for <font color="red">Production</font>!!! Make sure what environment are you testing
-      <br>
-      <pre>
-        <h3>App Configuration:</h3>
-        <ul>
-          <li>- cid : 1287</li>
-          <li>- app : QA_WEB</li>
-          <li>- UID : <span id="UID1"></span> | <span id="UID2"></span></li>
-        </ul>
-      </pre>
-    </div>
 </body>
 </html>
