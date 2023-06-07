@@ -9,9 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://jp-salvacion.github.io/JP/STYLE/css_style.css">
     <!-- POPUP Developer mode : ignore start MA time -->
-      <!-- MP POPUP script -->
-    <script type="text/javascript" id="">
-        !function (t, e, n) {
+    <script>
+      !function (t, e, n) {
         window.mpTrackerName = e;
         var c, a;
         window[window.mpTrackerName] = (a = {data: [], custom: {}}, function () {
@@ -25,20 +24,28 @@
         e[t] = arguments[1], a.custom = Object.assign(a.custom, e)
         }, a.init = function (t) {
         a.v = "1.0.0", a.trackerName = e, a.options = t || {}
-        }, (n = document.createElement("script")).type = "text/javascript",n.onload=function(){self=oldSelf}, n.async = !0, n.src = "https://sdk.synalioec.com/1/core.min.js", (c = document.getElementsByTagName("script")[0]).parentNode.insertBefore(n, c), a)
+        }, (n = document.createElement("script")).type = "text/javascript", n.async = !0, n.src = "https://sdk.synalioec.com/1/core.min.js", (c = document.getElementsByTagName("script")[0]).parentNode.insertBefore(n, c), a)
         }(0, "mpAnalytics");
-
+        
         var Analytics = window["mpAnalytics"];
         // required
         Analytics.init({
           organizationId: "00000000000040008000000000000000",
           projectId: "043859f0f608444b85227928397919c7",
-          plugins: ["popup"]
+          plugins: ["popup","synalio-chatbot","synalio-campaign"]
         })
-
-
+        
+          Analytics.set('synalioChatbotCid', '1287')
+          Analytics.set('synalioChatbotApp', 'QA_WEB')
+          Analytics.set('synalioChatbotUniqueId', '05dfa01a8fd346a98e55b88892d7d7c8')
+          
+        
+          Analytics.set('synalioCampaignCid', '1287')
+          Analytics.set('synalioCampaignApp', 'QA_WEB')
+          Analytics.set('synalioCampaignUniqueId', '05dfa01a8fd346a98e55b88892d7d7c8') 
+          
         Analytics.page({})
-      </script>
+        </script>
     </head>
 <body>
     <div id="divtitle" style="background-color: orange; padding-top: 1vh; padding-bottom: 1vh;">
