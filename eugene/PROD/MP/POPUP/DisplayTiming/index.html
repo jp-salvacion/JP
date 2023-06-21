@@ -51,7 +51,7 @@
     <div id="divtitle" style="background-color: orange; padding-top: 1vh; padding-bottom: 1vh;">
       <H1 style="color: white;">PROD QA Test site - MP / POPUP</H1>
     </div>
-    <h2 style="color: #0c5daf;"> POPUP Display Timing Test : For Clicked on BROWSER BACK BUTTON ブラウザの戻るボタンをクリックした時 </h2>
+    <h2 style="color: #0c5daf;"> FOR generate using </h2>
     <hr>
     <span>Hello world, This is only for <font color="orange"><H3>PROD</H3></font>!!! Make sure what environment are you testing!</span>
     <h2> Test App Configuration </h2>
@@ -87,23 +87,25 @@
       text2.textContent = uid2;
       </script>
       <hr>
-      <div id="test_html_id_area">
-        <div id="button_area">
-          <h3> Button area - Target test area </h3>
-          <button id="PCパソコン">For PC ID matched</button>
-          <button id="MOBILEモバイル">For MOBILE ID matched</button>
-          <button class="PCパソコン">For PC CLASS matched</button>
-          <button class="MOBILEモバイル">For MOBILE CLASS matched</button>
-          <button>PCパソコン</button>
-          <button>MOBILEモバイル</button>
-        </div>
-      </div>
       <div id="link_list">
+        <h3>Links for accessing each display timing option test page</h3>
+        <span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </span>
         <ul>
-          <li><a href="regression.html" target="_self"> -> Go To Regression </a></li>
-          <li><a href="only_pc.html" target="_self"> -> Go To ONLY PC </a></li>
-          <li><a href="only_mobile.html" target="_self"> -> Go To ONLY MOBILE </a></li>
-          <li><a href="https://www.google.co.jp/search?q=resola" target="_self"> -> Go To GOOGLE Search </a></li>
+          <li><a href="timing_after_n_seconds.html" target="_self">TIMING = AFTER N SECONDS</a></li>
+          <li><a href="timing_scroll_to_html_id.html" target="_self">TIMING = SCROLL TO TARGET HTML ID</a></li>
+          <li><a href="timing_click_on_html_id.html" target="_self">TIMING = CLICK ON TARGET HTML ID BUTTON</a></li>
+          <li><a href="timing_click_on_back_button.html" target="_self">TIMING = CLICK ON BROWSER BACK BUTTON</a></li>c
+          <li><a href="timing_return_to_left_tab.html" target="_self">TIMING = WHEN RETURNED TO POPUP TAB</a></li>
+        </ul>
+        <h4> ---- Timing = Click on Browser Back Button ----</h4>
+        <ul>
+          <li><a href="timing_click_on_back_button.html?device=pc" target="_self">TIMING = CLICK ON BROWSER BACK BUTTON for PC parameter</a></li>
+          <li><a href="timing_click_on_back_button.html?device=mobile" target="_self">TIMING = CLICK ON BROWSER BACK BUTTON for PC parameter</a></li>
+        </ul>
+        <h4> ---- Timing = Return to POPUP Tab ----</h4>
+        <ul>
+          <li><a href="timing_return_to_left_tab.html?device=pc" target="_self">TIMING = WHEN RETURNED TO POPUP TAB for PC parameter</a></li>
+          <li><a href="timing_return_to_left_tab.html?device=mobile" target="_self">TIMING = WHEN RETURNED TO POPUP TAB for PC parameter</a></li>
         </ul>
       </div>
       <div id="freespace"></div>
