@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[PROD] QA Test Site for MP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://jp-salvacion.github.io/JP/STYLE/css_style.css">
+    </head>
+<body>
+    <div id="divtitle"><H1><font color="DodgerBlue">PROD</font> QA Test site - MP</H1>
+    </div>
+    <hr>
+    <span>Hello world, This is only for <font color="DodgerBlue"><H3>PROD</H3></font>!!! Make sure what environment are you testing!</span>
+    <h2> Test App Configuration </h2>
+    <pre>
+      - OID : 00000000000040008000000000000000
+      - PID : 043859f0f608444b85227928397919c7
+      - MAAID :
+    </pre>
+    <!-- MP POPUP script -->
+    <script type="text/javascript" id="">
+      !function (t, e, n) {
+      window.mpTrackerName = e;
+      var c, a;
+      window[window.mpTrackerName] = (a = {data: [], custom: {}}, function () {
+        for (var t = function (t) {
+          return function () {
+          return a.data.push([t].concat(Array.prototype.slice.call(arguments, 0)))
+        }
+      }, e = "track page identify".split(" "), n = 0; n < e.length; n++) a[e[n]] = t(e[n])
+      }(), a.set = function () {
+      var t = arguments[0], e = {};
+      e[t] = arguments[1], a.custom = Object.assign(a.custom, e)
+      }, a.init = function (t) {
+      a.v = "1.0.0", a.trackerName = e, a.options = t || {}
+      }, (n = document.createElement("script")).type = "text/javascript",n.onload=function(){self=oldSelf}, n.async = !0, n.src = "https://sdk.synalioec.com/1/core.min.js", (c = document.getElementsByTagName("script")[0]).parentNode.insertBefore(n, c), a)
+      }(0, "mpAnalytics");
+
+      var Analytics = window["mpAnalytics"];
+      // required
+      Analytics.init({
+        organizationId: "00000000000040008000000000000000",
+        projectId: "043859f0f608444b85227928397919c7",
+        plugins: ["popup","synalio-chatbot","synalio-campaign"]
+      })
+      Analytics.set('synalioChatbotCid', '1287')
+      Analytics.set('synalioChatbotApp', 'QA_WEB')
+      Analytics.set('synalioChatbotUniqueId', '05dfa01a8fd346a98e55b88892d7d7c8')
+
+      Analytics.set('synalioCampaignCid', '1287')
+      Analytics.set('synalioCampaignApp', 'QA_WEB')
+      Analytics.set('synalioCampaignUniqueId', '05dfa01a8fd346a98e55b88892d7d7c8')
+      Analytics.page({})
+      
+    </script>
+    <div id="userid">
+        <h3> USER ID : </h3>
+        <span id="UID1"></span>
+        <br />
+        <span id="UID2"></span>
+        </div>
+      <hr>
+      <div id="link_list">
+        <h3>product list link</h3>
+        <h4>= FOR ABC =</h4>
+        <span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </span>
+        <ul>
+          <li><a href="ABC/0001.html" target="_self">Product - ABC0001</a></li>
+          <li><a href="ABC/0002.html" target="_self">Product - ABC0002</a></li>
+          <li><a href="ABC/0003.html" target="_self">Product - ABC0003</a></li>
+          <li><a href="ABC/0004.html" target="_self">Product - ABC0004</a></li>
+          <li><a href="ABC/0005.html" target="_self">Product - ABC0005</a></li>
+        </ul>
+        <h4>= FOR XYZ =</h4>
+        <span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </span>
+        <ul>
+          <li><a href="XYZ/0001.html" target="_self">Product - XYZ0001</a></li>
+          <li><a href="XYZ/0002.html" target="_self">Product - XYZ0002</a></li>
+          <li><a href="XYZ/0003.html" target="_self">Product - XYZ0003</a></li>
+          <li><a href="XYZ/0004.html" target="_self">Product - XYZ0004</a></li>
+          <li><a href="XYZ/0005.html" target="_self">Product - XYZ0005</a></li>
+        </ul>
+        <h4>= FOR XYZ EMA CONVERSION Test =</h4>
+        <span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </span>
+        <ul>
+          <li><a href="https://uss.resola.net/GybN5Ofm" target="_self">Product - XYZ0001 EMA CVP</a></li>
+          <li><a href="https://uss.resola.net/ugxCL9ky" target="_self">Product - XYZ0001 EMA CVP eugene domain</a></li>
+          <li><a href="XYZ/0002.html" target="_self">Product - XYZ0002</a></li>
+          <li><a href="XYZ/0003.html" target="_self">Product - XYZ0003</a></li>
+          <li><a href="XYZ/0004.html" target="_self">Product - XYZ0004</a></li>
+          <li><a href="https://uss.resola.net/hb5hTYbb" target="_self">Product - XYZ0005 EMA CVP</a></li>
+          <li><a href="https://uss.resola.net/s03eIoOx" target="_self">Product - XYZ0005 EMA CVP eugene domain</a></li>
+        </ul>
+      </div>
+      <script>
+        var cookies = document.cookie;
+        var cookiesArray = cookies.split(';');
+  
+        for(var c of cookiesArray){
+        var cArray = c.split('=');
+  
+        var pattern1 = "_rslgvry";
+        var pattern2 = " _rslgvry";  // 正規表現の条件
+        if( cArray[0] == pattern1 || cArray[0] == pattern2 ){  // keyになる文字列が正規表現にマッチしたら
+          var text1 = document.getElementById('UID1');
+          text1.textContent = cArray[1];
+          console.log(cArray[1]);
+          }
+        }
+        var uid2 = localStorage.getItem('_rslgvry');
+        var text2 = document.getElementById('UID2');
+        text2.textContent = uid2;
+        </script>
+</body>
+</html>
