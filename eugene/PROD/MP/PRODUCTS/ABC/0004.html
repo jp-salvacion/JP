@@ -3,46 +3,62 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[STG/QC] QA Test Site for MP</title>
+    <title>[PROD] QA Test Site for MP</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://jp-salvacion.github.io/JP/STYLE/css_style.css">
     <style>
-      #product {background-color: rgb(167, 200, 223); width: fit-content; padding: 1em;}
+      #product {background-color: rgb(167, 223, 209); width: fit-content; padding: 1em;}
       </style>
     </head>
 <body>
-    <div id="divtitle"><H1><font color="yellow">STG/QC</font> QA Test site - MP</H1>
+    <div id="divtitle"><H1><font color="DodgerBlue">PROD</font> QA Test site - MP</H1>
     </div>
     <hr>
-    <span>Hello world, This is only for <font color="yellow"><H3>STG</H3></font>!!! Make sure what environment are you testing!</span>
+    <span>Hello world, This is only for <font color="DodgerBlue"><H3>PROD</H3></font>!!! Make sure what environment are you testing!</span>
     <h2> Test App Configuration </h2>
     <pre>
-      - OID : ba000000000040008000000000000000
-      - PID : ba9d31a3da474eb79a7eab7f09c6e418
+      - OID : 00000000000040008000000000000000
+      - PID : 043859f0f608444b85227928397919c7
       - MAAID :
     </pre>
-    <!-- MP POPUP integrated script -->
-    <script type="text/javascript" id="">!function(t,e,n){
-      window.mpTrackerName=e;var c,a;window[window.mpTrackerName]=(a={data:[],custom:{}},function(){for(var t=function(t){return function(){return a.data.push([t].concat(Array.prototype.slice.call(arguments,0)))}},e="track page identify".split(" "),n=0;n<e.length;n++)a[e[n]]=t(e[n])}(),a.set=function(){var t=arguments[0],e={};e[t]=arguments[1],a.custom=Object.assign(a.custom,e)},a.init=function(t){a.v="1.0.0",a.trackerName=e,a.options=t||{}},(n=document.createElement("script")).type="text/javascript",
-      n.async=!0,n.src="https://sdk.mpdev.io/1/core.min.js",(c=document.getElementsByTagName("script")[0]).parentNode.insertBefore(n,c),a)}(0,"mpAnalytics");var Analytics=window["mpAnalytics"];
+    <!-- MP POPUP script -->
+    <script type="text/javascript" id="">
+      !function (t, e, n) {
+      window.mpTrackerName = e;
+      var c, a;
+      window[window.mpTrackerName] = (a = {data: [], custom: {}}, function () {
+        for (var t = function (t) {
+          return function () {
+          return a.data.push([t].concat(Array.prototype.slice.call(arguments, 0)))
+        }
+      }, e = "track page identify".split(" "), n = 0; n < e.length; n++) a[e[n]] = t(e[n])
+      }(), a.set = function () {
+      var t = arguments[0], e = {};
+      e[t] = arguments[1], a.custom = Object.assign(a.custom, e)
+      }, a.init = function (t) {
+      a.v = "1.0.0", a.trackerName = e, a.options = t || {}
+      }, (n = document.createElement("script")).type = "text/javascript",n.onload=function(){self=oldSelf}, n.async = !0, n.src = "https://sdk.synalioec.com/1/core.min.js", (c = document.getElementsByTagName("script")[0]).parentNode.insertBefore(n, c), a)
+      }(0, "mpAnalytics");
+
+      var Analytics = window["mpAnalytics"];
+      // required
       Analytics.init({
-        organizationId:"ba000000000040008000000000000000",  // qc
-        projectId:"ba9d31a3da474eb79a7eab7f09c6e418",
+        organizationId: "00000000000040008000000000000000",
+        projectId: "043859f0f608444b85227928397919c7",
         plugins: ["popup","synalio-chatbot","synalio-campaign"]
       })
+      Analytics.set('synalioChatbotCid', '1287')
+      Analytics.set('synalioChatbotApp', 'QA_WEB')
+      Analytics.set('synalioChatbotUniqueId', '05dfa01a8fd346a98e55b88892d7d7c8')
 
-      Analytics.set('synalioChatbotCid', '29')
-      Analytics.set('synalioChatbotApp', 'QA')
-      Analytics.set('synalioChatbotUniqueId', 'e777904b2bc84328b55342a7614f6071')
-
-      Analytics.set('synalioCampaignCid', '29')
-      Analytics.set('synalioCampaignApp', 'QA')
-      Analytics.set('synalioCampaignUniqueId', 'e777904b2bc84328b55342a7614f6071')
+      Analytics.set('synalioCampaignCid', '1287')
+      Analytics.set('synalioCampaignApp', 'QA_WEB')
+      Analytics.set('synalioCampaignUniqueId', '05dfa01a8fd346a98e55b88892d7d7c8')
       Analytics.page({})
-
-      </script>
+      
+    </script>
     <div id="userid">
         <h3> USER ID : </h3>
         <span id="UID1"></span>
@@ -69,12 +85,12 @@
       text2.textContent = uid2;
       </script>
       <div id="product">
-        <h3>PRODUCT : ABC0002</h3>
-        <h4>PRICE = 20000 NTD</h4>
+        <h3>PRODUCT : ABC0004</h3>
+        <h4>PRICE = 40000 NTD</h4>
         <p>
           <span>-------------------------------------------</span>
         </p>
-        <img src="img/0002.png" alt="0002">
+        <img src="img/0004.png" alt="0004">
         </div>
       <hr>
       <div id="link_list">
