@@ -14,55 +14,118 @@
       //localStorage.setItem("_ecDebugTargetAll", true);
       localStorage.setItem("_ecDebugStartAt", true);
       </script>
-      <!-- MP POPUP script -->
+    <!-- MP POPUP script -->
     <script type="text/javascript" id="">!function(t,e,n){
-        window.mpTrackerName=e;var c,a;window[window.mpTrackerName]=(a={data:[],custom:{}},function(){for(var t=function(t){return function(){return a.data.push([t].concat(Array.prototype.slice.call(arguments,0)))}},e="track page identify".split(" "),n=0;n<e.length;n++)a[e[n]]=t(e[n])}(),a.set=function(){var t=arguments[0],e={};e[t]=arguments[1],a.custom=Object.assign(a.custom,e)},a.init=function(t){a.v="1.0.0",a.trackerName=e,a.options=t||{}},(n=document.createElement("script")).type="text/javascript",
-        n.async=!0,n.src="https://sdk.mpdev.io/1/core.min.js",(c=document.getElementsByTagName("script")[0]).parentNode.insertBefore(n,c),a)}(0,"mpAnalytics");var Analytics=window["mpAnalytics"];
-        Analytics.init({
-          organizationId:"ba000000000040008000000000000000",  // dev
-          projectId:"ba9d31a3da474eb79a7eab7f09c6e418",
-          plugins:["popup"]
-        });
-        Analytics.page({});
-      </script>
-    </head>
+      window.mpTrackerName=e;var c,a;window[window.mpTrackerName]=(a={data:[],custom:{}},function(){for(var t=function(t){return function(){return a.data.push([t].concat(Array.prototype.slice.call(arguments,0)))}},e="track page identify".split(" "),n=0;n<e.length;n++)a[e[n]]=t(e[n])}(),a.set=function(){var t=arguments[0],e={};e[t]=arguments[1],a.custom=Object.assign(a.custom,e)},a.init=function(t){a.v="1.0.0",a.trackerName=e,a.options=t||{}},(n=document.createElement("script")).type="text/javascript",
+      n.async=!0,n.src="https://sdk.mpdev.io/1/core.min.js",(c=document.getElementsByTagName("script")[0]).parentNode.insertBefore(n,c),a)}(0,"mpAnalytics");var Analytics=window["mpAnalytics"];
+      Analytics.init({
+        organizationId:"ba000000000040008000000000000000",  // dev
+        projectId:"ba9d31a3da474eb79a7eab7f09c6e418",
+        plugins:["popup","synalio-chatbot","synalio-campaign","synalio-analytics","synalio-nanalytics"]
+      });
+      Analytics.set('synalioUniqueId', 'e777904b2bc84328b55342a7614f6071');
+      Analytics.page({});
+    </script>
+  </head>
 <body>
-    <div id="divtitle"><H1><font color="yellow">STG/QC</font> QA Test site - MP / POPUP</H1>
-    </div>
+  <div id="divtitle"><H1><font color="yellow">STG/QC</font> QA Test site - MP / POPUP</H1>
+  </div>
     <h1 style="color: #0c5daf;"> FOR Eugene tesing </h1>
     <hr>
-    <span>Hello world, This is only for <font color="yellow"><H3>STG</H3></font>!!! Make sure what environment are you testing!</span>
+    <span>Hello world, This is only for <font color="yellow">
+    <H3>STG</H3></font>
+    !!! Make sure what environment are you testing!</span>
+    <p>
+      |
+      <a href="#articles_1" target="_self" style="padding: 1em;">#1</a>
+      |
+      <a href="#articles_2" target="_self" style="padding: 1em;">#2</a>
+      |
+      <a href="#articles_3" target="_self" style="padding: 1em;">#3</a>
+      |
+      </p>
     <h2> Test App Configuration </h2>
     <pre>
       - OID : ba000000000040008000000000000000
       - PID : ba9d31a3da474eb79a7eab7f09c6e418
       - MAAID :
     </pre>
-    <h3> PATH: MP > POPUP (Debug MODE : MA Time skipped) <h3>
-    <div id="userid">
-        <h3> USER ID : </h3>
-        <span id="UID1"></span>
-        <br />
-        <span id="UID2"></span>
-        </div>
-    <script>
-      var cookies = document.cookie;
-      var cookiesArray = cookies.split(';');
+  <h3> PATH: MP > POPUP (Vanilla Mode) <h3>
+  <div id="userid">
+      <h3> USER ID : </h3>
+      <span id="UID1"></span>
+      <br />
+      <span id="UID2"></span>
+      </div>
+  <script>
+    var cookies = document.cookie;
+    var cookiesArray = cookies.split(';');
 
-      for(var c of cookiesArray){
-      var cArray = c.split('=');
+    for(var c of cookiesArray){
+    var cArray = c.split('=');
 
-      var pattern1 = "_rslgvry";
-      var pattern2 = " _rslgvry";  // 正規表現の条件
-      if( cArray[0] == pattern1 || cArray[0] == pattern2 ){  // keyになる文字列が正規表現にマッチしたら
-        var text1 = document.getElementById('UID1');
-        text1.textContent = cArray[1];
-        console.log(cArray[1]);
-        }
+    var pattern1 = "_rslgvry";
+    var pattern2 = " _rslgvry";  // 正規表現の条件
+    if( cArray[0] == pattern1 || cArray[0] == pattern2 ){  // keyになる文字列が正規表現にマッチしたら
+      var text1 = document.getElementById('UID1');
+      text1.textContent = cArray[1];
+      console.log(cArray[1]);
       }
-      var uid2 = localStorage.getItem('_rslgvry');
-      var text2 = document.getElementById('UID2');
-      text2.textContent = uid2;
-      </script>
+    }
+    var uid2 = localStorage.getItem('_rslgvry');
+    var text2 = document.getElementById('UID2');
+    text2.textContent = uid2;
+    </script>
+    <h2> -- POPUP > Eugene > page B -- </h2>
+    <hr>
+    <div id="articles_1" style="padding-top: 2em;">
+      <h3>1. 木曾路はすべて山の中である。</h3>
+      <br>
+      あるところは岨づたいに行く崖の道であり、
+      <br>
+      あるところは数十間の深さに臨む木曾川の岸であり、あるところは山の尾をめぐる谷の入り口である。
+      <br>
+      一筋の街道はこの深い森林地帯を貫いていた。東ざかいの桜沢から、西の十曲峠まで、木曾十一宿はこの街道に添うて、
+      <br>
+      二十二里余にわたる長い谿谷の間に散在していた。道路の位置も幾たびか改まったもので、古道はいつのまにか深い山間に埋もれた。名高い桟も、
+      <br>
+      <span> ------------------------------ </span>
+      </div>
+    <div id="articles_2" style="padding-top: 2em;">
+      <h3>2. 恥の多い生涯を送って来ました。</h3>
+      <br>
+      自分には、人間の生活というものが、見当つかないのです。
+      <br>
+      自分は東北の田舎に生れましたので、汽車をはじめて見たのは、よほど大きくなってからでした。
+      <br>
+      自分は停車場のブリッジを、上って、降りて、そうしてそれが線路をまたぎ越えるために造られたものだという事には全然気づかず、
+      <br>
+      ただそれは停車場の構内を外国の遊戯場みたいに、複雑に楽しく、ハイカラにするためにのみ、設備せられてあるも
+      <br>
+      <span> ------------------------------ </span>
+      </div>
+    <div id="articles_3" style="padding-top: 2em;">
+      <h3>3. 吾輩は猫である。</h3>
+      <br>
+      名前はまだ無い。
+      <br>
+      どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
+      <br>
+      吾輩はここで始めて人間というものを見た。
+      <br>
+      しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。
+      <br>
+      この書生というのは時々我々を捕えて煮て食うという話である。しかしその当時は何という考もなかったから別段恐しいとも思わなかった。
+      <br>
+      ただ彼の掌に載せられてスーと持ち上げられた時何だかフワフワした感じがあったばかりである。
+      <br>
+      掌の上で少し落ちついて書生の顔を見たのがいわゆる人間というものの見始であろう。この時妙なものだと思った感じが今でも残っている。
+      <br>
+      第一毛をもって装飾されべきはずの顔がつるつるしてまるで薬缶だ。その後猫にもだいぶ逢ったがこんな片輪には一度も出会わした事がない。
+      <br>
+      のみならず顔の真中があまりに突起している。そうしてその穴の中から時々ぷうぷう
+      <br>
+      <span> ------------------------------ </span>
+      </div>
 </body>
 </html>
