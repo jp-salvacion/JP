@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://jp-salvacion.github.io/JP/STYLE/css_style.css">
+    <title>[STG] QA Test Site - SYNALIO</title>
+    <!-- Chat bot script paste below -->
+    <script src="//synalio.stg.resola.net/api/chatbox?appid=de5bb3d97e84424ca1d782d6555e48b9" type="text/javascript"></script>
+
+    <!-- n-Analytics -->
+      <script>var synalytics=function(){!function(e,n,t){(e.NanalyticsObject=t)in e||(e[t]=function(){(e[t].q=e[t].q||[]).push(arguments)},e[t].ep=n);var a=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script"),i=1e17*Math.random();r.type="text/javascript",r.async=!0,r.src="https://sdk."+n+"/v1/web.js?sid="+i,a.parentNode.insertBefore(r,a)}(window,"n-analytics.io","Nanalytics");var e="_rslgvry",n="_rslgvry_conv_cnt",t="r_window",a=/^((?!chrome|android|crios).)*safari/i.test(navigator.userAgent),r="jp-salvacion.github.io,eugenetest.fc2.web.com,eugenechangresola.github.io";function i(e){var n=null,t=e+"=",a=document.cookie,r=a.indexOf(t);if(-1!=r){var i=r+t.length,o=a.indexOf(";",i);-1==o&&(o=a.length),n=decodeURIComponent(a.substring(i,o))}return n}function o(){return a?localStorage.getItem(e):i(e)}function c(e,n,t,a,r){var o=n+"="+t+";max-age="+(a||63072e3)+";path=/;";if(r)e.cookie=o;else if(c.domain)e.cookie=o+"domain=."+c.domain;else{var s=location.hostname.split(".");s.length>2&&s.shift(),c.domain=s.join("."),e.cookie=o+"domain=."+c.domain,i(n)!=t&&(c.domain=location.hostname,e.cookie=o+"domain=."+c.domain)}}function s(n){if(a)localStorage.setItem(e,n);else{c(document,e,n,63072e3)}}var u=function(){var e=o();return e||s(e="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(e){var n=16*Math.random()|0;return("x"==e?n:3&n|8).toString(16)})),e}();function _(e,n){var t=window.navigator,a=new Date,r=a.getHours()+Math.floor((a.getMinutes()+n)/60);return function(e){var n,t=1;if(e)for(t=0,n=e.length-1;0<=n;n--){var a=e.charCodeAt(n);t=0!=(a=266338304&(t=(t<<6&268435455)+a+(a<<14)))?t^a>>21:t}return t}([e,t.userAgent,t.language||"",a.getTimezoneOffset(),a.getYear(),a.getDate()+Math.floor(r/24),(24+r)%24,(60+a.getMinutes()+n)%60].join("."))}function f(e,n,t,a){e.addEventListener(n,t,!!a)}function d(e){if(e&&"undefined"!==e)return decodeURIComponent(e)}function l(e){if(e&&"undefined"!==e)return/^\d+$/.exec(e)?Number(e):void 0}function m(e){var n=o();if(!n)return e;var a=/(.*)([?&#])(?:_sy=[^&#]*)(?:&?)(.*)/.exec(e);a&&a.length>=3&&(e=a[1]+(a[3]?a[2]+a[3]:""));var r=0,c=i(t);null!=c&&null!=c&&(r="on"===c?1:2);var s,u=n+"."+r;if(window.Nanalytics){var f=(s={},document.cookie.split(/\s*;\s*/).forEach(function(e){var n=e.split("="),t=n[0].trim(),a=n[1];switch(t){case"__na_s_i":s.si=d(a);break;case"__na_s_t":s.sst=l(a);break;case"__na_s_n":s.sn=l(a);break;case"__na_u_i":s.uid=d(a);break;case"__na_c_s":s.src=d(a);break;case"__na_c_m":s.md=d(a);break;case"__na_c_c":s.cp=d(a);break;case"__na_c_k":s.kw=d(a)}}),s);u=u+"."+["uid","si","sst","sn"].map(function(e){return f[e]||""}).join("_")}var m="_sy="+_(u,0)+"."+u,g=e.indexOf("?");a=e.indexOf("#");var x=-1==g?"?":"&";return(e=-1==a?e+(x+m):e.substring(0,a)+x+m+e.substring(a)).replace(/&+_sy=/,"&_sy=")}function g(e){("http:"==e.protocol||"https:"==e.protocol)&&function(e,n){if(n.indexOf(document.location.hostname)>=0||document.location.hostname.indexOf(n)>=0)return!1;e=e.split(",");for(var t=0;t<e.length;t++)if(e[t]instanceof RegExp){if(e[t].test(n))return!0}else{var a=e[t].trim();if(n.indexOf(a)>=0)return!0}return!1}(r,e.hostname||"")&&e.href&&(e.href=m(e.href))}function x(e){try{for(var n=(e=e||window.event).target||e.srcElement,t={},a=100;n&&0<a;){if(n.href&&n.nodeName.match(/^a(?:rea)?$/i)){t=n;break}n=n.parentNode,a--}g(t)}catch(e){console.error(e)}}function v(){var e,n=(e=(e=window.location.search).match(/(?:&|#|\\?)_sy=([^&#]*)/))&&2==e.length?e[1]:"";if(n){var a=n.indexOf("."),r=n.substring(0,a),i=n.substring(a+1);if(r&&i)if(r==_(i,0)||r==_(i,-1)||r==_(i,-2)){a=i.indexOf(".");var o=i.substring(0,a);s(o),u=o;var f=i.substring(a+1);a=f.indexOf(".");var d=f.substring(0,a);"1"!==d&&"2"!==d||c(document,t,"1"===d?"on":"off",1800),function(e){var n=e.split("_");if(4==n.length){var t=(new Date).getTime(),a=location.hostname,r=location.href,i=document;c(i,"__na_u_i",n[0],0,a),c(i,"__na_s_i",n[1],0,a),c(i,"__na_s_t",n[2],0,a),c(i,"__na_s_n",n[3],0,a),c(i,"__na_p_t",t,0,a),c(i,"__na_s_c",encodeURIComponent(r),0,a),Object.defineProperty(document,"referrer",{value:r})}else console.warn("Invalid parameter length:",n.length)}(f.substring(a+1))}}}return function(e){"1"==e&&(f(document,"mousedown",x,!1),f(document,"keyup",x,!1),v())}("0"),Nanalytics("setup","NA-201",(new Date).getTime()),Nanalytics("config","itp_recovery",!0),Nanalytics("send","pageview",{customer_id:u,app_unique_id:"de5bb3d97e84424ca1d782d6555e48b9",chatbot_talk:((a?localStorage.getItem(n):i(n))||0).toString()}),{getUrl:function(e){var n=document.createElement("a");return n.href=e,g(n),n.href}}}();</script>
+
+    <!-- Conversion Calculate -->
+    <script src="https://synalio.stg.resola.net/analytics/js/de5bb3d97e84424ca1d782d6555e48b9/" type="text/javascript"></script>
+
+    <!-- satori new js -->
+    <script>
+    var satori = (function (){
+    function getCookie(name) {
+      var result = null;
+
+      var cookieName = name + '=';
+      var allcookies = document.cookie;
+      var position = allcookies.indexOf(cookieName);
+      if (position != -1) {
+        var startIndex = position + cookieName.length;
+
+        var endIndex = allcookies.indexOf(';', startIndex);
+        if (endIndex == -1) {
+          endIndex = allcookies.length;
+        }
+
+        result = decodeURIComponent(
+          allcookies.substring(startIndex, endIndex));
+      }
+
+      return result;
+    }
+
+    return {
+      onLoad: function () {
+        var st_segs = getCookie("st_segs");
+        if (st_segs === null || !st_segs.length) {
+          return;
+        }
+        const array = st_segs.split(',');
+        synalio.addExtVal("st_segs", array);
+      },
+    }
+
+      })();
+      if (window.synalio) {
+        satori.onLoad();
+      } else {
+        window.addEventListener("load", satori.onLoad, true);
+      }
+      </script>
+    <style>
+      #display_timing {
+        color: deeppink;background-color:ivory;
+      }
+      </style>
+    </head>
+<body>
+    <div id="divtitle" style="background-color: #ffc24d;"><H1><font color="#805e03">STG</font> QA Test site - SYNALIO, cid: 149 , QA with sceanrio v2</H1></div>
+    <hr>
+    <div id="subtitle">
+      <span>Hello world, This is only for <font color="yellow"><H3>STG</H3></font>!!! Make sure what environment are you testing!</span>
+      <br>
+      <h3> LANDING page : For SYNALIO campaign POPUP display timing tests <h3>
+    </div>
+    <div>
+      <pre>
+        UID = 
+        <span id="UID1"></span>
+        <span id="UID2"></span>
+        </pre> 
+    </div>
+    <div id="linklist">
+      <a href="page1.html">to PAGE 1 </a>
+      <br>
+      <a href="page2.html">to PAGE 2 </a>
+    </div>
+    <div id="compaign"><H3>Compaign here</H3>
+        <!-- Compaign Here -->
+        <script src="https://synalio.stg.resola.net/api/campaignjs/de5bb3d97e84424ca1d782d6555e48b9" type="text/javascript"></script>
+    </div>
+    <div id="link_list">
+      <ul>
+        <li><a href="regression.html" target="_self"> -> Go To Regression </a></li>
+        <li><a href="only_pc.html" target="_self"> -> Go To ONLY PC </a></li>
+        <li><a href="only_mobile.html" target="_self"> -> Go To ONLY MOBILE </a></li>
+        <li><a href="https://www.google.co.jp/search?q=resola" target="_self"> -> Go To GOOGLE Search </a></li>
+      </ul>
+      <hr>
+      <h3>SYNALIO campaign popup display timing options</h3>
+      <ul>
+        <li><a href="timing_page_visited.html" target="_self"> -> Go To "Timing:Page_Visited" </a></li>
+        <li><a href="timing_html_id_scrolling.html" target="_self"> -> Go To "Timing:HTML ID Scrolling" </a></li>
+        <li><a href="timing_N_Seconds.html" target="_self"> -> Go To "Timing:N Seconds" </a></li>
+        <li><a href="timing_closed.html" target="_self"> -> Go To "Timing:Window closed" </a></li>
+        <li><a href="timing_back_button.html" target="_self"> -> Go To "Timing:Browser back button clicked" </a></li>
+        <li><a href="index.html" target="_self"> -> Go To "LADING" </a></li>
+      </ul>
+    </div>
+    <div id="freespace"></div>
+    <hr>
+    <div id="display_timing">
+      <h1>Display timing option = Browser back button clicked</h1>
+      </div>
+    <div id="articles_1">
+      <h3>■ ファミコン（Family Computer、通称：ファミコン）は、</h3>
+      <p>
+      任天堂が1983年に日本国内で発売した8ビットの家庭用ゲーム機です。その後、世界中で愛され、ゲーム産業の発展に大きな影響を与えました。ファミコンは、数々の名作ゲームや特徴的なコントローラー、独自のゲームキャラクターで、今もなおゲーム愛好家たちに懐かしさと感動を与え続けています。
+
+      1983年7月15日、ファミコンは日本国内で発売され、大ヒットを記録しました。『スーパーマリオブラザーズ』、『ドンキーコング』、『ゼルダの伝説』など、多くの名作ゲームがリリースされ、ゲーム業界に革命をもたらしました。特に、赤い十字のAボタンと十字キーを持つコントローラーは、後のゲーム機のデザインにも影響を与えました。
+      
+      ファミコンの成功により、ゲーム業界は急速に成長しました。ゲーム開発の競争が激化し、独創的なアイデアや面白いゲームプレイが求められました。任天堂は、後にゲーム業界をリードする企業としての地位を確立しました。
+      
+      ファミコンの影響は日本だけにとどまらず、北米や欧州でも大きな成功を収めました。さまざまなジャンルのゲームが登場し、ゲーム文化が世界的なものとなりました。また、ファミコンは家族や友人とのコミュニケーションを促進し、多くの人々が共通の趣味を持つきっかけとなりました。
+      
+      ファミコンは現在でも根強いファンがおり、中古市場でも高値で取引されています。また、任天堂はファミコンのゲームをバーチャルコンソールやクラシックミニシリーズなどで再販し、新しい世代にも楽しまれています。
+      
+      ファミコンの登場は、ゲーム産業の歴史にとって重要な節目となりました。今日のゲーム機やゲームソフトウェアの進化は、ファミコンの革新的な存在があったからこそ可能と言えるでしょう。その名作ゲームとともに、ファミコンの記憶は永遠にゲーム愛好家たちの心に刻まれていることでしょう。
+        </p>
+      </div>
+    <div id="articles_2">
+      <h3>■ ドラえもんは、</h3>
+      <p>
+        藤子・F・不二雄によって生み出された日本の漫画・アニメ作品であり、多くの世代に愛されている代表的なキャラクターです。物語は、未来からやってきた猫型ロボット、ドラえもんと、彼の友人であるのび太の楽しい日常生活や冒険を描いています。
+
+        のび太のおもちゃ箱に隠れていたドラえもんは、様々な未来の道具を持っており、これらの道具を使ってのび太たちの悩みを解決します。どこでもドア、タケコプター、どこでもホールなど、未来の技術をベースにしたこれらの道具は、現実世界では考えられない不思議な能力を発揮します。しかし、時には道具を誤って使ったり、トラブルが発生したりして、おかしくも泣かせる物語が展開されます。
+
+        ドラえもんは、友情や助け合い、夢や希望をテーマにしたストーリーが多く、子供から大人まで楽しめる作品です。彼のひみつ道具は、人々に喜びや感動を与えるだけでなく、人間の本質や心の温かさを描写する手段としても使われています。
+        
+        作品は数多くの映画やテレビシリーズにもなり、世界中で親しまれています。特に日本では、ドラえもんは長寿アニメとして、子供たちのみならず、大人たちにも広く愛されています。そのキャラクターデザインやユニークな設定、心温まるストーリーは、今後も新しい世代に受け継がれていくことでしょう。
+        
+        ドラえもんは、日本のアニメ・漫画文化において不朽の存在となっています。彼のユーモアと温かさ、そして友情のメッセージは、長い間人々の心を癒してくれることでしょう。未来からやってきたこの可愛らしいロボットの物語は、ずっと多くの人々にとって愛され続けることでしょう。
+      </p>
+      </div>
+    <div id="articles_3">
+      <h3>■ キンキキッズは</h3>
+      <p>
+        日本の音楽グループで、堂本剛（どうもと つよし）と堂本光一（どうもと こういち）の2人によって構成されています。彼らは兄弟であり、親しみやすいポップな楽曲や個性的なパフォーマンスで多くのファンを魅了しています。
+
+        キンキキッズは1997年にデビューし、初期はデュオとして活動していましたが、その後メンバーが増え、現在はバンド形式での活動が主体となっています。彼らの音楽はポップスを中心に、ロックやR&Bなどの要素を取り入れた多様なスタイルで、幅広い年代のファンに支持されています。
+
+        特に、キンキキッズの楽曲はキャッチーで、耳に残るメロディとポジティブな歌詞が特徴です。彼らの歌声や楽曲は、聴く人々に元気や勇気を与え、明るい気持ちにさせてくれます。代表曲には「硝子の少年」、「愛されるより 愛したい」、「Hey! お願い！」などがあります。
+
+        また、キンキキッズのライブパフォーマンスも非常に魅力的で、ダンスやパフォーマンスを交えたステージは、ファンを魅了し続けています。彼らのライブはエネルギッシュで感動的なものであり、観客との一体感が特別な空間を作り出します。
+        
+        グループ名の「キンキキッズ」は、彼らの地元である堺市の別名「キンキ（近畿地方の略称）」と、若さと元気を表す「キッズ」を組み合わせたものです。彼らはデビュー以来、長いキャリアの中で多くのヒット曲を生み出し、日本の音楽シーンにおいて重要な存在となっています。
+
+        キンキキッズの音楽は時代を超えて愛され、これからもさらなる成功を納めることでしょう。彼らのポジティブなメッセージとパワフルなパフォーマンスは、多くの人々に感動と勇気を与え続けることでしょう。
+      </p>
+    </div>
+    <!-- Script for get and output user id -->
+    <script type="text/javascript">
+      var cookies = document.cookie;
+      var cookiesArray = cookies.split(';');
+
+      for(var c of cookiesArray){
+      var cArray = c.split('=');
+
+      var pattern1 = "_rslgvry";
+      var pattern2 = " _rslgvry";  // 正規表現の条件
+      if( cArray[0] == pattern1 || cArray[0] == pattern2 ){  // keyになる文字列が正規表現にマッチしたら
+        var text1 = document.getElementById('UID1');
+        text1.textContent = cArray[1];
+        console.log(cArray[1]);
+        }
+      }
+      var uid2 = localStorage.getItem('_rslgvry');
+      var text2 = document.getElementById('UID2');
+      text2.textContent = uid2;
+  </script>
+</body>
+</html>
