@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[STG/QC] QA Test Site for MP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://jp-salvacion.github.io/JP/STYLE/css_style.css">
+    <style>
+        /* CSS */
+        .button-19 {
+          appearance: button;
+          background-color: #1899D6;
+          border: solid transparent;
+          border-radius: 16px;
+          border-width: 0 0 4px;
+          box-sizing: border-box;
+          color: #FFFFFF;
+          cursor: pointer;
+          display: inline-block;
+          font-family: din-round,sans-serif;
+          font-size: 15px;
+          font-weight: 700;
+          letter-spacing: .8px;
+          line-height: 20px;
+          margin: 0;
+          outline: none;
+          overflow: visible;
+          padding: 13px 16px;
+          text-align: center;
+          text-transform: uppercase;
+          touch-action: manipulation;
+          transform: translateZ(0);
+          transition: filter .2s;
+          user-select: none;
+          -webkit-user-select: none;
+          vertical-align: middle;
+          white-space: nowrap;
+          width: 100%;
+        }
+
+        .button-19:after {
+          background-clip: padding-box;
+          background-color: #1CB0F6;
+          border: solid transparent;
+          border-radius: 16px;
+          border-width: 0 0 4px;
+          bottom: -4px;
+          content: "";
+          left: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+          z-index: -1;
+        }
+
+        .button-19:main,
+        .button-19:focus {
+          user-select: auto;
+        }
+
+        .button-19:hover:not(:disabled) {
+          filter: brightness(1.1);
+          -webkit-filter: brightness(1.1);
+        }
+
+        .button-19:disabled {
+          cursor: auto;
+        }
+        </style>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-PKDGSN3');</script>
+    <!-- End Google Tag Manager -->
+    </head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKDGSN3"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+    <div id="divtitle"><H1><font color="yellow">STG/QC</font> QA Test site - MP BUY PAGE</H1>
+    </div>
+    <hr>
+    <span>Hello world, This is only for <font color="yellow"><H3>STG</H3></font>!!! Make sure what environment are you testing!</span>
+    <h1> For Client Scenario Test - PURCHASED FINISHED CVP PAGE </h1>
+    <h2> Test App Configuration </h2>
+    <pre>
+      - OID : ba000000000040008000000000000000
+      - PID : ba9d31a3da474eb79a7eab7f09c6e418
+      - MAAID :
+    </pre>
+    <div>
+      <h2>  <font color="red">Thank you for buying our stuff!!</font> </h2>
+     </div>
+    <div id="userid">
+        <h3> USER ID : </h3>
+        <span id="UID1"></span>
+        <br />
+        <span id="UID2"></span>
+        </div>
+    <script>
+      var cookies = document.cookie;
+      var cookiesArray = cookies.split(';');
+
+      for(var c of cookiesArray){
+      var cArray = c.split('=');
+
+      var pattern1 = "_rslgvry";
+      var pattern2 = " _rslgvry";  // 正規表現の条件
+      if( cArray[0] == pattern1 || cArray[0] == pattern2 ){  // keyになる文字列が正規表現にマッチしたら
+        var text1 = document.getElementById('UID1');
+        text1.textContent = cArray[1];
+        console.log(cArray[1]);
+        }
+      }
+      var uid2 = localStorage.getItem('_rslgvry');
+      var text2 = document.getElementById('UID2');
+      text2.textContent = uid2;
+      </script>
+      <div style="padding:5vh;">
+        <button class="button-19" onclick="window.mpAnalytics.track('cv.custom.finished', {orderId: '12345678-buy-0000001',});">Click here to GET CONVERSION-PURCHASED!!</button>
+        </div>
+      <div id="link_list">
+        <ul>
+          <li><a href="CVP_page_visited.html">Back to CVP-Page Visit</a></li>
+          <li><a href="CVP_buy.html">Back to CVP-BUY</a></li>
+          <li><a href="../MP">Back to STG MP LP</a></li>
+        </ul>
+        </div>
+</body>
+</html>

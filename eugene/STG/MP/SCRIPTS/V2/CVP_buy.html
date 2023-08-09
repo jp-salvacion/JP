@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[STG/QC] QA Test Site for MP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://jp-salvacion.github.io/JP/STYLE/css_style.css">
+    <style>
+      /* CSS */
+      .button-51 {
+        background-color: transparent;
+        border: 1px solid #266DB6;
+        box-sizing: border-box;
+        color: #00132C;
+        font-family: "Avenir Next LT W01 Bold",sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        padding: 16px 23px;
+        position: relative;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+      }
+
+      .button-51:hover,
+      .button-51:active {
+        outline: 0;
+      }
+
+      .button-51:hover {
+        background-color: transparent;
+        cursor: pointer;
+      }
+
+      .button-51:before {
+        background-color: #D5EDF6;
+        content: "";
+        height: calc(100% + 3px);
+        position: absolute;
+        right: -7px;
+        top: -9px;
+        transition: background-color 300ms ease-in;
+        width: 100%;
+        z-index: -1;
+      }
+
+      .button-51:hover:before {
+        background-color: #6DCFF6;
+      }
+
+      @media (min-width: 768px) {
+        .button-51 {
+          padding: 16px 32px;
+        }
+      }
+      </style>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-PKDGSN3');</script>
+    <!-- End Google Tag Manager -->
+    </head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKDGSN3"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+    <div id="divtitle"><H1><font color="yellow">STG/QC</font> QA Test site - MP BUY PAGE</H1>
+    </div>
+    <hr>
+    <span>Hello world, This is only for <font color="yellow"><H3>STG</H3></font>!!! Make sure what environment are you testing!</span>
+    <h1> For Client Scenario Test - BUY CVP BUTTON PAGE </h1>
+    <h2> Test App Configuration </h2>
+    <pre>
+      - OID : ba000000000040008000000000000000
+      - PID : ba9d31a3da474eb79a7eab7f09c6e418
+      - MAAID :
+    </pre>
+    <div>
+      <a href="purchased.html">
+      <h2> BUY 1 GET 1 FREE here!</h2>
+       <span>Move to purchased page from here</span>
+      </a>
+     </div>
+    <div id="userid">
+        <h3> USER ID : </h3>
+        <span id="UID1"></span>
+        <br />
+        <span id="UID2"></span>
+        </div>
+    <script>
+      var cookies = document.cookie;
+      var cookiesArray = cookies.split(';');
+
+      for(var c of cookiesArray){
+      var cArray = c.split('=');
+
+      var pattern1 = "_rslgvry";
+      var pattern2 = " _rslgvry";  // 正規表現の条件
+      if( cArray[0] == pattern1 || cArray[0] == pattern2 ){  // keyになる文字列が正規表現にマッチしたら
+        var text1 = document.getElementById('UID1');
+        text1.textContent = cArray[1];
+        console.log(cArray[1]);
+        }
+      }
+      var uid2 = localStorage.getItem('_rslgvry');
+      var text2 = document.getElementById('UID2');
+      text2.textContent = uid2;
+      </script>
+      <div style="padding: 1em;">
+        <button class="button-51" onclick="window.mpAnalytics.track('site.order.completed', {orderId: '12345678-buy-0000001',});location.href='CVP_purchased.html'">CONVERSION-BUY & Go To Purchase</button>
+        </div>
+        <div id="link_list">
+          <ul>
+            <li><a href="CVP_page_visited.html">Back to CVP-Page Visit</a></li>            
+            <li><a href="../MP">Back to STG MP LP</a></li>
+          </ul>
+          </div>
+</body>
+</html>
