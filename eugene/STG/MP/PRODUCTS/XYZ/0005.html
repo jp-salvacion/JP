@@ -30,7 +30,7 @@
       Analytics.init({
         organizationId:"ba000000000040008000000000000000",  // qc
         projectId:"ba9d31a3da474eb79a7eab7f09c6e418",
-        plugins: ["popup","synalio-chatbot","synalio-campaign"]
+        plugins: ["linkdomains","popup","synalio-chatbot","synalio-campaign","synalio-analytics","synalio-nanalytics"]
       })
 
       Analytics.set('synalioChatbotCid', '29')
@@ -40,6 +40,8 @@
       Analytics.set('synalioCampaignCid', '29')
       Analytics.set('synalioCampaignApp', 'QA')
       Analytics.set('synalioCampaignUniqueId', 'e777904b2bc84328b55342a7614f6071')
+      Analytics.set('crossDomainTracking', 1);
+      Analytics.set('trackingDomains', ['jp-salvacion.github.io','eugenechang-test.com']);
       Analytics.page({})
 
       </script>
