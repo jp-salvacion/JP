@@ -13,7 +13,7 @@
     <div id="divtitle"><H1><font color="yellow">STG/QC</font> QA Test site - MP</H1>
     </div>
     <hr>
-    <span>Hello world, This is only for <font color="yellow"><H3>STG</H3></font>!!! Make sure what environment are you testing!</span>
+    <h1>NEW MP script embedded</h1>>
     <h2> Test App Configuration </h2>
     <pre>
       - OID : ba000000000040008000000000000000
@@ -28,19 +28,15 @@
         organizationId:"ba000000000040008000000000000000",  // qc
         projectId:"ba9d31a3da474eb79a7eab7f09c6e418",
         plugins: ["linkdomains","popup","synalio-chatbot","synalio-campaign","synalio-analytics","synalio-nanalytics"]
-      })
-
-      Analytics.set('synalioChatbotCid', '29')
-      Analytics.set('synalioChatbotApp', 'QA')
-      Analytics.set('synalioChatbotUniqueId', 'e777904b2bc84328b55342a7614f6071')
-      Analytics.set('synalioCampaignCid', '29')
-      Analytics.set('synalioCampaignApp', 'QA')
-      Analytics.set('synalioCampaignUniqueId', 'e777904b2bc84328b55342a7614f6071')
+      });
+      Analytics.set('synalioUniqueId', 'e777904b2bc84328b55342a7614f6071');      
       Analytics.set('linkDomains', ['jp-salvacion.github.io','eugenechang-test.com']);
       Analytics.page({})
-
-      window.mpAnalytics.track('site.page.visited', {})
       </script>
+          <div id="title">
+            <h1>CROSS - JP - PAGE0002 NEW</h1>
+           </div>
+     
     <div id="userid">
         <h3> USER ID : </h3>
         <span id="UID1"></span>
@@ -66,26 +62,33 @@
       var text2 = document.getElementById('UID2');
       text2.textContent = uid2;
       </script>
-      <h1>- CONVERSION "site.page.visited" -</h1>
       <hr>
       <div id="link_list">
-        <h3>CONVERSION Test Section</h3>
-        <span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </span>
-        <div id="link_list_cvp">
-          <ul>
-            <li><a href="CVP_buy.html">Back to CVP-BUY</a></li>
-            <li><a href="CVP_purchased.html">Back to CVP-PURCHASED</a></li>
-            <li><a href="../MP">Back to STG MP LP</a></li>
-          </ul>
-          </div>
-        <h3>Links for accessing each display timing option test page</h3>
+        <h3>LINKS for JP domain</h3>
         <span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </span>
         <ul>
-          <li><a href="timing_after_n_seconds.html" target="_self">TIMING = AFTER N SECONDS</a></li>
-          <li><a href="timing_scroll_to_html_id.html" target="_self">TIMING = SCROLL TO TARGET HTML ID</a></li>
-          <li><a href="timing_click_on_html_id.html" target="_self">TIMING = CLICK ON TARGET HTML ID BUTTON</a></li>
-          <li><a href="timing_click_on_back_button.html" target="_self">TIMING = CLICK ON BROWSER BACK BUTTON</a></li>
-          <li><a href="timing_return_to_left_tab.html" target="_self">TIMING = WHEN RETURNED TO POPUP TAB</a></li>
+          <li><a href="https://jp-salvacion.github.io/JP/eugene/STG/MP/CROSS/0001.html">V2-0001</a></li>
+          <li><a href="https://jp-salvacion.github.io/JP/eugene/STG/MP/CROSS/0002.html">V2-0002</a></li>          
+          <li><a href="https://jp-salvacion.github.io/JP/eugene/STG/MP/CROSS/V1_0001.html">V1-0001</a></li>
+          <li><a href="https://jp-salvacion.github.io/JP/eugene/STG/MP/CROSS/V1_0002.html">V1-0002</a></li>      
+        </ul>
+        <br>
+        <h3>LINKS for Eugene domain</h3>
+        <span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </span>
+        <ul>
+          <li><a href="https://eugenechang-test.com/eugene/STG/MP/CROSS/0001.html">V2-0001</a></li>
+          <li><a href="https://eugenechang-test.com/eugene/STG/MP/CROSS/0002.html">V2-0002</a></li> 
+          <li><a href="https://eugenechang-test.com/eugene/STG/MP/CROSS/V1_0001.html">V1-0001</a></li>
+          <li><a href="https://eugenechang-test.com/eugene/STG/MP/CROSS/V1_0002.html">V1-0002</a></li>               
+        </ul>
+        <br>
+        <h3>LINKS for Eugene ballon NOT Trackable domain</h3>
+        <span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </span>
+        <ul>
+          <li><a href="https://eugene-ballon.surge.sh/eugene/STG/MP/CROSS/0001.html">V2-0001</a></li>
+          <li><a href="https://eugene-ballon.surge.sh/eugene/STG/MP/CROSS/0002.html">V2-0002</a></li>
+          <li><a href="https://eugene-ballon.surge.sh/eugene/STG/MP/CROSS/V1_0001.html">V1-0001</a></li>
+          <li><a href="https://eugene-ballon.surge.sh/eugene/STG/MP/CROSS/V1_0002.html">V1-0002</a></li> 
         </ul>
       </div>
 </body>
