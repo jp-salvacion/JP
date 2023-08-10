@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[PROD][SYNALIO Based] QA CROSS Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://jp-salvacion.github.io/JP/STYLE/css_style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-184735157-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-184735157-2');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-NM55RF5');</script>
+      <!-- End Google Tag Manager -->
+    <style>
+      .list_style{background-color: #AAAAAA;font-family: sans-serif;}
+      </style>
+    </head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NM55RF5"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+    <div id="divtitle"><H1>SYNALIO - QA CROSS Domain Test site on [PROD Env]</H1></div>
+    <hr>
+    <span>Hello world, This is only for <font color="red">Production</font>!!! Make sure what environment are you testing</span>
+    <br>
+    <div id="divsubtitle" class="Test_Configuraiton">
+    <pre>
+      <ul class="list_style">
+        <li>Env : PROD</li>
+        <li>CID : 1906</li>
+        <li>APP : QA</li>
+        </ul>
+      </pre>
+      <br><br>
+      <h1> CROSS Domain - 0002 </h1>
+    </div>
+    <div id="user_id"></div>
+    <script type="text/javascript">
+        var userId = getCookie("_rslgvry");
+        let idEle = document.getElementById("user_id");
+        idEle.innerText = userId;
+        </script>
+    </div>    
+</body>
+</html>
