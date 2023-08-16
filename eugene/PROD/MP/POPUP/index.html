@@ -46,8 +46,19 @@
           
         Analytics.page({})
         </script>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-NM55RF5');</script>
+          <!-- End Google Tag Manager -->
     </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NM55RF5"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
     <div id="divtitle" style="background-color: orange; padding-top: 1vh; padding-bottom: 1vh;">
       <H1 style="color: white;">PROD QA Test site - MP / POPUP</H1>
     </div>
@@ -86,5 +97,23 @@
       var text2 = document.getElementById('UID2');
       text2.textContent = uid2;
       </script>
+      <div id="free_space"></div>
+      <hr>
+      <div id="popup_link_list" style="padding-bottom: 8vh;">
+        <div style="background-color: rgb(113, 139, 139);width: fit-content; padding: 0.1em;">
+          <h3>POPUP display timing link list</h3>
+          </div>
+        <p>
+          <span> -------------------------------------------------- </span>
+          </p>
+        <ul>
+          <li><a href="timing_after_n_seconds.html">Timing - Afer N Seconds</a></li>
+          <li><a href="timing_scroll_to_html_id.html">Timing - Scroll To HTML ID</a></li>
+          <li><a href="timing_click_on_html_id.html">Timing - HTML ID Button clicked</a></li>
+          <li><a href="timing_click_on_back_button.html">Timing - Click Back Button</a></li>
+          <li><a href="timing_return_to_left_tab.html">Timing - Return to target Tab </a></li>
+          <li><a href="timing_click_on_back_button_or_return_to_tab.html">Timing - Back button clicked OR Returned to target TAB</a></li>
+        </ul>
+      </div>
 </body>
 </html>
