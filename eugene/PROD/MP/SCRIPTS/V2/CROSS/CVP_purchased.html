@@ -7,107 +7,82 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://jp-salvacion.github.io/JP/STYLE/css_style.css">
-    <!-- POPUP Developer mode : ignore start MA time -->
-    <!-- <script>
-      localStorage.setItem("_ecdebug", "true");
-      localStorage.setItem("_ecDebugTargetAll", true);
-      localStorage.setItem("_ecDebugStartAt", true);
-    </script> -->
-      <!-- MP POPUP script -->
-      <script type="text/javascript" id="">
-          !function (t, e, n) {
-          window.mpTrackerName = e;
-          var c, a;
-          window[window.mpTrackerName] = (a = {data: [], custom: {}}, function () {
-            for (var t = function (t) {
-              return function () {
-              return a.data.push([t].concat(Array.prototype.slice.call(arguments, 0)))
-            }
-          }, e = "track page identify".split(" "), n = 0; n < e.length; n++) a[e[n]] = t(e[n])
-          }(), a.set = function () {
-          var t = arguments[0], e = {};
-          e[t] = arguments[1], a.custom = Object.assign(a.custom, e)
-          }, a.init = function (t) {
-          a.v = "1.0.0", a.trackerName = e, a.options = t || {}
-          }, (n = document.createElement("script")).type = "text/javascript",n.onload=function(){self=oldSelf}, n.async = !0, n.src = "https://sdk.synalioec.com/1/core.min.js", (c = document.getElementsByTagName("script")[0]).parentNode.insertBefore(n, c), a)
-          }(0, "mpAnalytics");
+    <link rel="stylesheet" type="text/css" href="https://jp-salvacion.github.io/JP/STYLE/css_style.css">    
+    <style>
+      /* CSS */
+      .button-19 {
+        appearance: button;
+        background-color: #1899D6;
+        border: solid transparent;
+        border-radius: 16px;
+        border-width: 0 0 4px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-family: din-round,sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: .8px;
+        line-height: 20px;
+        margin: 0;
+        outline: none;
+        overflow: visible;
+        padding: 13px 16px;
+        text-align: center;
+        text-transform: uppercase;
+        touch-action: manipulation;
+        transform: translateZ(0);
+        transition: filter .2s;
+        user-select: none;
+        -webkit-user-select: none;
+        vertical-align: middle;
+        white-space: nowrap;
+        width: 100%;
+      }
 
-          var Analytics = window["mpAnalytics"];
-          // required
-          Analytics.init({
-            organizationId: "00000000000040008000000000000000",
-            projectId: "043859f0f608444b85227928397919c7",
-            plugins: ["linkdomains","popup","synalio-chatbot","synalio-campaign","synalio-analytics","synalio-nanalytics"]
-          })
-          Analytics.set('synalioUniqueId', '05dfa01a8fd346a98e55b88892d7d7c8');
-          Analytics.set('linkDomains', ['jp-salvacion.github.io','eugenechang-test.com']);
-          Analytics.page({})
-        </script>
-              <style>
-                /* CSS */
-                .button-19 {
-                  appearance: button;
-                  background-color: #1899D6;
-                  border: solid transparent;
-                  border-radius: 16px;
-                  border-width: 0 0 4px;
-                  box-sizing: border-box;
-                  color: #FFFFFF;
-                  cursor: pointer;
-                  display: inline-block;
-                  font-family: din-round,sans-serif;
-                  font-size: 15px;
-                  font-weight: 700;
-                  letter-spacing: .8px;
-                  line-height: 20px;
-                  margin: 0;
-                  outline: none;
-                  overflow: visible;
-                  padding: 13px 16px;
-                  text-align: center;
-                  text-transform: uppercase;
-                  touch-action: manipulation;
-                  transform: translateZ(0);
-                  transition: filter .2s;
-                  user-select: none;
-                  -webkit-user-select: none;
-                  vertical-align: middle;
-                  white-space: nowrap;
-                  width: 100%;
-                }
-        
-                .button-19:after {
-                  background-clip: padding-box;
-                  background-color: #1CB0F6;
-                  border: solid transparent;
-                  border-radius: 16px;
-                  border-width: 0 0 4px;
-                  bottom: -4px;
-                  content: "";
-                  left: 0;
-                  position: absolute;
-                  right: 0;
-                  top: 0;
-                  z-index: -1;
-                }
-        
-                .button-19:main,
-                .button-19:focus {
-                  user-select: auto;
-                }
-        
-                .button-19:hover:not(:disabled) {
-                  filter: brightness(1.1);
-                  -webkit-filter: brightness(1.1);
-                }
-        
-                .button-19:disabled {
-                  cursor: auto;
-                }
-                </style>
+      .button-19:after {
+        background-clip: padding-box;
+        background-color: #1CB0F6;
+        border: solid transparent;
+        border-radius: 16px;
+        border-width: 0 0 4px;
+        bottom: -4px;
+        content: "";
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+      }
+
+      .button-19:main,
+      .button-19:focus {
+        user-select: auto;
+      }
+
+      .button-19:hover:not(:disabled) {
+        filter: brightness(1.1);
+        -webkit-filter: brightness(1.1);
+      }
+
+      .button-19:disabled {
+        cursor: auto;
+      }
+      </style>
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NM55RF5');</script>
+        <!-- End Google Tag Manager -->
     </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NM55RF5"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
     <div id="divtitle" style="background-color: #fdd089; padding-top: 1vh; padding-bottom: 1vh;">
       <H1 style="color: white;">PROD QA Test site - MP / POPUP with MP Script V2 (CROSS Domain)</H1>
     </div>
