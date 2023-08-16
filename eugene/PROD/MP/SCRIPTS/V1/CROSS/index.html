@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://jp-salvacion.github.io/JP/STYLE/css_style.css">
+
+    <title>[PROD][SYNALIO Based] QA Test Site</title>
+    <!-- Chat bot script paste below -->
+    <!-- <script src="//synalio.com/api/chatbox?appid=05dfa01a8fd346a98e55b88892d7d7c8" type="text/javascript"></script> -->
+
+    <!-- For gathering and analysis action data -->
+    <!-- <script>!function(){!function(t,e,n){(t.NanalyticsObject=n)in t||(t[n]=function(){(t[n].q=t[n].q||[]).push(arguments)},t[n].ep=e);var a=t.document.getElementsByTagName("script")[0],o=t.document.createElement("script"),i=1e17*Math.random();o.type="text/javascript",o.async=!0,o.src="https://sdk."+e+"/v1/web.js?sid="+i,a.parentNode.insertBefore(o,a)}(window,"n-analytics.io","Nanalytics");var t="_rslgvry",e="_rslgvry_conv_cnt",n=/^((?!chrome|android|crios).)*safari/i.test(navigator.userAgent);function a(t){var e=null,n=t+"=",a=document.cookie,o=a.indexOf(n);if(-1!=o){var i=o+n.length,r=a.indexOf(";",i);-1==r&&(r=a.length),e=decodeURIComponent(a.substring(i,r))}return e}var o=function(){var e=n?localStorage.getItem(t):a(t);e||(e="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(t){var e=16*Math.random()|0;return("x"==t?e:3&e|8).toString(16)}),n?localStorage.setItem(t,e):function t(e,n,o,i){var r=n+"="+o+";max-age="+(i||63072e3)+";path=/;";if(t.domain)e.cookie=r+"domain=."+t.domain;else{var c=location.hostname.split(".");c.length>2&&c.shift(),t.domain=c.join("."),e.cookie=r+"domain=."+t.domain,a(n)!=o&&(t.domain=location.hostname,e.cookie=r+"domain=."+t.domain)}}(document,t,e,63072e3));return e}();Nanalytics("setup","NA-201",(new Date).getTime()),Nanalytics("config","itp_recovery",!0),Nanalytics("send","pageview",{customer_id:o,app_unique_id:"05dfa01a8fd346a98e55b88892d7d7c8",chatbot_talk:((n?localStorage.getItem(e):a(e))||0).toString()})}();</script> -->
+
+    <!-- Covertion Settings -->
+    <!-- <script src="https://synalio.com/analytics/js/05dfa01a8fd346a98e55b88892d7d7c8/" type="text/javascript"></script> -->
+
+    <!-- MP integrated scripts -->
+    <script type="text/javascript">
+      !function (t, e, n) {
+        window.mpTrackerName = e;
+        var c, a;
+        window[window.mpTrackerName] = (a = {data: [], custom: {}}, function () {
+        for (var t = function (t) {
+          return function () {
+            return a.data.push([t].concat(Array.prototype.slice.call(arguments, 0)))
+          }
+        }, e = "track page identify".split(" "), n = 0; n < e.length; n++) a[e[n]] = t(e[n])
+        }(), a.set = function () {
+        var t = arguments[0], e = {};
+          e[t] = arguments[1], a.custom = Object.assign(a.custom, e)
+        }, a.init = function (t) {
+          a.v = "1.0.0", a.trackerName = e, a.options = t || {}
+        }, (n = document.createElement("script")).type = "text/javascript", n.async = !0, n.src = "https://sdk.synalioec.com/1/core.min.js", (c = document.getElementsByTagName("script")[0]).parentNode.insertBefore(n, c), a)
+      }(0, "mpAnalytics");
+  
+      var Analytics = window["mpAnalytics"];
+      // required
+      Analytics.init({
+        organizationId: "00000000000040008000000000000000",
+        projectId: "043859f0f608444b85227928397919c7",
+        plugins: ["linkdomains","popup","synalio-chatbot","synalio-campaign","synalio-analytics","synalio-nanalytics"]
+      })
+  
+      Analytics.set('synalioChatbotCid', '1287')
+      Analytics.set('synalioChatbotApp', 'QA_WEB')
+      Analytics.set('synalioChatbotUniqueId', '05dfa01a8fd346a98e55b88892d7d7c8')
+    
+      Analytics.set('synalioCampaignCid', '1287')
+      Analytics.set('synalioCampaignApp', 'QA_WEB')
+      Analytics.set('synalioCampaignUniqueId', '05dfa01a8fd346a98e55b88892d7d7c8')
+      Analytics.set('linkDomains', ['jp-salvacion.github.io','eugenechang-test.com']);
+      Analytics.page({})
+      </script>
+    </head>
+<body>
+  <div id="divtitle"><H1>SYNALIO OEM - QA Test site on [PROD Env] with MP Script V1 (CROSS DOMAIN)</H1>
+    <hr>
+    Hello world, This is only for <font color="red">Production</font>!!! Make sure what environment are you testing
+    <br>
+    <pre>
+      <h3>App Configuration:</h3>
+      <ul>
+        <li>- cid : 1287</li>
+        <li>- app : QA_WEB</li>
+        <li>- UID : <span id="UID1"></span> | <span id="UID2"></span></li>
+      </ul>
+    </pre>
+  </div>
+  <script>
+    var cookies = document.cookie;
+    var cookiesArray = cookies.split(';');
+
+    for(var c of cookiesArray){
+    var cArray = c.split('=');
+
+    var pattern1 = "_rslgvry";
+    var pattern2 = " _rslgvry";  // 正規表現の条件
+    if( cArray[0] == pattern1 || cArray[0] == pattern2 ){  // keyになる文字列が正規表現にマッチしたら
+      var text1 = document.getElementById('UID1');
+      text1.textContent = cArray[1];
+      console.log(cArray[1]);
+      }
+    }
+    var uid2 = localStorage.getItem('_rslgvry');
+    var text2 = document.getElementById('UID2');
+    text2.textContent = uid2;
+    </script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[PROD] User Scenario Test Site for MP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://jp-salvacion.github.io/JP/STYLE/css_style.css">
+    <!-- POPUP Developer mode : ignore start MA time -->
+    <!-- <script>
+      localStorage.setItem("_ecdebug", "true");
+      localStorage.setItem("_ecDebugTargetAll", true);
+      localStorage.setItem("_ecDebugStartAt", true);
+    </script> -->
+      <!-- MP POPUP script -->
+      <script type="text/javascript" id="">
+          !function (t, e, n) {
+          window.mpTrackerName = e;
+          var c, a;
+          window[window.mpTrackerName] = (a = {data: [], custom: {}}, function () {
+            for (var t = function (t) {
+              return function () {
+              return a.data.push([t].concat(Array.prototype.slice.call(arguments, 0)))
+            }
+          }, e = "track page identify".split(" "), n = 0; n < e.length; n++) a[e[n]] = t(e[n])
+          }(), a.set = function () {
+          var t = arguments[0], e = {};
+          e[t] = arguments[1], a.custom = Object.assign(a.custom, e)
+          }, a.init = function (t) {
+          a.v = "1.0.0", a.trackerName = e, a.options = t || {}
+          }, (n = document.createElement("script")).type = "text/javascript",n.onload=function(){self=oldSelf}, n.async = !0, n.src = "https://sdk.synalioec.com/1/core.min.js", (c = document.getElementsByTagName("script")[0]).parentNode.insertBefore(n, c), a)
+          }(0, "mpAnalytics");
+
+          var Analytics = window["mpAnalytics"];
+          // required
+          Analytics.init({
+            organizationId: "00000000000040008000000000000000",
+            projectId: "043859f0f608444b85227928397919c7",
+            plugins: ["linkdomains","popup","synalio-chatbot","synalio-campaign","synalio-analytics","synalio-nanalytics"]
+          })
+          Analytics.set('synalioChatbotCid', '1287')
+          Analytics.set('synalioChatbotApp', 'QA_WEB')
+          Analytics.set('synalioChatbotUniqueId', '05dfa01a8fd346a98e55b88892d7d7c8')
+
+          Analytics.set('synalioCampaignCid', '1287')
+          Analytics.set('synalioCampaignApp', 'QA_WEB')
+          Analytics.set('synalioCampaignUniqueId', '05dfa01a8fd346a98e55b88892d7d7c8')
+          Analytics.set('linkDomains', ['jp-salvacion.github.io','eugenechang-test.com']);
+          Analytics.page({})
+        </script>
+        <style>
+          /* CSS */
+          .button-51 {
+            background-color: transparent;
+            border: 1px solid #266DB6;
+            box-sizing: border-box;
+            color: #00132C;
+            font-family: "Avenir Next LT W01 Bold",sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            padding: 16px 23px;
+            position: relative;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+          }
+    
+          .button-51:hover,
+          .button-51:active {
+            outline: 0;
+          }
+    
+          .button-51:hover {
+            background-color: transparent;
+            cursor: pointer;
+          }
+    
+          .button-51:before {
+            background-color: #D5EDF6;
+            content: "";
+            height: calc(100% + 3px);
+            position: absolute;
+            right: -7px;
+            top: -9px;
+            transition: background-color 300ms ease-in;
+            width: 100%;
+            z-index: -1;
+          }
+    
+          .button-51:hover:before {
+            background-color: #6DCFF6;
+          }
+    
+          @media (min-width: 768px) {
+            .button-51 {
+              padding: 16px 32px;
+            }
+          }
+          </style>
+    </head>
+<body>
+    <div id="divtitle" style="background-color: #fdd089; padding-top: 1vh; padding-bottom: 1vh;">
+      <H1 style="color: white;">PROD QA Test site - MP / POPUP</H1>
+    </div>
+    <h2 style="color: #9ebbba"> # FOR User Scenario Test # </h2>
+    <hr>
+    <span>Hello world, This is only for <font color="orange"><H3>PROD</H3></font>!!! Make sure what environment are you testing!</span>
+    <h2> Test App Configuration </h2>
+    <pre>
+      - OID : 00000000000040008000000000000000
+      - PID : 043859f0f608444b85227928397919c7
+      - MAAID :
+    </pre>
+    <h3> PATH: MP > POPUP : CVP BUY BUTTON (Event=site.order.completed)<h3>
+    <div id="userid">
+        <h3> USER ID : </h3>
+        <span id="UID1"></span>
+        <br />
+        <span id="UID2"></span>
+        </div>
+    <script>
+      var cookies = document.cookie;
+      var cookiesArray = cookies.split(';');
+
+      for(var c of cookiesArray){
+      var cArray = c.split('=');
+
+      var pattern1 = "_rslgvry";
+      var pattern2 = " _rslgvry";  // 正規表現の条件
+      if( cArray[0] == pattern1 || cArray[0] == pattern2 ){  // keyになる文字列が正規表現にマッチしたら
+        var text1 = document.getElementById('UID1');
+        text1.textContent = cArray[1];
+        console.log(cArray[1]);
+        }
+      }
+      var uid2 = localStorage.getItem('_rslgvry');
+      var text2 = document.getElementById('UID2');
+      text2.textContent = uid2;
+      </script>
+      <div style="padding: 1em;">
+        <button class="button-51" onclick="window.mpAnalytics.track('site.order.completed', {orderId: '12345678-prod-buy-0000001',});location.href='CVP_purchased.html'
+        ">CONVERSION=BUY BUTTON</button>
+      </div>
+      <div id="link_list">
+        <ul>
+          <li><a href="CVP_page_visited.html">Back to CVP-Page Visit</a></li>            
+          <li><a href="../MP">Back to STG MP LP</a></li>
+        </ul>
+        </div>
+</body>
+</html>

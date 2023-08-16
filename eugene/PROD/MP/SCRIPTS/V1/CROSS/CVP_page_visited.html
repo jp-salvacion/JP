@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[PROD] User Scenario Test Site for MP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://jp-salvacion.github.io/JP/STYLE/css_style.css">
+    <!-- POPUP Developer mode : ignore start MA time -->
+    <!-- <script>
+      localStorage.setItem("_ecdebug", "true");
+      localStorage.setItem("_ecDebugTargetAll", true);
+      localStorage.setItem("_ecDebugStartAt", true);
+    </script> -->
+      <!-- MP POPUP script -->
+      <script type="text/javascript" id="">
+          !function (t, e, n) {
+          window.mpTrackerName = e;
+          var c, a;
+          window[window.mpTrackerName] = (a = {data: [], custom: {}}, function () {
+            for (var t = function (t) {
+              return function () {
+              return a.data.push([t].concat(Array.prototype.slice.call(arguments, 0)))
+            }
+          }, e = "track page identify".split(" "), n = 0; n < e.length; n++) a[e[n]] = t(e[n])
+          }(), a.set = function () {
+          var t = arguments[0], e = {};
+          e[t] = arguments[1], a.custom = Object.assign(a.custom, e)
+          }, a.init = function (t) {
+          a.v = "1.0.0", a.trackerName = e, a.options = t || {}
+          }, (n = document.createElement("script")).type = "text/javascript",n.onload=function(){self=oldSelf}, n.async = !0, n.src = "https://sdk.synalioec.com/1/core.min.js", (c = document.getElementsByTagName("script")[0]).parentNode.insertBefore(n, c), a)
+          }(0, "mpAnalytics");
+
+          var Analytics = window["mpAnalytics"];
+          // required
+          Analytics.init({
+            organizationId: "00000000000040008000000000000000",
+            projectId: "043859f0f608444b85227928397919c7",
+            plugins: ["linkdomains","popup","synalio-chatbot","synalio-campaign","synalio-analytics","synalio-nanalytics"]
+          })
+          Analytics.set('synalioChatbotCid', '1287')
+          Analytics.set('synalioChatbotApp', 'QA_WEB')
+          Analytics.set('synalioChatbotUniqueId', '05dfa01a8fd346a98e55b88892d7d7c8')
+
+          Analytics.set('synalioCampaignCid', '1287')
+          Analytics.set('synalioCampaignApp', 'QA_WEB')
+          Analytics.set('synalioCampaignUniqueId', '05dfa01a8fd346a98e55b88892d7d7c8')
+          Analytics.set('linkDomains', ['jp-salvacion.github.io','eugenechang-test.com']);
+          Analytics.page({})
+          window.mpAnalytics.track('site.page.visited', {})
+        </script>
+              <style>
+                /* CSS */
+                .button-19 {
+                  appearance: button;
+                  background-color: #1899D6;
+                  border: solid transparent;
+                  border-radius: 16px;
+                  border-width: 0 0 4px;
+                  box-sizing: border-box;
+                  color: #FFFFFF;
+                  cursor: pointer;
+                  display: inline-block;
+                  font-family: din-round,sans-serif;
+                  font-size: 15px;
+                  font-weight: 700;
+                  letter-spacing: .8px;
+                  line-height: 20px;
+                  margin: 0;
+                  outline: none;
+                  overflow: visible;
+                  padding: 13px 16px;
+                  text-align: center;
+                  text-transform: uppercase;
+                  touch-action: manipulation;
+                  transform: translateZ(0);
+                  transition: filter .2s;
+                  user-select: none;
+                  -webkit-user-select: none;
+                  vertical-align: middle;
+                  white-space: nowrap;
+                  width: 100%;
+                }
+        
+                .button-19:after {
+                  background-clip: padding-box;
+                  background-color: #1CB0F6;
+                  border: solid transparent;
+                  border-radius: 16px;
+                  border-width: 0 0 4px;
+                  bottom: -4px;
+                  content: "";
+                  left: 0;
+                  position: absolute;
+                  right: 0;
+                  top: 0;
+                  z-index: -1;
+                }
+        
+                .button-19:main,
+                .button-19:focus {
+                  user-select: auto;
+                }
+        
+                .button-19:hover:not(:disabled) {
+                  filter: brightness(1.1);
+                  -webkit-filter: brightness(1.1);
+                }
+        
+                .button-19:disabled {
+                  cursor: auto;
+                }
+                </style>
+    </head>
+<body>
+    <div id="divtitle" style="background-color: #fdd089; padding-top: 1vh; padding-bottom: 1vh;">
+      <H1 style="color: white;">PROD QA Test site - MP / POPUP with MP Script V1 (CROSS Domain)</H1>
+    </div>
+    <h2 style="color: #9ebbba"> # FOR User Scenario Test # </h2>
+    <hr>
+    <span>Hello world, This is only for <font color="orange"><H3>PROD</H3></font>!!! Make sure what environment are you testing!</span>
+    <h2> Test App Configuration </h2>
+    <pre>
+      - OID : 00000000000040008000000000000000
+      - PID : 043859f0f608444b85227928397919c7
+      - MAAID :
+    </pre>
+    <h3> PATH: MP > POPUP - FOR CVP VISITED</h3>
+    <div id="userid">
+        <h3> USER ID : </h3>
+        <span id="UID1"></span>
+        <br />
+        <span id="UID2"></span>
+        </div>
+    <script>
+      var cookies = document.cookie;
+      var cookiesArray = cookies.split(';');
+
+      for(var c of cookiesArray){
+      var cArray = c.split('=');
+
+      var pattern1 = "_rslgvry";
+      var pattern2 = " _rslgvry";  // 正規表現の条件
+      if( cArray[0] == pattern1 || cArray[0] == pattern2 ){  // keyになる文字列が正規表現にマッチしたら
+        var text1 = document.getElementById('UID1');
+        text1.textContent = cArray[1];
+        console.log(cArray[1]);
+        }
+      }
+      var uid2 = localStorage.getItem('_rslgvry');
+      var text2 = document.getElementById('UID2');
+      text2.textContent = uid2;
+      </script>
+      <div id="link_list">
+        <h3>CONVERSION Test Section</h3>
+        <span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </span>
+        <div id="link_list_cvp"></div>
+          <ul>
+            <li><a href="CVP_purchased.html">Go to CVP-PURCHASED</a></li>
+            <li><a href="CVP_buy.html">Go to CVP-BUY</a></li>
+            <li><a href="../MP">Back to STG MP LP</a></li>
+          </ul>
+        </div>
+        <h3>Links for accessing each display timing option test page</h3>
+        <span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </span>
+        <ul>
+          <li><a href="timing_after_n_seconds.html" target="_self">TIMING = AFTER N SECONDS</a></li>
+          <li><a href="timing_scroll_to_html_id.html" target="_self">TIMING = SCROLL TO TARGET HTML ID</a></li>
+          <li><a href="timing_click_on_html_id.html" target="_self">TIMING = CLICK ON TARGET HTML ID BUTTON</a></li>
+          <li><a href="timing_click_on_back_button.html" target="_self">TIMING = CLICK ON BROWSER BACK BUTTON</a></li>
+          <li><a href="timing_return_to_left_tab.html" target="_self">TIMING = WHEN RETURNED TO POPUP TAB</a></li>
+        </ul>
+        </div>
+</body>
+</html>
