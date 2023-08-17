@@ -8,13 +8,51 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://jp-salvacion.github.io/JP/STYLE/css_style.css">
-    <!-- Google Tag Manager -->
+    <!-- Google Tag Manager
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-NM55RF5');</script>
       <!-- End Google Tag Manager -->
+    <!-- MP integrated scripts -->
+    <script type="text/javascript">
+      !function (t, e, n) {
+        window.mpTrackerName = e;
+        var c, a;
+        window[window.mpTrackerName] = (a = {data: [], custom: {}}, function () {
+        for (var t = function (t) {
+          return function () {
+            return a.data.push([t].concat(Array.prototype.slice.call(arguments, 0)))
+          }
+        }, e = "track page identify".split(" "), n = 0; n < e.length; n++) a[e[n]] = t(e[n])
+        }(), a.set = function () {
+        var t = arguments[0], e = {};
+          e[t] = arguments[1], a.custom = Object.assign(a.custom, e)
+        }, a.init = function (t) {
+          a.v = "1.0.0", a.trackerName = e, a.options = t || {}
+        }, (n = document.createElement("script")).type = "text/javascript", n.async = !0, n.src = "https://sdk.synalioec.com/1/core.min.js", (c = document.getElementsByTagName("script")[0]).parentNode.insertBefore(n, c), a)
+      }(0, "mpAnalytics");
+  
+      var Analytics = window["mpAnalytics"];
+      // required
+      Analytics.init({
+        organizationId: "00000000000040008000000000000000",
+        projectId: "043859f0f608444b85227928397919c7",
+        plugins: ["linkdomains","popup","synalio-chatbot","synalio-campaign","synalio-analytics","synalio-nanalytics"]
+      })
+  
+      Analytics.set('synalioChatbotCid', '1287')
+      Analytics.set('synalioChatbotApp', 'QA_WEB')
+      Analytics.set('synalioChatbotUniqueId', '05dfa01a8fd346a98e55b88892d7d7c8')
+    
+      Analytics.set('synalioCampaignCid', '1287')
+      Analytics.set('synalioCampaignApp', 'QA_WEB')
+      Analytics.set('synalioCampaignUniqueId', '05dfa01a8fd346a98e55b88892d7d7c8')
+      Analytics.set('linkDomains', ['jp-salvacion.github.io','eugenechang-test.com']);
+      Analytics.page({})
+      window.mpAnalytics.track('site.page.visited', {})
+      </script>
     <style>
     /* CSS */
     .button-19 {
@@ -76,10 +114,11 @@
     .button-19:disabled {
       cursor: auto;
     }
-    </style>
+      </style>
+
     </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) 
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NM55RF5"
       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- End Google Tag Manager (noscript) -->
