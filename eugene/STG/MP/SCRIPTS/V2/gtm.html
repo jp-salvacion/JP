@@ -8,40 +8,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://jp-salvacion.github.io/JP/STYLE/css_style.css">
-    <!-- Google Tag Manager 
+    <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-PKDGSN3');</script>
     <!-- End Google Tag Manager -->
-    <!-- MP POPUP integrated script -->
-    <script type="text/javascript" id="">!function(t,e,n){
-      window.mpTrackerName=e;var c,a;window[window.mpTrackerName]=(a={data:[],custom:{}},function(){for(var t=function(t){return function(){return a.data.push([t].concat(Array.prototype.slice.call(arguments,0)))}},e="track page identify".split(" "),n=0;n<e.length;n++)a[e[n]]=t(e[n])}(),a.set=function(){var t=arguments[0],e={};e[t]=arguments[1],a.custom=Object.assign(a.custom,e)},a.init=function(t){a.v="1.0.0",a.trackerName=e,a.options=t||{}},(n=document.createElement("script")).type="text/javascript",
-      n.async=!0,n.src="https://sdk.mpdev.io/1/core.min.js",(c=document.getElementsByTagName("script")[0]).parentNode.insertBefore(n,c),a)}(0,"mpAnalytics");var Analytics=window["mpAnalytics"];
-      Analytics.init({
-        organizationId:"ba000000000040008000000000000000",  // qc
-        projectId:"ba9d31a3da474eb79a7eab7f09c6e418",
-        plugins: ["popup","synalio-chatbot","synalio-campaign","synalio-analytics","synalio-nanalytics"]
-      })
-
-      Analytics.set('synalioChatbotCid', '29')
-      Analytics.set('synalioChatbotApp', 'QA')
-      Analytics.set('synalioChatbotUniqueId', 'e777904b2bc84328b55342a7614f6071')
-
-      Analytics.set('synalioCampaignCid', '29')
-      Analytics.set('synalioCampaignApp', 'QA')
-      Analytics.set('synalioCampaignUniqueId', 'e777904b2bc84328b55342a7614f6071')
-      Analytics.page({})
-
-      </script>
     </head>
 <body>
-    <!-- Google Tag Manager (noscript)
+    <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKDGSN3"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div id="divtitle"><H1><font color="yellow">STG/QC</font> QA Test site - MP SCRIPT V1 without</H1>
+    <div id="divtitle"><H1><font color="yellow">STG/QC</font> QA Test site - MP</H1>
     </div>
     <hr>
     <h1>NEW MP script embedded</h1>>
@@ -56,7 +36,26 @@
         <span id="UID1"></span>
         <br />
         <span id="UID2"></span>
-        </div>    
+        </div>
+    <script>
+      var cookies = document.cookie;
+      var cookiesArray = cookies.split(';');
+
+      for(var c of cookiesArray){
+      var cArray = c.split('=');
+
+      var pattern1 = "_rslgvry";
+      var pattern2 = " _rslgvry";  // 正規表現の条件
+      if( cArray[0] == pattern1 || cArray[0] == pattern2 ){  // keyになる文字列が正規表現にマッチしたら
+        var text1 = document.getElementById('UID1');
+        text1.textContent = cArray[1];
+        console.log(cArray[1]);
+        }
+      }
+      var uid2 = localStorage.getItem('_rslgvry');
+      var text2 = document.getElementById('UID2');
+      text2.textContent = uid2;
+      </script>
       <hr>
       <div id="link_table">
         <h3>CVP test page table with different domain</h3>
