@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/STYLE/css_style.css">
+    <link rel="stylesheet" type="text/css" href="https://jp-salvacion.github.io/JP/STYLE/css_style.css">
     </head>
 <body>
     <div id="divtitle"><H1><font color="yellow">STG/QC</font> QA Test site - MP</H1>
@@ -76,6 +76,12 @@
           <li><a href="timing_click_on_back_button.html" target="_self">TIMING = CLICK ON BROWSER BACK BUTTON</a></li>
           <li><a href="timing_return_to_left_tab.html" target="_self">TIMING = WHEN RETURNED TO POPUP TAB</a></li>
         </ul>
+      </div>
+      <div style="padding:5vh">
+        <button class="button-19" style="padding: 1vh;" onclick="window.mpAnalytics.track('cv.custom.finished', {orderId: '12345678-prod-buy-0000001',});">CONVERSION=Purchased BUTTON</button>
+        <p>
+          <button class="button-29" style="padding: 1vh;" role="button" onclick="window.mpAnalytics.track('site.order.completed',{orderId: '12345678-prod-buy-0000001',})">Event: Site.order.completed</button>
+          </p>
       </div>
 </body>
 </html>

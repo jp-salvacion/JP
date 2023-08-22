@@ -122,9 +122,12 @@
       var text2 = document.getElementById('UID2');
       text2.textContent = uid2;
       </script>
-      <div style="padding:5vh;">
-        <button class="button-19" onclick="window.mpAnalytics.track('cv.custom.finished', {orderId: '12345678-buy-0000001',});">Click here to GET CONVERSION-PURCHASED!!</button>
-        </div>
+      <div style="padding:5vh">
+        <button class="button-19" style="padding: 1vh;" onclick="window.mpAnalytics.track('cv.custom.finished', {orderId: '12345678-prod-buy-0000001',});">CONVERSION=Purchased BUTTON</button>
+        <p>
+          <button class="button-29" style="padding: 1vh;" role="button" onclick="window.mpAnalytics.track('site.order.completed',{orderId: '12345678-prod-buy-0000001',})">Event: Site.order.completed</button>
+          </p>
+      </div>
       <div id="link_list">
         <ul>
           <li><a href="CVP_page_visited.html">Back to CVP-Page Visit</a></li>

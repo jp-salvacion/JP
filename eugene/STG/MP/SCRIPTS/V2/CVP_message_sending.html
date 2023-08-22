@@ -79,5 +79,11 @@
           <li><a href="timing_return_to_left_tab.html" target="_self">TIMING = WHEN RETURNED TO POPUP TAB</a></li>
         </ul>
       </div>
+      <div style="padding:5vh">
+        <button class="button-19" style="padding: 1vh;" onclick="window.mpAnalytics.track('cv.custom.finished', {orderId: '12345678-prod-buy-0000001',});">CONVERSION=Purchased BUTTON</button>
+        <p>
+          <button class="button-29" style="padding: 1vh;" role="button" onclick="window.mpAnalytics.track('site.order.completed',{orderId: '12345678-prod-buy-0000001',})">Event: Site.order.completed</button>
+          </p>
+      </div>
 </body>
 </html>
