@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[STG/QC] QA Test Site for MP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://jp-salvacion.github.io/JP/STYLE/css_style.css">
+    </head>
+<body>
+    <div id="divtitle"><H1><font color="yellow">STG/QC</font> QA Test site - MP</H1>
+    </div>
+    <hr>
+    <h1>NEW MP script embedded + CROSS DOMAIN + LINE Follower inflow channel links</h1>
+    <h2> Test App Configuration </h2>
+    <pre>
+      - OID : ba000000000040008000000000000000
+      - PID : ba9d31a3da474eb79a7eab7f09c6e418
+      - MAAID :
+    </pre>
+    <!-- MP POPUP integrated script -->
+    <script type="text/javascript" id="">!function(t,e,n){
+      window.mpTrackerName=e;var c,a;window[window.mpTrackerName]=(a={data:[],custom:{}},function(){for(var t=function(t){return function(){return a.data.push([t].concat(Array.prototype.slice.call(arguments,0)))}},e="track page identify".split(" "),n=0;n<e.length;n++)a[e[n]]=t(e[n])}(),a.set=function(){var t=arguments[0],e={};e[t]=arguments[1],a.custom=Object.assign(a.custom,e)},a.init=function(t){a.v="1.0.0",a.trackerName=e,a.options=t||{}},(n=document.createElement("script")).type="text/javascript",
+      n.async=!0,n.src="https://sdk.mpdev.io/1/core.min.js",(c=document.getElementsByTagName("script")[0]).parentNode.insertBefore(n,c),a)}(0,"mpAnalytics");var Analytics=window["mpAnalytics"];
+      Analytics.init({
+        organizationId:"ba000000000040008000000000000000",  // qc
+        projectId:"ba9d31a3da474eb79a7eab7f09c6e418",
+        plugins: ["linkdomains","popup","synalio-chatbot","synalio-campaign","synalio-analytics","synalio-nanalytics","anonymousid-attach", "inflow-channel"]
+      });
+      Analytics.set('synalioUniqueId', 'e777904b2bc84328b55342a7614f6071')
+      Analytics.set("inflowUrlPrefix", "https://liff.line.me")
+      Analytics.set("anonymousIdAttachUrlPrefix", "https://liff.line.me")
+      Analytics.set('linkDomains', ['jp-salvacion.github.io','eugenechang-test.com']);
+      Analytics.page({})
+      </script>
+    <div id="userid">
+        <h3> USER ID : </h3>
+        <span id="UID1"></span>
+        <br />
+        <span id="UID2"></span>
+      </div>
+    <div id="title" style="width: 100%;height: 60px;background-color: lightsteelblue;">
+      <h1>CROSS - INDEX LANDING</h1>
+      </div>
+    <script>
+      var cookies = document.cookie;
+      var cookiesArray = cookies.split(';');
+
+      for(var c of cookiesArray){
+      var cArray = c.split('=');
+
+      var pattern1 = "_rslgvry";
+      var pattern2 = " _rslgvry";  // 正規表現の条件
+      if( cArray[0] == pattern1 || cArray[0] == pattern2 ){  // keyになる文字列が正規表現にマッチしたら
+        var text1 = document.getElementById('UID1');
+        text1.textContent = cArray[1];
+        console.log(cArray[1]);
+        }
+      }
+      var uid2 = localStorage.getItem('_rslgvry');
+      var text2 = document.getElementById('UID2');
+      text2.textContent = uid2;
+      </script>
+      <hr>
+      <div id="link_list">
+        <h3>LINKS for JP domain</h3>
+        <span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </span>
+        <ul>
+          <li><a href="https://jp-salvacion.github.io/JP/eugene/STG/MP/CROSS/0001.html">V2-0001</a></li>
+          <li><a href="https://jp-salvacion.github.io/JP/eugene/STG/MP/CROSS/0002.html">V2-0002</a></li>          
+          <li><a href="https://jp-salvacion.github.io/JP/eugene/STG/MP/CROSS/V1_0001.html">V1-0001</a></li>
+          <li><a href="https://jp-salvacion.github.io/JP/eugene/STG/MP/CROSS/V1_0002.html">V1-0002</a></li>      
+        </ul>
+        <br>
+        <h3>LINKS for Eugene domain</h3>
+        <span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </span>
+        <ul>
+          <li><a href="https://eugenechang-test.com/eugene/STG/MP/CROSS/0001.html">V2-0001</a></li>
+          <li><a href="https://eugenechang-test.com/eugene/STG/MP/CROSS/0002.html">V2-0002</a></li> 
+          <li><a href="https://eugenechang-test.com/eugene/STG/MP/CROSS/V1_0001.html">V1-0001</a></li>
+          <li><a href="https://eugenechang-test.com/eugene/STG/MP/CROSS/V1_0002.html">V1-0002</a></li>               
+        </ul>
+        <br>
+        <h3>LINKS for Eugene ballon NOT Trackable domain</h3>
+        <span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </span>
+        <ul>
+          <li><a href="https://eugene-ballon.surge.sh/eugene/STG/MP/CROSS/0001.html">V2-0001</a></li>
+          <li><a href="https://eugene-ballon.surge.sh/eugene/STG/MP/CROSS/0002.html">V2-0002</a></li>
+          <li><a href="https://eugene-ballon.surge.sh/eugene/STG/MP/CROSS/V1_0001.html">V1-0001</a></li>
+          <li><a href="https://eugene-ballon.surge.sh/eugene/STG/MP/CROSS/V1_0002.html">V1-0002</a></li> 
+        </ul>
+        <br>
+        <h3>LINE follower inflow channel LINK LIST</h3>
+        <span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </span>
+        <pre>Click link on PC platform it should generates QR code</pre>
+        <ul>
+          <li><a href="https://liff.line.me/1660942398-Y29XkJwE?__mcid=8ee30d72-4182-11ee-baca-0aa6ae8f0413&__maid=8ffbe24e8fad4dd38ebad5341168c8c9">渋谷ハチ公口店</a></li>
+          <li><a href="https://liff.line.me/1660942398-Y29XkJwE?__mcid=8ee30ebc-4182-11ee-baca-0aa6ae8f0413&__maid=8ffbe24e8fad4dd38ebad5341168c8c9">渋谷新南口店</a></li>
+          <li><a href="https://liff.line.me/1660942398-Y29XkJwE?__mcid=8ee30f48-4182-11ee-baca-0aa6ae8f0413&__maid=8ffbe24e8fad4dd38ebad5341168c8c9">渋谷スクランブル交差点店</a></li>
+          <li><a href="https://liff.line.me/1660942398-Y29XkJwE?__mcid=8ee30fb6-4182-11ee-baca-0aa6ae8f0413&__maid=8ffbe24e8fad4dd38ebad5341168c8c9">新宿サザンテラス店</a></li>
+          <li><a href="https://liff.line.me/1660942398-Y29XkJwE?__mcid=8ee3101a-4182-11ee-baca-0aa6ae8f0413&__maid=8ffbe24e8fad4dd38ebad5341168c8c9">新宿東口店</a></li>
+          <li><a href="https://liff.line.me/1660942398-Y29XkJwE?__mcid=8ee31088-4182-11ee-baca-0aa6ae8f0413&__maid=8ffbe24e8fad4dd38ebad5341168c8c9">新宿東京都庁店</a></li>
+          <li><a href="https://liff.line.me/1660942398-Y29XkJwE?__mcid=8ee310ec-4182-11ee-baca-0aa6ae8f0413&__maid=8ffbe24e8fad4dd38ebad5341168c8c9">池袋西口公園店</a></li>
+          <li><a href="https://liff.line.me/1660942398-Y29XkJwE?__mcid=8ee3115a-4182-11ee-baca-0aa6ae8f0413&__maid=8ffbe24e8fad4dd38ebad5341168c8c9">池袋サンシャインシティ店 </a></li>
+          </ul>
+      </div>
+      <div id="freespace">
+        </div> 
+</body>
+</html>
