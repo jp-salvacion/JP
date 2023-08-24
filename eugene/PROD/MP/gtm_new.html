@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://jp-salvacion.github.io/JP/STYLE/css_style.css">
+
+    <title>[PROD][SYNALIO Based] QA Test Site</title>
+    <!-- Chat bot script paste below -->
+    <!-- GTM script -->
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NM55RF5');</script>
+    <!-- End Google Tag Manager -->
+    </head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NM55RF5"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="divtitle" class="main_title">
+      <H1>SYNALIO OEM - QA Test site on [PROD Env]</H1>
+    </div>
+    <hr>
+    <div id="subtitle" class="sub_title">
+      <h2>cid: 1906 | appname: QA_WEB</h2>
+      <span>Hello world, This is only for <font color="red">Production</font>!!! Make sure what environment are you testing</span>
+      <h3> Chatbot, Campaign, MP-POPUP integrated GTM script </h3>
+    </div>
+    <div id="campaign">
+      <!-- Campaign -->
+
+    </div>
+    <div id="userid">
+        <h3> USER ID : </h3>
+        <span id="UID1"></span>
+        <br />
+        <span id="UID2"></span>
+        </div>
+    <script>
+      var cookies = document.cookie;
+      var cookiesArray = cookies.split(';');
+
+      for(var c of cookiesArray){
+      var cArray = c.split('=');
+
+      var pattern1 = "_rslgvry";
+      var pattern2 = " _rslgvry";  // 正規表現の条件
+      if( cArray[0] == pattern1 || cArray[0] == pattern2 ){  // keyになる文字列が正規表現にマッチしたら
+        var text1 = document.getElementById('UID1');
+        text1.textContent = cArray[1];
+        console.log(cArray[1]);
+        }
+      }
+      var uid2 = localStorage.getItem('_rslgvry');
+      var text2 = document.getElementById('UID2');
+      text2.textContent = uid2;
+      </script>
+      <div id="link_list">
+        <ul>
+          <li><a href="index.html">To Main Page</a></li>
+          <li><a href="long.html">To long Page</a></li>
+          <li><a href="campaign_back.html">campaign back button test page</a></li>
+          <li><a href="no_chatbot.html">NO chatbot page</a></li>
+          <li><a href="cvp_POPUP.html">CVP POPUP</a></li>
+          <li><a href="cvp_goal.html">CVP GOAL</a></li>
+        </ul>
+      </div>
+      <hr>
+      <br />
+    <hr style="border-style: dotted;border-width: 1px;">
+    <div id="linklist" style="padding:1vh;">
+        <h3> LINK LIST : for GTM pages</h3>
+        <ul>
+            <li><a href="gtm_a_tag.html">TARGET ELEMENT = A tag</a></li>
+            <li><a href="gtm_div.html">TARGET ELEMENT = DIV tag</a></li>
+            <li><a href="gtm_divIndiv.html">TARGET ELEMENT = DIV in DIV tag</a></li>
+            <li><a href="gtm_button.html">TARGET ELEMENT = BUTTON tag</a></li>
+            <li><a href="gtm_img.html">TARGET ELEMENT = IMG tag</a></li>
+            <li><a href="gtm_input_button.html">TARGET ELEMENT = INPUT TYPE BUTTON tag</a></li>
+        </ul>
+    </div>
+    <div style="display: none;">
+        <h2> = Test elements area for ID : LOGIN = </h2>
+        <br />
+        <div id="login"><a href="goal.html">login div : go to goal page</a></div>
+        <br />
+        <div id="login">
+            <div id="div_2">
+                <a href="goal.html?utm_source=google&utm_medium=social&utm_term=LTS">login div > div > a link</a>
+                </div>
+            </div>
+        <br />
+        <div><button id="login" onclick="location.href='goal.html'">login button: go to goal</button></div>
+        <br />
+        <div><a href="goal.html"><img id="login" src="src/image.png" alt="login id image" style="width: 96px;"></a></div>
+        <br />
+        <div><input type="button" id="login" onclick="location.href='goal.html'" value="input type button : go to goal"></div>
+        <br />
+    </div>
+    <hr style="border-style: dotted;border-width: 1px;">
+    <div style="display: none;">
+        <h2> = Test elements area for ID : newEntry = </h2>
+        <br />
+        <div id="newentry"><a href="goal.html?">newentry div : go to goal page</a></div>
+        <br />
+        <div id="newentry">
+            <div id="div_2">
+                <a href="goal.html?utm_source=google&utm_medium=social&utm_term=LTS">newEntry div > div > a link</a>
+                </div>
+            </div>
+        <br />
+        <div><button id="newentry" onclick="location.href='goal.html'">newentry button: go to goal</button></div>
+        <br />
+        <div><a href="goal.html"><img id="newentry" src="src/image.png" alt="newentry id image" style="width: 96px;"></a></div>
+        <br />
+        <div><input type="button" id="newentry" onclick="location.href='goal.html'" value="newentry input type button : go to goal"></div>
+        <br />
+    </div>
+</body>
+</html>
