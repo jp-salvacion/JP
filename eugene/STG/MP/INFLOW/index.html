@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[STG/QC] QA Test Site for MP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://jp-salvacion.github.io/JP/STYLE/css_style.css">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-PKDGSN3');</script>
+      <!-- End Google Tag Manager -->
+    </head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKDGSN3"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+    <div id="divtitle"><H1><font color="yellow">STG/QC</font> QA Test site - MP</H1>
+    </div>
+    <hr>
+    <span>Hello world, This is only for <font color="yellow"><H3>STG</H3></font>!!! Make sure what environment are you testing!</span>
+    <h2> Test App Configuration </h2>
+    <pre>
+      - OID : ba000000000040008000000000000000
+      - PID : ba9d31a3da474eb79a7eab7f09c6e418
+      - MAAID :
+    </pre>
+    <div id="userid">
+        <h3> USER ID : </h3>
+        <span id="UID1"></span>
+        <br />
+        <span id="UID2"></span>
+        </div>
+    <script>
+      var cookies = document.cookie;
+      var cookiesArray = cookies.split(';');
+
+      for(var c of cookiesArray){
+      var cArray = c.split('=');
+
+      var pattern1 = "_rslgvry";
+      var pattern2 = " _rslgvry";  // 正規表現の条件
+      if( cArray[0] == pattern1 || cArray[0] == pattern2 ){  // keyになる文字列が正規表現にマッチしたら
+        var text1 = document.getElementById('UID1');
+        text1.textContent = cArray[1];
+        console.log(cArray[1]);
+        }
+      }
+      var uid2 = localStorage.getItem('_rslgvry');
+      var text2 = document.getElementById('UID2');
+      text2.textContent = uid2;
+      </script>
+      <hr>
+      <div id="link_list">
+        <h3>MP LINE INFLOW CHANNEL: CID 138 | QA_LINEBOT</h3>
+        <span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </span>
+        <ul>
+          <li><a href="https://liff.line.me/1655380465-3p0EpKjV?__mcid=994b9a67-e511-4646-88fb-dd05452d02be&__maid=eef26f1692284154a1f080b0acdca087">INFLOW: QR CODE</a></li>
+          <li><a href="https://liff.line.me/1655380465-3p0EpKjV?__mcid=dd28c2dc-0736-4f00-b531-20a1bda993ee&__maid=eef26f1692284154a1f080b0acdca087">INFLOW: LINK CLICK</a></li>
+        </ul>
+      </div>
+</body>
+</html>
