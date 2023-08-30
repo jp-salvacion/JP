@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://jp-salvacion.github.io/JP/STYLE/css_style.css">
+
+    <title>[PROD][SYNALIO Based] QA Test Site</title>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-NM55RF5');</script>
+      <!-- End Google Tag Manager -->
+    </head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NM55RF5"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  <div id="divtitle"><H1>SYNALIO OEM - QA Test site on [PROD Env] with MP Script V2 (NO CROSS DOMAIN)</H1>
+    <hr>
+    Hello world, This is only for <font color="red">Production</font>!!! Make sure what environment are you testing
+    <br>
+    <pre>
+      <h3>App Configuration:</h3>
+      <ul>
+        <li>- cid : 1287</li>
+        <li>- app : QA_WEB</li>
+        <li>- UID : <span id="UID1"></span> | <span id="UID2"></span></li>
+      </ul>
+    </pre>
+  </div>
+  <div style="background-color: rgb(110, 164, 235);width: fit-content;padding-top: 2px;padding-bottom: 2px;padding-left: 1%;padding-right: 1%;">
+    <h3>Repeat feature: User scenario test - Page B</h3>
+  </div>
+  <script>
+    var cookies = document.cookie;
+    var cookiesArray = cookies.split(';');
+
+    for(var c of cookiesArray){
+    var cArray = c.split('=');
+
+    var pattern1 = "_rslgvry";
+    var pattern2 = " _rslgvry";  // 正規表現の条件
+    if( cArray[0] == pattern1 || cArray[0] == pattern2 ){  // keyになる文字列が正規表現にマッチしたら
+      var text1 = document.getElementById('UID1');
+      text1.textContent = cArray[1];
+      console.log(cArray[1]);
+      }
+    }
+    var uid2 = localStorage.getItem('_rslgvry');
+    var text2 = document.getElementById('UID2');
+    text2.textContent = uid2;
+    </script>
+    <hr>
+    <h1>GTM embedded !!</h1>
+</body>
+</html>
