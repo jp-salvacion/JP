@@ -1,18 +1,68 @@
 <!DOCTYPE html>
+ 
 <html>
 <head>
-    <meta charset="utf-9">
-    <title>JP Test Site</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[STG/QC] QA Test Site for MP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://jp-salvacion.github.io/JP/STYLE/css_style.css">
+<title>JP Test Site</title>
 <script src="//dev.rebot.resola.net/api/chatbox?appid=ea90f45394884900a2b8920cee1df51c" type="text/javascript"></script>
 <script>var synalytics=function(){!function(e,n,t){(e.NanalyticsObject=t)in e||(e[t]=function(){(e[t].q=e[t].q||[]).push(arguments)},e[t].ep=n);var a=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script"),i=1e17*Math.random();r.type="text/javascript",r.async=!0,r.src="https://sdk."+n+"/v1/web.js?sid="+i,a.parentNode.insertBefore(r,a)}(window,"n-analytics.io","Nanalytics");var e="_rslgvry",n="_rslgvry_conv_cnt",t="r_window",a=/^((?!chrome|android|crios).)*safari/i.test(navigator.userAgent),r="";function i(e){var n=null,t=e+"=",a=document.cookie,r=a.indexOf(t);if(-1!=r){var i=r+t.length,o=a.indexOf(";",i);-1==o&&(o=a.length),n=decodeURIComponent(a.substring(i,o))}return n}function o(){return a?localStorage.getItem(e):i(e)}function c(e,n,t,a,r){var o=n+"="+t+";max-age="+(a||63072e3)+";path=/;";if(r)e.cookie=o;else if(c.domain)e.cookie=o+"domain=."+c.domain;else{var s=location.hostname.split(".");s.length>2&&s.shift(),c.domain=s.join("."),e.cookie=o+"domain=."+c.domain,i(n)!=t&&(c.domain=location.hostname,e.cookie=o+"domain=."+c.domain)}}function s(n){if(a)localStorage.setItem(e,n);else{c(document,e,n,63072e3)}}var u=function(){var e=o();return e||s(e="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(e){var n=16*Math.random()|0;return("x"==e?n:3&n|8).toString(16)})),e}();function _(e,n){var t=window.navigator,a=new Date,r=a.getHours()+Math.floor((a.getMinutes()+n)/60);return function(e){var n,t=1;if(e)for(t=0,n=e.length-1;0<=n;n--){var a=e.charCodeAt(n);t=0!=(a=266338304&(t=(t<<6&268435455)+a+(a<<14)))?t^a>>21:t}return t}([e,t.userAgent,t.language||"",a.getTimezoneOffset(),a.getYear(),a.getDate()+Math.floor(r/24),(24+r)%24,(60+a.getMinutes()+n)%60].join("."))}function f(e,n,t,a){e.addEventListener(n,t,!!a)}function d(e){if(e&&"undefined"!==e)return decodeURIComponent(e)}function l(e){if(e&&"undefined"!==e)return/^\d+$/.exec(e)?Number(e):void 0}function m(e){var n=o();if(!n)return e;var a=/(.*)([?&#])(?:_sy=[^&#]*)(?:&?)(.*)/.exec(e);a&&a.length>=3&&(e=a[1]+(a[3]?a[2]+a[3]:""));var r=0,c=i(t);null!=c&&null!=c&&(r="on"===c?1:2);var s,u=n+"."+r;if(window.Nanalytics){var f=(s={},document.cookie.split(/\s*;\s*/).forEach(function(e){var n=e.split("="),t=n[0].trim(),a=n[1];switch(t){case"__na_s_i":s.si=d(a);break;case"__na_s_t":s.sst=l(a);break;case"__na_s_n":s.sn=l(a);break;case"__na_u_i":s.uid=d(a);break;case"__na_c_s":s.src=d(a);break;case"__na_c_m":s.md=d(a);break;case"__na_c_c":s.cp=d(a);break;case"__na_c_k":s.kw=d(a)}}),s);u=u+"."+["uid","si","sst","sn"].map(function(e){return f[e]||""}).join("_")}var m="_sy="+_(u,0)+"."+u,g=e.indexOf("?");a=e.indexOf("#");var x=-1==g?"?":"&";return(e=-1==a?e+(x+m):e.substring(0,a)+x+m+e.substring(a)).replace(/&+_sy=/,"&_sy=")}function g(e){("http:"==e.protocol||"https:"==e.protocol)&&function(e,n){if(n.indexOf(document.location.hostname)>=0||document.location.hostname.indexOf(n)>=0)return!1;e=e.split(",");for(var t=0;t<e.length;t++)if(e[t]instanceof RegExp){if(e[t].test(n))return!0}else{var a=e[t].trim();if(n.indexOf(a)>=0)return!0}return!1}(r,e.hostname||"")&&e.href&&(e.href=m(e.href))}function x(e){try{for(var n=(e=e||window.event).target||e.srcElement,t={},a=100;n&&0<a;){if(n.href&&n.nodeName.match(/^a(?:rea)?$/i)){t=n;break}n=n.parentNode,a--}g(t)}catch(e){console.error(e)}}function v(){var e,n=(e=(e=window.location.search).match(/(?:&|#|\\?)_sy=([^&#]*)/))&&2==e.length?e[1]:"";if(n){var a=n.indexOf("."),r=n.substring(0,a),i=n.substring(a+1);if(r&&i)if(r==_(i,0)||r==_(i,-1)||r==_(i,-2)){a=i.indexOf(".");var o=i.substring(0,a);s(o),u=o;var f=i.substring(a+1);a=f.indexOf(".");var d=f.substring(0,a);"1"!==d&&"2"!==d||c(document,t,"1"===d?"on":"off",1800),function(e){var n=e.split("_");if(4==n.length){var t=(new Date).getTime(),a=location.hostname,r=location.href,i=document;c(i,"__na_u_i",n[0],0,a),c(i,"__na_s_i",n[1],0,a),c(i,"__na_s_t",n[2],0,a),c(i,"__na_s_n",n[3],0,a),c(i,"__na_p_t",t,0,a),c(i,"__na_s_c",encodeURIComponent(r),0,a),Object.defineProperty(document,"referrer",{value:r})}else console.warn("Invalid parameter length:",n.length)}(f.substring(a+1))}}}return function(e){"1"==e&&(f(document,"mousedown",x,!1),f(document,"keyup",x,!1),v())}("0"),Nanalytics("setup","NA-201",(new Date).getTime()),Nanalytics("config","itp_recovery",!0),Nanalytics("send","pageview",{customer_id:u,app_unique_id:"ea90f45394884900a2b8920cee1df51c",chatbot_talk:((a?localStorage.getItem(n):i(n))||0).toString()}),{getUrl:function(e){var n=document.createElement("a");return n.href=e,g(n),n.href}}}();</script>
-    
-    </head>
-<body> 
-    <div id="divtitle"><H1>JP Test Site</H1>
-        <a href="https://jp-salvacion.github.io/Test/">Test label</a>
-    <hr>
-    Hello world, This is only for <font color="red">Python</font>!!! Make sure what environment are you testing!
-    <br>
-    </div>
+</head>
+<body>
+<div id="divtitle">
+<h1>JP Test Site</h1>
+<a href="https://jp-salvacion.github.io/Test/">Test label</a><hr />Hello world, This is only for <span style="color: red;">Python</span>!!! Make sure what environment are you testing!</div>
+<div></div>
+<div><strong>LINE inflow channel link list</strong></div>
+<div><strong>----</strong></div>
+<div></div>
+<ul>
+<li><a href="https://liff.line.me/1655380465-02yq2Nlk/afe07e46cb724a29b7ab005be5548c3b?name=野比のび太&amp;email=nobita@resola.ai&amp;company=株式会社野比のび太&amp;gender=男性&amp;test_number=4034243420&amp;test_datetime=2023-09-14%2010:15&amp;test_time=10:15&amp;ages=41-50&amp;hobby=映画鑑賞"><span>流入-LIFFLink</span></a><span> - system default + extradata</span></li>
+<li><a href="https://liff.line.me/1655380465-02yq2Nlk/466e1ef1073b4b708a0ef3c03c7c0354?name=骨川スネ夫&amp;email=suneo_hair@resola.ai&amp;company=パパは社長&amp;tel=098709870987&amp;test_text=シナリオリンクからです&amp;test_メモ=シナリオリンクから付与したメモ文字です&amp;ages=60以上&amp;gender=不明"><span>流入-シナリオリンク</span></a><span> </span><span> - system default + extradata</span></li>
+<li><a href="https://liff.line.me/1655380465-RAYzPoV7/6d73ba28043040a3a3dd344d3397dec9?name=俺はジャイアン、ガキ大将&amp;email=giant_takeshi@doraemon-world.jp&amp;tel=08032132131&amp;company=剛田八百屋&amp;memo=たけし、店番頼むわよ"><span>流入-Extradata用</span></a><span> - only system default data</span></li>
+<li><span><a href="https://liff.line.me/1655380465-5oNv6QJm/e8d44163a7ec45a3b8be5d794d587fcd?test_number=9527&amp;test_undefined=ycb0ilrY7h79EFfRMixZch7hsVRV3Me7ghznJOcKpRhCCjcfBV6oGCWZm5B1u6o+6&amp;hobby=%5B%27%E3%83%90%E3%82%B9%E3%82%B1%E3%83%83%E3%83%88%E3%83%9C%E3%83%BC%E3%83%AB%27%2C%27%E3%82%AB%E3%83%A9%E3%82%AA%E3%82%B1%27%2C%27%E6%98%A0%E7%94%BB%E9%91%91%E8%B3%9E%27%2C%27%E9%87%8E%E7%90%83%27%5D">流入-20230414B</a> - only extradata checkbox multiple items (label deleted)</span><span></span></li>
+<li><a href="https://liff.line.me/1655380465-5oNv6QJm/e8d44163a7ec45a3b8be5d794d587fcd">流入-20230414B</a> - (label deleted without parameters)</li>
+<li>流入-20230414B QR code (label deleted)</li>
+<li>1. PURE</li>
+<li><img src="https://jp-salvacion.github.io/JP/eugene/IMG/Deleted_INFLOW_STG.png" alt="Deleted inflow qr cdoe (pure)" width="589" height="496" /></li>
+<li>2. Parameters</li>
+<li><img src="https://jp-salvacion.github.io/JP/eugene/IMG/Deleted_INFLOW_STG_parameters.png" alt="deleted inflow qr code (parameters)" width="581" height="533" /></li>
+<li><strong>流入-QR_Codeスキャン (pure)</strong></li>
+<li><span><img src="https://jp-salvacion.github.io/JP/eugene/IMG/INFLOW_STG.png" alt="INFLOW QR code pure" width="591" height="549" /></span></li>
+</ul>
+<p></p>
+<p><strong>CID29 inflow channe link list</strong></p>
+<p><strong>----</strong></p>
+<ul>
+<li>&nbsp;- <a href="https://liff.line.me/1653917033-0BMPvKZn/e52f018e216f4876a19d28652e769773">流入経路_Link</a> - no data</li>
+</ul>
+<p><strong></strong></p>
+<p><strong>----------------------------------------------------------------------------------------</strong></p>
+<p><strong>PROD Test</strong></p>
+<ul>
+<li><span><a href="https://liff.line.me/1655722988-xQdoMObV/00775c66619943659e605bfc7f3677d5?name=ユージンがリンクをタップした&amp;email=eugene_link_tapping@resola.ai&amp;tel=07098769876&amp;company=株式会社resola&amp;年齢=30代">流入_リンクアクセス</a> - system default + extradata</span></li>
+<li><span><a href="https://liff.line.me/1655722988-xQdoMObV/fd13a58534cf458ebfa3aa0aef592741">流入_20231004-A</a> - (label deleted without parameters)</span></li>
+<li><span><a href="https://console.libero-app.com/api/line/611aba0e505b46a09293b34229cba3d1/label?liff.state=%2Ffd13a58534cf458ebfa3aa0aef592741%3Femail%3Ddeletd_user%2540test-domain.com%26tel%3D09000000000%26%25E6%258C%2587%25E5%25AE%259A%25E7%2584%25A1%25E3%2581%2597_UNDEFINED%3D%25E6%25B5%2581%25E5%2585%25A5%25E3%2583%25A9%25E3%2583%2599%25E3%2583%25AB%25E3%2581%25AF%25E5%2589%258A%25E9%2599%25A4%25E3%2581%2595%25E3%2582%258C%25E3%2581%259F">流入_20231004-A</a> - (label deleted with parameters)</span></li>
+<li><span>流入_20231004-A QR code (label deleted)</span></li>
+<li><span>1. Pure</span></li>
+<li><span><img src="https://jp-salvacion.github.io/JP/eugene/IMG/Deleted_INFLOW_PROD.png" alt="deleted inflow qr code (pure)" width="670" height="488" /></span></li>
+<li><span>2. Parameters</span></li>
+<li><span><img src="https://jp-salvacion.github.io/JP/eugene/IMG/Deleted_INFLOW_PROD_parameters.png" alt="deleted inflow qr code with parameters" width="609" height="484" /></span></li>
+<li><strong>流入QR code (pure)</strong></li>
+<li><strong><img src="https://jp-salvacion.github.io/JP/eugene/IMG/INFLOW_PROD.png" alt="INFLOW QR code PURE" width="619" height="554" /></strong></li>
+</ul>
+<p><span></span></p>
+<p><strong>For UNFOLLOWER Test&nbsp;</strong></p>
+<p><span>----</span><span></span></p>
+<p><a href="https://liff.line.me/1655380465-RAYzPoV7/6d73ba28043040a3a3dd344d3397dec9?name=俺はジャイアン、ガキ大将&amp;email=giant_takeshi@doraemon-world.jp&amp;tel=08032132131&amp;company=剛田八百屋&amp;memo=たけし、店番頼むわよ"><span></span></a></p>
+<ul>
+<li><span><a href="https://liff.line.me/1655380465-02yq2Nlk/466e1ef1073b4b708a0ef3c03c7c0354?gender=男性&amp;test_number=4034243420&amp;test_datetime=2023-09-14%2010:15&amp;test_time=10:15&amp;ages=41-50&amp;hobby=映画鑑賞&amp;name=野比のび太くん&amp;email=nobita_kun@resola.ai&amp;tel=08012341234&amp;company=株式会社DORAEMON">流入-シナリオリンク</a></span><span> </span><span> - extradata + system default</span></li>
+<li><a href="https://liff.line.me/1655380465-02yq2Nlk/819f4ad70291466cb30be63e19a0a9db?gender=男性&amp;test_number=4034243420&amp;test_datetime=2023-09-14%2010:15&amp;test_time=10:15&amp;ages=41-50&amp;hobby=映画鑑賞&amp;name=野比のび太くん&amp;email=nobita_kun@resola.ai&amp;tel=08012341234&amp;company=株式会社DORAEMON"><span>流入-QR Code</span></a><span> </span><span> - extradata + system default</span></li>
+</ul>
 </body>
 </html>
