@@ -20,27 +20,19 @@
       - PID : ba9d31a3da474eb79a7eab7f09c6e418
       - MAAID :
     </pre>
-    <!-- MP POPUP integrated script -->
+    <!-- MP POPUP script -->
     <script type="text/javascript" id="">!function(t,e,n){
       window.mpTrackerName=e;var c,a;window[window.mpTrackerName]=(a={data:[],custom:{}},function(){for(var t=function(t){return function(){return a.data.push([t].concat(Array.prototype.slice.call(arguments,0)))}},e="track page identify".split(" "),n=0;n<e.length;n++)a[e[n]]=t(e[n])}(),a.set=function(){var t=arguments[0],e={};e[t]=arguments[1],a.custom=Object.assign(a.custom,e)},a.init=function(t){a.v="1.0.0",a.trackerName=e,a.options=t||{}},(n=document.createElement("script")).type="text/javascript",
       n.async=!0,n.src="https://sdk.mpdev.io/1/core.min.js",(c=document.getElementsByTagName("script")[0]).parentNode.insertBefore(n,c),a)}(0,"mpAnalytics");var Analytics=window["mpAnalytics"];
       Analytics.init({
-        organizationId:"ba000000000040008000000000000000",  // qc
+        organizationId:"ba000000000040008000000000000000",  // dev
         projectId:"ba9d31a3da474eb79a7eab7f09c6e418",
         plugins: ["linkdomains","popup","synalio-chatbot","synalio-campaign","synalio-analytics","synalio-nanalytics"]
-      })
-
-      Analytics.set('synalioChatbotCid', '29')
-      Analytics.set('synalioChatbotApp', 'QA')
-      Analytics.set('synalioChatbotUniqueId', 'e777904b2bc84328b55342a7614f6071')
-      Analytics.set('synalioCampaignCid', '29')
-      Analytics.set('synalioCampaignApp', 'QA')
-      Analytics.set('synalioCampaignUniqueId', 'e777904b2bc84328b55342a7614f6071')
-      Analytics.set('linkDomains', ['jp-salvacion.github.io','eugenechang-test.com']);
-      Analytics.page({})
-
-      window.mpAnalytics.track('site.page.visited', {})
-      </script>
+      });
+    Analytics.set('synalioUniqueId', 'e777904b2bc84328b55342a7614f6071');
+    Analytics.set('linkDomains', ['jp-salvacion.github.io','eugenechang-test.com']);
+    Analytics.page({})
+    </script>
     <div id="userid">
         <h3> USER ID : </h3>
         <span id="UID1"></span>
