@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[STG/QC] QA Test Site for MP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://jp-salvacion.github.io/JP/STYLE/css_style.css">
+    </head>
+<body></body>
+    <div id="divtitle"><H1><font color="yellow">STG/QC</font> QA Test site - MP</H1>
+    </div>
+    <hr>
+    <span>Hello world, This is only for <font color="yellow"><H3>STG</H3></font>!!! Make sure what environment are you testing!</span>
+    <h1 style="background-color: #abd870;">LINE Follower inflow = no GTM and inserted inflow channel 2 lines prefixes</h1>
+    <h2> Test App Configuration </h2>
+    <pre>
+      - OID : ba000000000040008000000000000000
+      - PID : ba9d31a3da474eb79a7eab7f09c6e418
+      - MAAID :
+    </pre>
+    <div id="userid">
+        <h3> USER ID : </h3>
+        <span id="UID1"></span>
+        <br />
+        <span id="UID2"></span>
+        </div>
+    <script>
+      var cookies = document.cookie;
+      var cookiesArray = cookies.split(';');
+
+      for(var c of cookiesArray){
+      var cArray = c.split('=');
+
+      var pattern1 = "_rslgvry";
+      var pattern2 = " _rslgvry";  // 正規表現の条件
+      if( cArray[0] == pattern1 || cArray[0] == pattern2 ){  // keyになる文字列が正規表現にマッチしたら
+        var text1 = document.getElementById('UID1');
+        text1.textContent = cArray[1];
+        console.log(cArray[1]);
+        }
+      }
+      var uid2 = localStorage.getItem('_rslgvry');
+      var text2 = document.getElementById('UID2');
+      text2.textContent = uid2;
+      </script>
+        <!-- MP POPUP script V2 NO CROSS DOMAIN -->
+    <script type="text/javascript" id="">!function(t,e,n){
+      window.mpTrackerName=e;var c,a;window[window.mpTrackerName]=(a={data:[],custom:{}},function(){for(var t=function(t){return function(){return a.data.push([t].concat(Array.prototype.slice.call(arguments,0)))}},e="track page identify".split(" "),n=0;n<e.length;n++)a[e[n]]=t(e[n])}(),a.set=function(){var t=arguments[0],e={};e[t]=arguments[1],a.custom=Object.assign(a.custom,e)},a.init=function(t){a.v="1.0.0",a.trackerName=e,a.options=t||{}},(n=document.createElement("script")).type="text/javascript",
+      n.async=!0,n.src="https://sdk.mpdev.io/1/core.min.js",(c=document.getElementsByTagName("script")[0]).parentNode.insertBefore(n,c),a)}(0,"mpAnalytics");var Analytics=window["mpAnalytics"];
+      Analytics.init({
+        organizationId:"ba000000000040008000000000000000",  // dev
+        projectId:"ba9d31a3da474eb79a7eab7f09c6e418",
+        plugins: ["linkdomains","popup","synalio-chatbot","synalio-campaign","synalio-analytics","synalio-nanalytics","anonymousid-attach", "inflow-channel"]
+      });
+    Analytics.set('synalioUniqueId', 'e777904b2bc84328b55342a7614f6071');
+    Analytics.set("inflowUrlPrefix","https://liff.line.me");
+    Analytics.set("anonymousIdAttachUrlPrefix","https://liff.line.me");
+    Analytics.set('linkDomains', ['jp-salvacion.github.io','eugenechang-test.com']);
+    Analytics.set('anonymousIdAttachElemenentIds', 'login, newentry');
+    Analytics.page({})
+    </script>
+<hr>
+<!-- start of LINE follower inflow channel link list area -->
+<div>
+<pre>
+  [FOR MP MAIN Test App]
+  - ENV: QC/STG
+  - CID: 185
+  - APP: app_emoji_2803
+</pre>
+</div>
+<div id="inflow_custom" style="display: inline-block;margin: 1em;">
+<div style="display: flex;justify-content: center;"><h3> Link list to different CVP pages </h3></div>
+<hr>
+<div style="display: inherit;padding: 1em;margin: 0.2em;"><a href="index.html">◆ index page</a></div>
+<div style="display: inherit;padding: 1em;margin: 0.2em;"><a href="page_visited.html">◆ page visited page</a></div>
+<div style="display: inherit;padding: 1em;margin: 0.2em;"><a href="purchased.html">◆ purchased page</a></div>
+<div style="display: inherit;padding: 1em;margin: 0.2em;"><a href="custom.html">◆ custom page</a></div>
+</div>
+<br>
+<div id="inflow_pageVisited" style="display: inline-block;border-style: dotted;border-width: 1px;margin: 1em;">
+<div style="display: flex;justify-content: center;"><h3> = Follower inflow list : Event Page Visited = </h3></div>
+<div><pre>EMA name:[QA]LINE_Follower_Channel到達</pre></div>
+<div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(165, 245, 218);"><a href="https://liff.line.me/1660942398-Y29XkJwE?__mcid=2cb66eba-ddb6-4b66-916c-63778f4346b6&__maid=2378a3ad4991415aaee8dd3c3b06460a">渋谷ハチ公口店</a></div>
+<div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(165, 245, 218);"><a href="https://liff.line.me/1660942398-Y29XkJwE?__mcid=5d896661-02b4-4b95-b94b-2d5e67fe2831&__maid=2378a3ad4991415aaee8dd3c3b06460a">渋谷新南口店</a></div>
+<div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(165, 245, 218);"><a href="https://liff.line.me/1660942398-Y29XkJwE?__mcid=c0eadc96-dd14-4b76-919e-ae98d525b3b1&__maid=2378a3ad4991415aaee8dd3c3b06460a">新宿サザンテラス店</a></div>
+<div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(165, 245, 218);"><a href="https://liff.line.me/1660942398-Y29XkJwE?__mcid=45ee26e6-3342-4f9d-84da-bd6a92f61d86&__maid=2378a3ad4991415aaee8dd3c3b06460a">新宿東口店</a></div>
+<br>
+<div id="inflow_purchased" style="display: inline-block;border-style: dotted;border-width: 1px;margin: 1em;">
+<div style="display: flex;justify-content: center;"><h3> = Follower inflow list : Event PURCHASED = </h3></div>
+<div><pre>EMA name:[QA]LINE_Follower_Channel購入</pre></div>
+<div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(178, 185, 248);"><a href="https://liff.line.me/1660942398-Y29XkJwE?__mcid=b67af508-418b-11ee-baca-0aa6ae8f0413&__maid=716b7de18b954d4d86950a830018721c">PURCHASED - 渋谷ハチ公口店</a></div>
+<div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(178, 185, 248);"><a href="https://liff.line.me/1660942398-Y29XkJwE?__mcid=b67af6ca-418b-11ee-baca-0aa6ae8f0413&__maid=716b7de18b954d4d86950a830018721c">PURCHASED - 渋谷スクランブル交差点店</a></div>
+<div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(178, 185, 248);"><a href="https://liff.line.me/1660942398-Y29XkJwE?__mcid=e7eef186-4242-11ee-baca-0aa6ae8f0413&__maid=716b7de18b954d4d86950a830018721c">PURCHASED - 渋谷３０文字の店【３０文字３０文字３０文字３０文字３０文字】 </a></div>
+<div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(178, 185, 248);"><a href="https://liff.line.me/1660942398-Y29XkJwE?__mcid=d6b3ea56-2997-4c08-8bc5-c0081e1b423b&__maid=716b7de18b954d4d86950a830018721c">PURCHASED - 渋谷２号店</a></div>
+<div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(178, 185, 248);"><a href="https://liff.line.me/1660942398-Y29XkJwE?__mcid=8c2c1e6f-68c5-41b5-a2ee-b4bd8b228b50&__maid=716b7de18b954d4d86950a830018721c">PURCHASED - 渋谷３号店(temp)</a></div>
+</div>
+<br>
+<div id="inflow_custom" style="display: inline-block;border-style: dotted;border-width: 1px;margin: 1em;">
+<div style="display: flex;justify-content: center;"><h3> = Follower inflow list : Event CUSTOM = </h3></div>   <div><pre>EMA name:[QA]LINE_Follower_Channelカスタム</pre></div>
+<div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(248, 178, 184);"><a href="https://liff.line.me/1660942398-Y29XkJwE?__mcid=f1ba9f07-d221-47cb-81bc-44b1020b3d09&__maid=48fac590fce3400d8ea22bb588f4d469">CUSTOM - カスタム_渋谷店_Shibuya</a></div>
+<div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(248, 178, 184);"><a href="https://liff.line.me/1660942398-Y29XkJwE?__mcid=ebecc291-40b4-48be-b742-733c48cfee15&__maid=48fac590fce3400d8ea22bb588f4d469">CUSTOM - カスタム_新宿店_Shinjuku</a></div>
+<div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(248, 178, 184);"><a href="https://liff.line.me/1660942398-Y29XkJwE?__mcid=b6d57c76-f271-4256-8594-e1a3c12469eb&__maid=48fac590fce3400d8ea22bb588f4d469">CUSTOm - カスタム_東京店_Tokyo</a></div>
+<div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(248, 178, 184);"><a href="https://liff.line.me/1660942398-Y29XkJwE?__mcid=e27cdb52-d5da-42c4-9efb-9b09a35f78cf&__maid=48fac590fce3400d8ea22bb588f4d469">CUSTOm - カスタム_恵比寿店_Ebisu</a></div>
+<div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(248, 178, 184);"><a href="https://liff.line.me/1660942398-Y29XkJwE?__mcid=b4922c2c-6a34-481c-bf95-b16cf9d9fe9d&__maid=48fac590fce3400d8ea22bb588f4d469">CUSTOm - カスタム_品川店_Shinagawa</a></div>
+</div>
+<!-- end of LINE follower inflow channel link list area -->
+<hr>
+<div id="cvp_link_list_jp" style="display: inline-block;border-style: dotted;border-width: 1px;margin: 1em;">
+      <div style="display: flex;justify-content: center;"><h3>= Conversion pages link list (LINE INFLOW plugin embedded) = JP domain</h3></div>
+      <div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(165, 245, 218);"><a href="https://jp-salvacion.github.io/JP/eugene/STG/MP/INFLOW/index.html">To landing page</a></div>
+      <div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(165, 245, 218);"><a href="https://uss.resola.net/Cdwu7Cn7">To PAGE VISITED</a></div>
+      <div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(165, 245, 218);"><a href="https://uss.resola.net/elerrihU">To PURCHASED</a></div>
+      <div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(165, 245, 218);"><a href="https://jp-salvacion.github.io/JP/eugene/STG/MP/INFLOW/custom.html">To CUSTOM</a></div>
+    </div>
+    <hr>
+    <div id="cvp_link_list_eg" style="display: inline-block;border-style: dotted;border-width: 1px;margin: 1em;">
+      <div style="display: flex;justify-content: center;"><h3>= Conversion pages link list (LINE INFLOW plugin embedded) = Eugene domain</h3></div>
+      <div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(178, 185, 248);"><a href="https://eugenechang-test.com/eugene/STG/MP/INFLOW/index.html">To landing page</a></div>
+      <div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(178, 185, 248);"><a href="https://uss.resola.net/HHMeR7FV">To PAGE VISITED</a></div>
+      <div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(178, 185, 248);"><a href="https://uss.resola.net/7XdvFSTI">To PURCHASED</a></div>
+      <div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(178, 185, 248);"><a href="https://eugenechang-test.com/eugene/STG/MP/INFLOW/custom.html">To CUSTOM</a></div>
+    </div>
+    <hr>
+    <div id="cvp_link_list_ballon" style="display: inline-block;border-style: dotted;border-width: 1px;margin: 1em;">
+      <div style="display: flex;justify-content: center;"><h3>= Conversion pages link list (LINE INFLOW plugin embedded) = Untrackable domain</h3></div>
+      <div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(243, 176, 226);"><a href="http://eugene-ballon.surge.sh/eugene/STG/MP/INFLOW/index.html">To landing page</a></div>
+      <div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(243, 176, 226);"><a href="http://eugene-ballon.surge.sh/eugene/STG/MP/INFLOW/page_visited.html">To PAGE VISITED</a></div>
+      <div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(243, 176, 226);"><a href="http://eugene-ballon.surge.sh/eugene/STG/MP/INFLOW/purchased.html">To PURCHASED</a></div>
+      <div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(243, 176, 226);"><a href="http://eugene-ballon.surge.sh/eugene/STG/MP/INFLOW/custom.html">To CUSTOM</a></div>
+    </div>
+</body>
+</html>
