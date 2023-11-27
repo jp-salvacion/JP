@@ -14,45 +14,37 @@
 
     <!-- Covertion Settings -->
     <!-- <script src="https://synalio.com/analytics/js/05dfa01a8fd346a98e55b88892d7d7c8/" type="text/javascript"></script> -->
-
-    <!-- MP integrated scripts -->
-    <script type="text/javascript">
+    <!-- Generated MP V2 script at 2023/08/24 -->
+    <script>
       !function (t, e, n) {
         window.mpTrackerName = e;
         var c, a;
         window[window.mpTrackerName] = (a = {data: [], custom: {}}, function () {
-        for (var t = function (t) {
-          return function () {
+          for (var t = function (t) {
+            return function () {
             return a.data.push([t].concat(Array.prototype.slice.call(arguments, 0)))
           }
         }, e = "track page identify".split(" "), n = 0; n < e.length; n++) a[e[n]] = t(e[n])
         }(), a.set = function () {
         var t = arguments[0], e = {};
-          e[t] = arguments[1], a.custom = Object.assign(a.custom, e)
+        e[t] = arguments[1], a.custom = Object.assign(a.custom, e)
         }, a.init = function (t) {
-          a.v = "1.0.0", a.trackerName = e, a.options = t || {}
+        a.v = "1.0.0", a.trackerName = e, a.options = t || {}
         }, (n = document.createElement("script")).type = "text/javascript", n.async = !0, n.src = "https://sdk.synalioec.com/1/core.min.js", (c = document.getElementsByTagName("script")[0]).parentNode.insertBefore(n, c), a)
       }(0, "mpAnalytics");
-  
+      
       var Analytics = window["mpAnalytics"];
-      // required
       Analytics.init({
         organizationId: "00000000000040008000000000000000",
         projectId: "043859f0f608444b85227928397919c7",
-        plugins: ["popup","synalio-chatbot","synalio-campaign"]
-      })
-  
-      Analytics.set('synalioChatbotCid', '1287')
-      Analytics.set('synalioChatbotApp', 'QA_WEB')
-      Analytics.set('synalioChatbotUniqueId', '05dfa01a8fd346a98e55b88892d7d7c8')
-  
-  
-      Analytics.set('synalioCampaignCid', '1287')
-      Analytics.set('synalioCampaignApp', 'QA_WEB')
-      Analytics.set('synalioCampaignUniqueId', '05dfa01a8fd346a98e55b88892d7d7c8')
-  
-      Analytics.page({})
+        plugins: ["ecbeing","popup","linkdomains","inflow-channel","anonymousid-attach","synalio-chatbot","synalio-campaign","synalio-analytics","synalio-nanalytics"]
+      });
+      Analytics.set('synalioUniqueId', '05dfa01a8fd346a98e55b88892d7d7c8');
+      Analytics.set('linkDomains', 'jp-salvacion.github.io,eugenechang-test.com,eugene-ballon.surge.sh');
+      Analytics.set('anonymousIdAttachElemenentIds', 'login, newentry');
+      Analytics.page({});
       </script>
+    <!-- ENd of MP V2 script -->
     </head>
 <body>
   <div id="divtitle"><H1>SYNALIO OEM - QA Test site on [PROD Env]</H1>
@@ -87,5 +79,19 @@
     var text2 = document.getElementById('UID2');
     text2.textContent = uid2;
     </script>
+  <h2>EMA > External CV Test link list</h2>
+  <div id="cvp_link_list_jp" style="display: inline-block;border-style: dotted;border-width: 1px;margin: 1em;">
+          <div style="display: flex;justify-content: center;"><h3>= Conversion pages link list = JP domain</h3></div>
+          <div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(165, 245, 218);"><a href="https://uuurl.in/eT0Uu3yw">To page visit page</a></div>
+          <div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(165, 245, 218);"><a href="https://uuurl.in/JcRc2kte">To purchased Page</a></div>
+          <div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(165, 245, 218);"><a href="https://uuurl.in/7fMkI43Q">To custom page</a></div>
+        </div>
+  <hr>
+  <div id="cvp_link_list_eg" style="display: inline-block;border-style: dotted;border-width: 1px;margin: 1em;">
+          <div style="display: flex;justify-content: center;"><h3>= Conversion pages link list = Eugene domain</h3></div>
+          <div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(178, 185, 248);"><a href="https://uuurl.in/c0I5GZEW">To page visited page</a></div>
+          <div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(178, 185, 248);"><a href="https://uuurl.in/xPZRA4r3">To purchased Page</a></div>
+          <div style="display: inherit;padding: 2em;margin: 1em;background-color: rgb(178, 185, 248);"><a href="https://uuurl.in/rUYE8LRH">To custom page</a></div>
+        </div>
 </body>
 </html>

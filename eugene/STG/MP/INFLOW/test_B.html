@@ -22,29 +22,27 @@
       - MAAID :
     </pre>
     <div id="userid">
-        <h3> USER ID : </h3>
-        <span id="UID1"></span>
+        <h3> USER ID (__rslgvery and __anon_id): </h3>
+        __rslgvry (cookies): <span id="UID1"></span>
         <br />
-        <span id="UID2"></span>
+        __rslgvry (localStorage): <span id="UID2"></span>
+        <br />
+        __anonId (localStorage): <span id="UID3"></span>
         </div>
     <script>
       var cookies = document.cookie;
       var cookiesArray = cookies.split(';');
 
-      for(var c of cookiesArray){
-      var cArray = c.split('=');
-
-      var pattern1 = "_rslgvry";
-      var pattern2 = " _rslgvry";  // 正規表現の条件
-      if( cArray[0] == pattern1 || cArray[0] == pattern2 ){  // keyになる文字列が正規表現にマッチしたら
-        var text1 = document.getElementById('UID1');
-        text1.textContent = cArray[1];
-        console.log(cArray[1]);
-        }
-      }
+      var text1 = document.getElementById('UID1');
+      text1.textContent = cookiesArray[0];
+      console.log(cookiesArray[0]);
+      
       var uid2 = localStorage.getItem('_rslgvry');
       var text2 = document.getElementById('UID2');
       text2.textContent = uid2;
+      var uid3 = localStorage.getItem('__anon_id');
+      var text3 = document.getElementById('UID3');
+      text3.textContent = uid3;
       </script>
         <!-- MP POPUP script V2 NO CROSS DOMAIN -->
     <script type="text/javascript" id="">!function(t,e,n){
