@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[STG/QC] QA Test Site for MP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://jp-salvacion.github.io/JP/STYLE/css_style.css">
+    <!-- POPUP Developer mode : ignore start MA time -->
+      <!-- MP POPUP script -->
+    <script type="text/javascript" id="">!function(t,e,n){
+        window.mpTrackerName=e;var c,a;window[window.mpTrackerName]=(a={data:[],custom:{}},function(){for(var t=function(t){return function(){return a.data.push([t].concat(Array.prototype.slice.call(arguments,0)))}},e="track page identify".split(" "),n=0;n<e.length;n++)a[e[n]]=t(e[n])}(),a.set=function(){var t=arguments[0],e={};e[t]=arguments[1],a.custom=Object.assign(a.custom,e)},a.init=function(t){a.v="1.0.0",a.trackerName=e,a.options=t||{}},(n=document.createElement("script")).type="text/javascript",
+        n.async=!0,n.src="https://sdk.mpdev.io/1/core.min.js",(c=document.getElementsByTagName("script")[0]).parentNode.insertBefore(n,c),a)}(0,"mpAnalytics");var Analytics=window["mpAnalytics"];
+        Analytics.init({
+          organizationId:"ba000000000040008000000000000000",  // dev
+          projectId:"ba9d31a3da474eb79a7eab7f09c6e418",
+          plugins: ["linkdomains","popup","synalio-chatbot","synalio-campaign","synalio-analytics","synalio-nanalytics"]
+        });
+      Analytics.set('synalioUniqueId', 'e777904b2bc84328b55342a7614f6071');
+      Analytics.set('linkDomains', ['jp-salvacion.github.io','eugenechang-test.com']);
+      Analytics.page({})
+      </script>
+      <style>
+        /* CSS */
+        .button-19 {
+          appearance: button;
+          background-color: #1899D6;
+          border: solid transparent;
+          border-radius: 16px;
+          border-width: 0 0 4px;
+          box-sizing: border-box;
+          color: #FFFFFF;
+          cursor: pointer;
+          display: inline-block;
+          font-family: din-round,sans-serif;
+          font-size: 15px;
+          font-weight: 700;
+          letter-spacing: .8px;
+          line-height: 20px;
+          margin: 0;
+          outline: none;
+          overflow: visible;
+          padding: 13px 16px;
+          text-align: center;
+          text-transform: uppercase;
+          touch-action: manipulation;
+          transform: translateZ(0);
+          transition: filter .2s;
+          user-select: none;
+          -webkit-user-select: none;
+          vertical-align: middle;
+          white-space: nowrap;
+          width: 100%;
+        }
+
+        .button-19:after {
+          background-clip: padding-box;
+          background-color: #1CB0F6;
+          border: solid transparent;
+          border-radius: 16px;
+          border-width: 0 0 4px;
+          bottom: -4px;
+          content: "";
+          left: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+          z-index: -1;
+        }
+
+        .button-19:main,
+        .button-19:focus {
+          user-select: auto;
+        }
+
+        .button-19:hover:not(:disabled) {
+          filter: brightness(1.1);
+          -webkit-filter: brightness(1.1);
+        }
+
+        .button-19:disabled {
+          cursor: auto;
+        }
+        </style>
+    </head>
+<body>
+    <div id="divtitle"><H1><font color="yellow">STG/QC</font> QA Test site - POPUP/Eugene/regression NO GTM script</H1>
+    </div>
+    <hr>
+    <span>Hello world, This is only for <font color="yellow"><H3>STG</H3></font>!!! Make sure what environment are you testing!</span>
+    <h1> MP Script V2 - no GTM </h1>
+    <h2> Test App Configuration </h2>
+    <pre>
+      - OID : ba000000000040008000000000000000
+      - PID : ba9d31a3da474eb79a7eab7f09c6e418
+      - MAAID :
+    </pre>
+    <div>
+      <h2>  <font color="red">Thank you for buying our stuff!!</font> </h2>
+     </div>
+    <div id="userid">
+        <h3> USER ID : </h3>
+        <span id="UID1"></span>
+        <br />
+        <span id="UID2"></span>
+        </div>
+    <script>
+      var cookies = document.cookie;
+      var cookiesArray = cookies.split(';');
+
+      for(var c of cookiesArray){
+      var cArray = c.split('=');
+
+      var pattern1 = "_rslgvry";
+      var pattern2 = " _rslgvry";  // 正規表現の条件
+      if( cArray[0] == pattern1 || cArray[0] == pattern2 ){  // keyになる文字列が正規表現にマッチしたら
+        var text1 = document.getElementById('UID1');
+        text1.textContent = cArray[1];
+        console.log(cArray[1]);
+        }
+      }
+      var uid2 = localStorage.getItem('_rslgvry');
+      var text2 = document.getElementById('UID2');
+      text2.textContent = uid2;
+      </script>
+      <div style="padding:5vh;">
+        <button class="button-19" onclick="window.mpAnalytics.track('cv.custom.finished', {orderId: '12345678-buy-0000001',});">Click here to GET CONVERSION-PURCHASED!!</button>
+        </div>
+        <hr>
+        <div id="link_table">
+          <h3>CVP test page table with different domain</h3>
+          <pre>* = not in tradck list</pre>
+          <table>
+            <tr>
+              <th>JP domain</th>
+              <th>eugene domain</th>
+              <th>eugene ballon (not in track list)</th>
+              <th>eugene fc2 (not in track list)</th>
+            </tr>
+            <tr>
+              <td> -------------------- </td>
+              <td> -------------------- </td>
+              <td> -------------------- </td>
+              <td> -------------------- </td>
+              </tr>
+            <tr>
+              <td><a href="https://jp-salvacion.github.io/JP/eugene/STG/MP/NEW/CVP_page_visited.html">JP - page visited</a></td>
+              <td><a href="https://eugenechang-test.com/eugene/STG/MP/NEW/CVP_page_visited.html">Eugene - page visited</a></td>
+              <td><a href="https://eugene-ballon.surge.sh/eugene/STG/MP/NEW/CVP_page_visited.html">*Eugene-ballon - page visited</td>
+              <td><a href="https://eugenetest.web.fc2.com/eugene/STG/MP/NEW/CVP_page_visited.html">*Eugene FC2 - page visited</td>
+            </tr>
+            <tr>
+              <td><a href="https://jp-salvacion.github.io/JP/eugene/STG/MP/NEW/CVP_buy.html">JP - BUY</a></td>
+              <td><a href="https://eugenechang-test.com/eugene/STG/MP/NEW/CVP_buy.html">Eugene - BUY</a></td>
+              <td><a href="https://eugene-ballon.surge.sh/eugene/STG/MP/NEW/CVP_buy.html">*Eugene ballon - BUY</td>
+              <td><a href="https://eugenetest.web.fc2.com/eugene/STG/MP/NEW/CVP_buy.html">*Eugene FC2 - BUY</td>
+            </tr>
+            <tr>
+              <td><a href="https://jp-salvacion.github.io/JP/eugene/STG/MP/NEW/CVP_purchased.html">JP - purchased</a></td>
+              <td><a href="https://eugenechang-test.com/eugene/STG/MP/NEW/CVP_purchased.html">Eugene - purchased</a></td>
+              <td><a href="https://eugene-ballon.surge.sh/eugene/STG/MP/NEW/CVP_purchased.html">*Eugene-ballon - purchased</td>
+              <td><a href="https://eugenetest.web.fc2.com/eugene/STG/MP/NEW/CVP_purchased.html">*Eugene FC2 - purchased</td>
+            </tr>
+          </table>
+          </div>
+          <hr>
+      <div id="link_list">
+        <ul>
+          <li><a href="CVP_page_visited.html">Back to CVP-Page Visit</a></li>
+          <li><a href="CVP_buy.html">Back to CVP-BUY</a></li>
+          <li><a href="../MP">Back to STG MP LP</a></li>
+        </ul>
+        </div>
+</body>
+</html>
