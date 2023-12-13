@@ -1,9 +1,11 @@
 const POPEE_POPUP_DIV_ID = 'popup_popee';
 let isPopeeShowed = false;
 
+// original client liff url : "targetUrl": "https://liff.line.me/1661207487-GoXg7jp9/1f973ccfd901445f985d48defee0e988",
+
 const popeeData = `{
   "isOption": true,
-  "targetUrl": "https://liff.line.me/1661207487-GoXg7jp9/1f973ccfd901445f985d48defee0e988",
+  "targetUrl": "https://liff.line.me/1657010504-lagewyDP/3c5b6c9f142d487e8ed1b8c59aceed30",
   "mobileImage": {
     "url": "https://d1hpw071j6batb.cloudfront.net/uploads/browserback_option/mobile_image/1272/%E3%83%9D%E3%83%83%E3%83%97%E3%82%A2%E3%83%83%E3%83%97%E3%83%90%E3%83%8A%E3%83%BC-1.png"
   },
