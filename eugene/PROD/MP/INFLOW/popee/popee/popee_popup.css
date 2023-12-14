@@ -1,0 +1,186 @@
+.a_popee,.close_popee,.content_popee,.coupon_content_popee,.coupon_popee,.coupon_stay_content_popee,.coupon_stay_popee,.coupon_stay_timer_popee .custom_coupon_stay_timer_popee,.img_popee,.overlay_popee,.popup_popee,.sale_time_popee {
+  background: transparent;
+  border: 0;
+  box-sizing: border-box;
+  font-family: auto;
+  font-size: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline
+}
+
+.overlay_popee {
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+  z-index: 9999
+}
+
+.popup_popee .close_popee {
+  color: #333;
+  font-size: 2.5rem;
+  font-weight: 700;
+  height: 2.3rem;
+  line-height: 1.7rem;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  top: 0;
+  width: 2.3rem
+}
+
+.popup_popee .close_popee:hover {
+  color: rgba(51,51,51,.78)
+}
+
+.popup_popee .custom_close_popee {
+  background-color: #4a4a4a;
+  bottom: -38px;
+  color: #fff;
+  cursor: pointer;
+  font-family: Helvetica Neue,Helvetica,sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+  top: auto;
+  width: 100%
+}
+
+.popup_popee .custom_close_popee:hover {
+  opacity: .7
+}
+
+.content_popee {
+  width: 100%
+}
+
+.img_popee {
+  border-radius: 5px;
+  width: 100%
+}
+
+.sale_time,.sale_time_popee {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  bottom: 50%;
+  color: red;
+  font-size: 6.4vmin;
+  font-weight: 700;
+  height: auto;
+  left: 50%;
+  line-height: 100%;
+  position: absolute;
+  transform: translate(-50%,50%);
+  width: 100%;
+  word-break: normal
+}
+
+.sale_time {
+  bottom: 8%;
+  font-style: normal;
+  font-weight: 400;
+  left: 50
+}
+
+.coupon_popee {
+  align-items: center;
+  background-color: transparent;
+  border: solid;
+  border-radius: 2%;
+  bottom: 50%;
+  color: #000;
+  display: flex;
+  font-size: 5vmin;
+  font-weight: 700;
+  height: auto;
+  justify-content: center;
+  left: 50%;
+  padding: 10px;
+  position: absolute;
+  transform: translate(-50%,50%);
+  width: 100%;
+  word-break: normal
+}
+
+.coupon_stay_popee {
+  bottom: 155px;
+  height: 90px;
+  position: fixed;
+  right: 10px;
+  width: 90px;
+  z-index: 50
+}
+
+.coupon_stay_content_popee {
+  background-size: cover;
+  height: auto;
+  padding: 2px;
+  text-align: center;
+  width: 100%
+}
+
+.coupon_stay_timer_popee {
+  align-items: center;
+  border-radius: 40%;
+  color: red;
+  display: flex;
+  font-size: 80%;
+  font-weight: 700;
+  height: 30.5px;
+  justify-content: center;
+  left: 37px;
+  position: absolute;
+  top: 11.5px;
+  transform: rotate(4deg);
+  width: 50px
+}
+
+.custom_coupon_stay_timer_popee {
+  bottom: 1vmin;
+  color: red;
+  font-size: 2.5vmin;
+  font-weight: 700;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%)
+}
+
+.popup_popee {
+  pointer-events: auto;
+  position: relative;
+  text-align: center
+}
+
+.a_popee {
+  display: inline-block;
+  will-change: auto
+}
+
+@media screen and (min-width: 481px) {
+  .popup_popee {
+      width:60vmin
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .popup_popee .close_popee {
+      height:3rem;
+      line-height: 2rem;
+      padding-bottom: 1rem;
+      padding-left: 1rem;
+      width: 3rem
+  }
+
+  .sale_time,.sale_time_popee {
+      font-size: 10vmin
+  }
+}
