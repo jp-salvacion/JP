@@ -8,23 +8,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/STYLE/css_style.css">
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-NM55RF5');</script>
-    <!-- End Google Tag Manager -->
+   <script>
+  !function (t, e, n) {
+    window.mpTrackerName = e;
+    var c, a;
+    window[window.mpTrackerName] = (a = {data: [], custom: {}}, function () {
+      for (var t = function (t) {
+        return function () {
+        return a.data.push([t].concat(Array.prototype.slice.call(arguments, 0)))
+      }
+    }, e = "track page identify".split(" "), n = 0; n < e.length; n++) a[e[n]] = t(e[n])
+    }(), a.set = function () {
+    var t = arguments[0], e = {};
+    e[t] = arguments[1], a.custom = Object.assign(a.custom, e)
+    }, a.init = function (t) {
+    a.v = "1.0.0", a.trackerName = e, a.options = t || {}
+    }, (n = document.createElement("script")).type = "text/javascript", n.async = !0, n.src = "https://sdk.synalioec.com/1/core.min.js", (c = document.getElementsByTagName("script")[0]).parentNode.insertBefore(n, c), a)
+  }(0, "mpAnalytics");
+  
+  var Analytics = window["mpAnalytics"];
+  Analytics.init({
+    organizationId: "00000000000040008000000000000000",
+    projectId: "043859f0f608444b85227928397919c7",
+    plugins: ["popup", "inflow-channel", "anonymousid-attach"]
+  });
+  Analytics.page({});
+  Analytics.set('memberIdSelectorPrefix', 'span.user-id');
+  Analytics.set('memberIdRegexPattern', 'スタッフNo：');
+</script>
     </head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NM55RF5"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+ 
     <div id="divtitle" style="background-color: orange; padding-top: 1vh; padding-bottom: 1vh;">
       <H1 style="color: white;">PROD QA Test site - MP / POPUP</H1>
     </div>
-    <h2 style="color: #bc3f67;"> FOR Trang testing </h2>
+    <h2 style="color: #bc3f67;"> FOR Trang testing popup </h2>
     <hr>
     <span>Hello world, This is only for <font color="orange"><H3>PROD</H3></font>!!! Make sure what environment are you testing!</span>
     <h2> Test App Configuration </h2>
@@ -34,6 +52,8 @@
       - MAAID :
     </pre>
     <h3> PATH: MP > POPUP > Trang > page 01<h3>
+        
+ <a href="https://jp-salvacion.github.io/JP/eugene/PROD/MP/INFLOW/cvp.html" target="_self">Click here to open conversion page</a>
     <div id="userid">
         <h3> USER ID : </h3>
         <span id="UID1"></span>
