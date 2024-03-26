@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[STG/QC] QA Test Site for MP / LIBERO LINE app test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://jp-salvacion.github.io/JP/STYLE/css_style.css">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-PHNWCDMS');</script>
+    <!-- End Google Tag Manager -->
+    </head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PHNWCDMS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <h1> Landing page </h1>
+  <hr>
+  <div id="userid">
+    <h3> USER ID : </h3>
+    <span id="UID1"></span>
+    <br />
+    <span id="UID2"></span>
+    </div>
+  <script>
+    var cookies = document.cookie;
+    var cookiesArray = cookies.split(';');
+
+    for(var c of cookiesArray){
+    var cArray = c.split('=');
+
+    var pattern1 = "_rslgvry";
+    var pattern2 = " _rslgvry";  // 正規表現の条件
+    if( cArray[0] == pattern1 || cArray[0] == pattern2 ){  // keyになる文字列が正規表現にマッチしたら
+      var text1 = document.getElementById('UID1');
+      text1.textContent = cArray[1];
+      console.log(cArray[1]);
+      }
+    }
+    var uid2 = localStorage.getItem('_rslgvry');
+    var text2 = document.getElementById('UID2');
+    text2.textContent = uid2;
+    </script>
+</body>
+</html>
