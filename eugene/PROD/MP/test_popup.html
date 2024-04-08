@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://jp-salvacion.github.io/JP/STYLE/css_style.css">
+
+    <title>[PROD][SYNALIO Based] QA Test Site</title>
+    <!-- Generated MP V2 script at 2023/08/24 -->
+    <script>
+      !function (t, e, n) {
+        window.mpTrackerName = e;
+        var c, a;
+        window[window.mpTrackerName] = (a = {data: [], custom: {}}, function () {
+          for (var t = function (t) {
+            return function () {
+            return a.data.push([t].concat(Array.prototype.slice.call(arguments, 0)))
+          }
+        }, e = "track page identify".split(" "), n = 0; n < e.length; n++) a[e[n]] = t(e[n])
+        }(), a.set = function () {
+        var t = arguments[0], e = {};
+        e[t] = arguments[1], a.custom = Object.assign(a.custom, e)
+        }, a.init = function (t) {
+        a.v = "1.0.0", a.trackerName = e, a.options = t || {}
+        }, (n = document.createElement("script")).type = "text/javascript", n.async = !0, n.src = "https://sdk.synalioec.com/1/core.min.js", (c = document.getElementsByTagName("script")[0]).parentNode.insertBefore(n, c), a)
+      }(0, "mpAnalytics");
+      
+      var Analytics = window["mpAnalytics"];
+      Analytics.init({
+        organizationId: "00000000000040008000000000000000",
+        projectId: "043859f0f608444b85227928397919c7",
+        plugins: ["ecbeing","popup","synalio-chatbot","synalio-campaign","synalio-analytics","synalio-nanalytics"]
+      });
+      Analytics.set('synalioUniqueId', '05dfa01a8fd346a98e55b88892d7d7c8');
+      Analytics.page({});
+      </script>
+<!-- ENd of MP V2 script -->
+    </head>
+<body>
+  <div id="divtitle"><H1>SYNALIO OEM - QA Test site on [PROD Env]</H1>
+    <hr>
+    Hello world, This is only for <font color="red">Production</font>!!! Make sure what environment are you testing
+    <br>
+    <pre>
+      <h3>App Configuration:</h3>
+      <ul>
+        <li>- cid : 1287</li>
+        <li>- app : QA_WEB</li>
+        <li>- UID : <span id="UID1"></span> | <span id="UID2"></span></li>
+      </ul>
+    </pre>
+    <h2> POPUP plugin without link domain</h2>
+  </div>
+</html>
