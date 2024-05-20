@@ -14,15 +14,47 @@
       localStorage.setItem("_ecDebugStartAt", true);
       </script>
       <!-- MP POPUP script -->
-<script type="text/javascript" id="">!function(k,f,e){window.mpTrackerName=f;var g,a;window[window.mpTrackerName]=(a={data:[],custom:{}},function(){for(var c=function(h){return function(){return a.data.push([h].concat(Array.prototype.slice.call(arguments,0)))}},d=["track","page","identify"],b=0;b<d.length;b++)a[d[b]]=c(d[b])}(),a.set=function(c,d){var b={};b[c]=d;a.custom=Object.assign(a.custom,b)},a.init=function(c){a.v="1.0.0";a.trackerName=f;a.options=c||{}},(e=document.createElement("script")).type="text/javascript",e.async=!0,e.src=
-"https://sdk.mpdev.io/1/core.min.js",(g=document.getElementsByTagName("script")[0]).parentNode.insertBefore(e,g),a)}(0,"mpAnalytics");var Analytics=window.mpAnalytics;Analytics.init({organizationId:"ba000000000040008000000000000000",projectId:"ba000000000040008000000000000000",plugins:["popup","synalio-chatbot","synalio-campaign","synalio-analytics","synalio-nanalytics"]});Analytics.page({});</script>
+  <script>
+    ! function(t, e, n) {
+        window.mpTrackerName = e;
+        var c, a;
+        window[window.mpTrackerName] = (a = {
+            data: [],
+            custom: {}
+        }, function() {
+            for (var t = function(t) {
+                    return function() {
+                        return a.data.push([t].concat(Array.prototype.slice.call(arguments, 0)))
+                    }
+                }, e = "track page identify".split(" "), n = 0; n < e.length; n++) a[e[n]] = t(e[n])
+        }(), a.set = function() {
+            var t = arguments[0],
+                e = {};
+            e[t] = arguments[1], a.custom = Object.assign(a.custom, e)
+        }, a.init = function(t) {
+            a.v = "1.0.0", a.trackerName = e, a.options = t || {}
+        }, (n = document.createElement("script")).type = "text/javascript", n.async = !0, n.src = "https://sdk.mpdev.io/1/core.min.js", (c = document.getElementsByTagName("script")[0]).parentNode.insertBefore(n, c), a)
+    }(0, "mpAnalytics");
+
+var Analytics = window["mpAnalytics"];
+Analytics.init({
+    organizationId: "ba000000000040008000000000000000",
+    projectId: "ba000000000040008000000000000000",
+    plugins: ["popup", "inflow-channel", "anonymousid-attach"]
+});
+Analytics.page({});
+      Analytics.set('memberIdSelectorPrefix', "span.user-id")
+Analytics.set("memberIdRegexPattern", "スタッフNo：")
+    </script>
     </head>
 <body>
     <div id="divtitle"><H1><font color="yellow">STG/QC</font> QA Test site - MP / POPUP</H1>
     </div>
     <h1 style="color: #0c5daf;"> FOR Trang tesing </h1>
         <hr/>
+    <span class="topNumber user-id">スタッフNo：214015895</span> 
     <hr>
+    <a href="https://jp-salvacion.github.io/JP/eugene/STG/MP/INFLOW/purchased.html" target="_self">Click here to open conversion page</a>
     <span>Hello world, This is only for <font color="yellow"><H3>STG</H3></font>!!! Make sure what environment are you testing!</span>
     <p>
       |
