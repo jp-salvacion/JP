@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>[STG/QC] QA Test Site for MP</title>
@@ -14,16 +14,15 @@
       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-PKDGSN3');</script>
-    <!-- End Google Tag Manager -->
+      <!-- End Google Tag Manager -->
     </head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKDGSN3"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKDGSN3"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div id="divtitle"><H1><font color="yellow">STG/QC</font> QA Test site - MP / POPUP</H1>
     </div>
-    <h1 style="color: #0c5daf;"> FOR Eugene tesing </h1>
     <hr>
     <span>Hello world, This is only for <font color="yellow"><H3>STG</H3></font>!!! Make sure what environment are you testing!</span>
     <h2> Test App Configuration </h2>
@@ -32,7 +31,7 @@
       - PID : ba9d31a3da474eb79a7eab7f09c6e418
       - MAAID :
     </pre>
-    <h3> PATH: MP > POPUP : REGRESSION CHECK <h3>
+    <h3> PATH: MP > POPUP display position: bottom-left <h3>
     <div id="userid">
         <h3> USER ID : </h3>
         <span id="UID1"></span>
@@ -59,37 +58,37 @@
       text2.textContent = uid2;
       </script>
       <hr>
-      <div id="../popup_link_list">
+      <div id="popup_link_list">
         <h3>Links for accessing each display timing option test page</h3>
         <span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </span>
         <ul>
-          <li><a href="timing_after_n_seconds.html" target="_self">TIMING = AFTER N SECONDS</a></li>
-          <li><a href="timing_scroll_to_html_id.html" target="_self">TIMING = SCROLL TO TARGET HTML ID</a></li>
-          <li><a href="timing_click_on_html_id.html" target="_self">TIMING = CLICK ON TARGET HTML ID BUTTON</a></li>
-          <li><a href="timing_click_on_back_button.html" target="_self">TIMING = CLICK ON BROWSER BACK BUTTON</a></li>
-          <li><a href="timing_return_to_left_tab.html" target="_self">TIMING = WHEN RETURNED TO POPUP TAB</a></li>
-          <li><a href="timing_click_on_back_button_return_to_tab.html" target="_self">TIMING = WHEN BROWSER BACK BUTTON CLICKED & WHEN RETURNED TO POPUP TAB</a></li>
+          <li><a href="Eugene/timing_after_n_seconds.html" target="_self">TIMING = AFTER N SECONDS</a></li>
+          <li><a href="Eugene/timing_scroll_to_html_id.html" target="_self">TIMING = SCROLL TO TARGET HTML ID</a></li>
+          <li><a href="Eugene/timing_click_on_html_id.html" target="_self">TIMING = CLICK ON TARGET HTML ID BUTTON</a></li>
+          <li><a href="Eugene/timing_click_on_back_button.html" target="_self">TIMING = CLICK ON BROWSER BACK BUTTON</a></li>
+          <li><a href="Eugene/timing_return_to_left_tab.html" target="_self">TIMING = WHEN RETURNED TO POPUP TAB</a></li>
+          <li><a href="Eugene/timing_click_on_back_button_return_to_tab.html" target="_self">TIMING = WHEN BROWSER BACK BUTTON CLICKED & WHEN RETURNED TO POPUP TAB</a></li>
         </ul>
         <h4> ---- POPUP display position tests ----</h4>
         <ul>
-          <li><a href="../popup_modal.html" target="_self">Display position: modal</a></li>
-          <li><a href="../popup_center.html" target="_self">Display position: bottom-center</a></li>
-          <li><a href="../popup_right.html" target="_self">Display position: bottom-right</a></li>
-          <li><a href="../popup_left.html" target="_self">Display position: bottom-left</a></li>
+          <li><a href="popup_modal.html" target="_self">Display position: modal</a></li>
+          <li><a href="popup_center.html" target="_self">Display position: bottom-center</a></li>
+          <li><a href="popup_right.html" target="_self">Display position: bottom-right</a></li>
+          <li><a href="popup_left.html" target="_self">Display position: bottom-left</a></li>
         </ul>
         <h4> ---- POPUP multiple steps test ----</h4>
         <ul>
-          <li><a href="../steps.html" target="_self">Multiple STEPS test</a></li>
+          <li><a href="steps.html" target="_self">Multiple STEPS test</a></li>
         </ul>
         <h4> ---- Timing = Click on Browser Back Button ----</h4>
         <ul>
-          <li><a href="timing_click_on_back_button.html?device=pc" target="_self">TIMING = CLICK ON BROWSER BACK BUTTON for PC parameter</a></li>
-          <li><a href="timing_click_on_back_button.html?device=mobile" target="_self">TIMING = CLICK ON BROWSER BACK BUTTON for PC parameter</a></li>
+          <li><a href="Eugene/timing_click_on_back_button.html?device=pc" target="_self">TIMING = CLICK ON BROWSER BACK BUTTON for PC parameter</a></li>
+          <li><a href="Eugene/timing_click_on_back_button.html?device=mobile" target="_self">TIMING = CLICK ON BROWSER BACK BUTTON for PC parameter</a></li>
         </ul>
         <h4> ---- Timing = Return to POPUP Tab ----</h4>
         <ul>
-          <li><a href="timing_return_to_left_tab.html?device=pc" target="_self">TIMING = WHEN RETURNED TO POPUP TAB for PC parameter</a></li>
-          <li><a href="timing_return_to_left_tab.html?device=mobile" target="_self">TIMING = WHEN RETURNED TO POPUP TAB for PC parameter</a></li>
+          <li><a href="Eugene/timing_return_to_left_tab.html?device=pc" target="_self">TIMING = WHEN RETURNED TO POPUP TAB for PC parameter</a></li>
+          <li><a href="Eugene/timing_return_to_left_tab.html?device=mobile" target="_self">TIMING = WHEN RETURNED TO POPUP TAB for PC parameter</a></li>
         </ul>
       </div>
       <div id="freespace"></div>
