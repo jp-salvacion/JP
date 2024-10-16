@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <title>DECA AI Widgets Test page </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: "Zen Maru Gothic", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        td {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="proofreading">
+        <h2>【校正 Proofreading】</h2>
+        <p>&nbsp;</p>
+        <div>
+            <table dir="ltr" border="1" cellspacing="0" cellpadding="0" data-sheets-root="1" data-sheets-baot="1" width="60%"><colgroup><col width="301" /><col width="504" /></colgroup>
+                <tbody>
+                <tr>
+                <td>textlint-rule-no-doubled-joshi</td>
+                <td>今日は、朝ごはんを食べてから散歩をしました。散歩をしていると、友達に会いました。友達と一緒にカフェに行きました。カフェでコーヒーを飲みました。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-no-doubled-joshi</td>
+                <td>法律案は十三日の衆議院の本会議で賛成多数で可決され、参議院に送付されます。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-no-doubled-joshi</td>
+                <td>今回の新プロジェクトは材料不足で代替素材で製品を作った。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-no-double-negative-ja</td>
+                <td>彼は決して失敗しないわけではなかった。彼の努力は認められなかった。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-no-double-negative-ja</td>
+                <td>会議での意見が理解されないわけではなかった。結局、誰も賛成しなかった。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-no-double-negative-ja</td>
+                <td>そのプロジェクトが成功しないわけではなかったが、予算が足りなかった。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-no-doubled-conjunctive-particle-ga</td>
+                <td>スケジュールには余裕があるが、新しいプロジェクトの提案は非常に興味深いものでしたが、予算の制約があるため、実現は難しいかもしれません。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-no-doubled-conjunctive-particle-ga</td>
+                <td>新しいプロジェクトの提案は非常に興味深いものでしたが、予算の制約が厳しいため、実現可能かどうかは慎重に検討する必要がありますが、もう少し他の策を考えてみたいと思います。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-no-doubled-conjunctive-particle-ga</td>
+                <td>お客様からのご意見は大変貴重でございますが、現在のシステムでは対応難しいとなってしまい、ご不便をおかけいたしますが、何卒ご理解いただけますようお願い申し上げます。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-no-doubled-conjunction</td>
+                <td>昨日は雨が降っていました。そして、今日は晴れています。そして、明日は曇りの予報です。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-no-doubled-conjunction</td>
+                <td>彼は毎朝ジョギングをしています。しかし、最近は忙しくて時間が取れないそうです。しかし、健康を維持するために続けたいと言っています。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-no-doubled-conjunction</td>
+                <td>私は新しいレストランに行ってみました。ところが、料理があまり美味しくありませんでした。ところが、サービスはとても良かったです。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-prefer-tari-tari</td>
+                <td>階段を上がったり、下がる。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-prefer-tari-tari</td>
+                <td>階段を上ったり、降りたりすると、心拍数も上がったり、下がるわ。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-max-ten</td>
+                <td>青色だったり、赤色だったり、緑色だったり、黄色だったり、虹色などがキャンバスに全部塗ってある。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-max-kanji-continuous-len</td>
+                <td>一二三四五六と数えてみましょう。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-max-kanji-continuous-len</td>
+                <td>一二三四五六と数えてみましょう。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-no-mix-dearu-desumasu</td>
+                <td>彼は昨日、図書館に行きました。そして、たくさんの本を借りたのである。図書館は静かで、勉強するには最適です。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-no-mix-dearu-desumasu</td>
+                <td>今日はいい天気ですが、明日は悪天候である。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-no-mix-dearu-desumasu</td>
+                <td>新しいプロジェクトが始まった。チーム全員が協力して、成功を目指します。プロジェクトは挑戦的であるが、やりがいがあることである。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-ja-no-redundant-expression</td>
+                <td>お客様が当社のオンラインサポートシステムを利用することにより、24時間365日体制で問題を解決することができるようになっております。さらに、チャットサポートを通じてリアルタイムで専門スタッフと直接やり取りすることができるため、迅速かつ的確なサポートを受けることができるのが特徴です。何かご不明点がございましたら、どうぞお気軽にお問い合わせください。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-ja-no-redundant-expression</td>
+                <td>この新しい製品は、従来のモデルと比較して性能が大幅に向上しているであると言えます。特に、処理速度やバッテリー寿命の面で顕著な改善が見られ、ユーザーの利便性が大いに高まるであると言えます。また、デザインも一新され、よりスタイリッシュで使いやすい形状になっているであると言えます。これにより、幅広いユーザー層に支持されるであると言えます。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-ja-no-redundant-expression</td>
+                <td>お客様からのフィードバックを受けて、我々のチームは迅速に対応を行うことが求められています。これにより、サービスの質を向上させ、顧客満足度を高めることができると考えています。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-no-dropping-the-ra</td>
+                <td>今日は新しいレストランに行って、たくさんの料理を食べれた。特にデザートが美味しかった。雰囲気も良くて、また行きたくなる。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-no-dropping-the-ra</td>
+                <td>彼は最近、忙しすぎて映画を観れないと言っていた。仕事の量が増えて、家に帰る時間も遅くなってしまったので、趣味の時間が取れなくなったそうだ。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-no-dropping-the-ra</td>
+                <td>この映画はオンラインで簡単に見れるので、ぜひチェックしてみてください。</td>
+                </tr>
+                <tr>
+                <td>textlint-ja/textlint-rule-no-insert-dropping-sa</td>
+                <td>せっかく今日頑張って頼まれた仕事を早く終わらせて帰りたさそうなのがおかしかった。</td>
+                </tr>
+                <tr>
+                <td>textlint-ja/textlint-rule-no-insert-dropping-sa</td>
+                <td>昨日の夜、友人と新しくオープンした和食レストランに行きました。友人は刺し身をたべたさそうにメニューを見ていましたが、私は寿司が美味しさそうだったので、寿司の盛り合わせを注文しました。結果的に、どちらも新鮮で美味しく、大満足のディナーとなりました。</td>
+                </tr>
+                <tr>
+                <td>textlint-ja/textlint-rule-no-insert-dropping-sa</td>
+                <td>ありがとうございます。いただいた不具合症状の画像は良そうです。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-ja-no-mixed-period</td>
+                <td>彼は昨日、図書館に行きました そこで、たくさんの本を読みました。 その後、友達とカフェで会う予定があったので、急いで出かけました。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-ja-no-mixed-period</td>
+                <td>朝早く起きて、散歩に出かけました。天気が良かったので、公園を一周しました 途中で、犬を連れた人々や、ジョギングをしている人たちに出会いました</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-ja-no-mixed-period</td>
+                <td>私は旅行が大好きです 特に自然の美しい場所を訪れるのが好きです。去年は北海道に行きました そこで、美しい風景と美味しい食べ物を楽しみました</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-ja-no-inappropriate-words</td>
+                <td>実行もしないのにここだけ言い放っても、ほかの人から見ると実にバカにしか見えないと思います。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-ja-no-inappropriate-words</td>
+                <td>ババアとか、ブスとか言ったら、ハラスメントに当たりますよ。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-ja-no-inappropriate-words</td>
+                <td>ひざや尻を地につけたままで進むこと。膝行(しっこう)などはいざりというのです。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-ja-no-inappropriate-words</td>
+                <td>アダルトビデオ、エロ同人誌などは二十歳以上からレンタルできるので、お客様の年齢確認ことをご注意ください。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-ja-no-abusage</td>
+                <td>こう言えるケースは、ブートストラップの設定に自分のCSSを適応させる（ブートストラップの命名規則・ルールに自分の設定を合わせる）みたいなケースぐらいだと思います。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-ja-no-abusage</td>
+                <td>この画像表示域のウインドウ幅が可変すると、表示画像のサイズや対比率がおかしくなりそうなので、変更できないように修正してください。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-ja-no-abusage</td>
+                <td>よく「整数を返却する関数」とか「メソッドの返却値」という表現を目にしますが，たいへん違和感があります。「返却」は，借りたり貰もらったりしたものを返す（元へ戻す）ことだからです。それぞれ「整数を返す関数」「メソッドの返り値」と言えばいいでしょう。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-ja-no-abusage</td>
+                <td>検証の範囲をさらに広げて隈なく実施したいので、例外を補足することでカバレージを向上させましょう。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-ja-no-abusage</td>
+                <td>こう言えるケースは、ブートストラップの設定に自分のCSSを適応させる（ブートストラップの命名規則・ルールに自分の設定を合わせる）みたいなケースぐらいだと思います。それに、この画像表示域のウインドウ幅が可変すると、表示画像のサイズや対比率がおかしくなりそうなので、変更できないように修正してください。検証の範囲をさらに広げて隈なく実施したいので、例外を補足することでカバレージを向上させましょう。また、言葉の使用を訂正したいと思い、よく「整数を返却する関数」とか「メソッドの返却値」という表現を目にしますが，たいへん違和感があります。「返却」は，借りたり貰もらったりしたものを返す（元へ戻す）ことだからです。それぞれ「整数を返す関数」「メソッドの返り値」と言えばいいでしょう。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-no-hankaku-kana</td>
+                <td>こう言えるケースは、ﾌﾞｰﾄｽﾄﾗｯﾌﾟの設定に自分のCSSを適用したほうがお勧めします。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-no-hankaku-kana</td>
+                <td>こう言えるｹｰｽは、ﾌﾞｰﾄｽﾄﾗｯﾌﾟの設定に自分のCSSを適用したほうがお勧めします。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet</td>
+                <td>こう言えるＣＡＳＥは、ブートストラップの設定に自分のCSSを適用したほうがお勧めします。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet</td>
+                <td>こう言えるＣＡＳＥは、ブートストラップの設定に自分のCSSを適用したほうがお勧めします。それと、ＬＯＧも残しておいてデバッグするとき素早くに原因が見つけ出すから。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-ja-hiragana-keishikimeishi</td>
+                <td>ソフトウェアをリリースする度に、基本機能テストが自動的に回すような環境を構築完了しました。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-ja-hiragana-keishikimeishi</td>
+                <td>新しいプロジェクトを始める上で、適切な資格や経験を持つ人材を採用することが重要です。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-ja-hiragana-keishikimeishi</td>
+                <td>毎日コツコツと練習する事が上達できる道だと思います。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-ja-hiragana-fukushi</td>
+                <td>現在のところ、凡そ80%のタスクが完了しています。残りの部分も予定通り進めば、納期には間に合う見込みです。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-ja-hiragana-fukushi</td>
+                <td>新しいプロジェクトの進捗状況について報告しますと、概ね予定通りに進んでおりますが、いくつかの課題がまだ解決されていないため、引き続き注意が必要です。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-ja-hiragana-fukushi</td>
+                <td>このプロジェクトの完了には、凡そ3ヶ月、若しくはそれ以上の時間が必要です。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-ja-hiragana-hojodoushi</td>
+                <td>計画書の作成にあたり、必要な情報や資料がございましたら、遠慮なくお知らせください。弊社の担当者が迅速に対応させて頂きます。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-ja-hiragana-hojodoushi</td>
+                <td>システムのアップデートの実施により、下記の日時において一時的にサービスがご利用頂けなくなりますことをお知らせ致します。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-ja-hiragana-hojodoushi</td>
+                <td>メンテナンス中は、全てのオンラインサービスが一時的に停止致します。お客様には大変ご不便をお掛け致しますが、何卒ご理解とご協力を賜りますようお願い申し上げます。なお、メンテナンス終了後は、より快適にご利用頂けるようシステムの改善を図って参ります。今後とも変わらぬご愛顧を賜りますよう、重ねてお願い申し上げます。ご不明点やご質問がございましたら、弊社カスタマーサポートまでご連絡頂けますようお願い致します。何卒宜しくお願い申し上げます。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-ja-joyo-or-jinmeiyo-kanji</td>
+                <td>個人情報の漏洩という虞がありますので、サーバー側のセキュリティ対策を一層より強化しました。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-no-synonyms-resola</td>
+                <td>今回の不具合はサーバー側に発生しており、先週実施したメインテナンス作業はうまくエラーログとキャッシュを削除しなかったため、サーバがエラー状態に解除できませんでした。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-no-synonyms-resola</td>
+                <td>新バージョンのリリースに伴い、ユーザーの皆様には、ユーザガイドを参照していただくことをお勧めします。ユーザ登録を完了した後、ユーザーネームとパスワードを使用してログインしてください。また、ユーザサポートチームが24時間体制でサポートを提供しておりますので、何か問題が発生した場合は、ユーザーサポートにご連絡ください。</td>
+                </tr>
+                <tr>
+                <td>textlint-rule-no-synonyms-resola</td>
+                <td>今回の不具合はサーバー側に発生しており、先週実施したメインテナンス作業はうまくエラーログとキャッシュを削除しなかったため、サーバがエラー状態に解除できませんでした。ユーザ側への影響はクリティカルではなく、ユーザー設定画面は一時的にユーザ画像が側に更新できない問題が発生したとのことです。</td>
+                </tr>
+                <tr>
+                <td>user-dictionary</td>
+                <td>添付した申し込み表の社名のところに「株式会社リソラ」または株式会社無しで「リソラ」で記入してください。星付いた欄を漏れずに正確に記入してご提出ください</td>
+                </tr>
+                <tr>
+                <td>user-dictionary</td>
+                <td>添付した申し込み表の社名のところに「株式会社resola」または株式会社無しで「RESOLA」で記入してください。星付いた欄を漏れずに正確に記入してご提出ください。</td>
+                </tr>
+                <tr>
+                <td>user-dictionary</td>
+                <td>社名には色々と誤記入のパターンがあります。例えば「givery」、「株式会社ギブリー」、「ぎぶりー」などとかあって、入力や記載の際にぜひ再三の確認を深く注意してください。</td>
+                </tr>
+                <tr>
+                <td>user-dictionary</td>
+                <td>社名には色々と誤記入のパターンがあります。例えば「株式会社Givery」、「株式会社ぎぶりー」や「GIVERY」などとかあって、入力や記載の際にぜひ再三の確認を深く注意してください。</td>
+                </tr>
+                <tr>
+                <td>user-dictionary</td>
+                <td>「お値段以上、NITORI」というキャッチフレーズがよくCMで耳にしたが、社名を間違って記入したケールはいくつかあって　例えば、「株式会社NITORI」、「にとり」と小文字の「nitori」などです。「NITORI」を間違えないようにご注意ください。</td>
+                </tr>
+                <tr>
+                <td>user-dictionary</td>
+                <td>「Resola」、「resola」、「リソラ」、「りそら」、「株式会社RESOLA」、「株式会社Resola」、「株式会社りそら」、「株式会社リソラ」などの社名表記がいくつかあって、正しい社名を使用することは非常に重要である。特に社外向けの書類やウェブページにおいては、誤記載がないように注意深く確認してください。社名の誤記載は、企業の信頼性やブランドイメージに悪影響を及ぼす可能性がありますので、細心の注意を払ってください。正確な情報を提供することで、取引先や顧客との信頼関係を築くことができます。何か不明点がある場合は、必ず上司や担当部署に確認を取るようにしてくださいますようお願いします。</td>
+                </tr>
+                <tr>
+                <td>Default dictionary</td>
+                <td>本件の対応は以上でございまして、引き続きよろしくお願いいたしまう。</td>
+                </tr>
+                <tr>
+                <td>Default dictionary</td>
+                <td>こんちは、今日はとても良い天気ですね。</td>
+                </tr>
+                <tr>
+                <td>Default dictionary</td>
+                <td>この度の不具合により、多大なご迷惑をおかけしまして誠に申し訳アリアン船でした。</td>
+                </tr>
+                <tr>
+                <td>user-dictionary</td>
+                <td>会社携帯が壊れました。<br />昨日、わたしの友達と映画を見に行った。映画館は混んでいるで、チケット買うのに時間かかた。けれども、映画はとても面白いだったので、全てはそれだけで価値がありました。次の映画見たいけど、どれいいかわかんない。友達もいろんな映画を提案するけど、決めるのが難しいだ。映画の後、レストランで食事したけど、料理があまりおいしくないだ。ウェイターは注文を間違い多くだし、サービスも遅いでした。帰る時にはもう遅くて、電車間に合うのが心配だった。でも、なんとか電車間に合ったし、家に着くたら、すぐ寝ました。今日も仕事があって、大変するけど、がんばるたい。</td>
+                </tr>
+                </tbody>
+                </table>
+        </div>
+        <label for="proofreading_text">proofreading text area</label>
+        <br />
+        <textarea id="proofreading_text" cols="100" name="proofreading_text" rows="10">proofreading test</textarea>
+    </div>
+    <hr />
+    <div id="tone_adjustment">
+        <h2>【トンマナ調整 Tone adjustment】</h2>
+        <div>
+            <ul>
+                <li>返品はどうすればいいのか？在庫状況の確認ほうほうを教えてください。</li>
+                <li>今週の目標は、校正、トーンとマナーの調整、そしてナレッジ検索の三つの機能を全部試して、いい成果を出すことです！</li>
+                <li>○○さん、CPUの発送ありがとうございます。返却されたCPUを受領したところ、外観に損傷が見られなかったため、新品と交換することに決定しました！明日の発送を予定しておりますので、どうぞご安心くださいね。</li>
+            </ul>
+        </div>
+        <label for="tone_adjustment_text">Tone adjustment text area</label>
+        <br />
+        <textarea id="tone_adjustment_text" cols="100" name="tone_adjustment_text" rows="10">tone adjustment test</textarea>
+    </div>
+    <hr />
+    <div id="kb_search">
+        <h2>【ナレッジ検索 KB search】</h2>
+        <p>&nbsp;</p>
+    </div>
+    <hr />
+    <div id="reply_assistant">
+        <h2>【返信文作成 Reply assistant】</h2>
+        <div>
+            <ul>
+                <li>Windowsの設定について</li>
+                <li>robot frameworkのインストール方法</li>
+                <li>fedora linuxはどうセットアップすればいいの？</li>
+            </ul>
+        </div>
+        <label for="reply_assistant_text">Reply assistant text area</label>
+        <br />
+        <textarea id="reply_assistant_text" cols="100" name="reply_assistant_text" rows="10">reply assistant test</textarea>
+    </div>
+</body>
+</html>
