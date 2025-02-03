@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Shadow DOM Test</title>
+        <style>
+            #app {
+                border: 3px solid red;
+                margin-bottom: 20px;
+                }
+            #shadow-root {
+                border: 3px solid purple;
+                }
+            button {
+                color: white;
+                background-color: red;
+                }
+        </style>
+    </head>
+    <body>
+        <div id="app">
+            <button type="button">Click</button>
+            <p>Paragraph</p>
+          </div>
+        <div id="shadow-root"></div>
+        <script type="text/javascript" >
+            let shadowTarget = document.getElementById("shadow-root");
+            let shadow = shadowTarget.attachShadow({ mode: "open" });
+
+            let shadowButton = document.createElement("button");
+            let shadowParagraph = document.createElement("p");
+            let shadowStyles = document.createElement("style");
+            shadowStyles.innerHTML = `
+            p {
+                color: purple;
+                font-weight: bold;
+            }
+            `;
+            shadowButton.type = "button";
+            shadowButton.innerHTML = "Click Shadow";
+            shadowParagraph.innerHTML = "Shadow Paragraph";
+            shadow.appendChild(shadowStyles);
+            shadow.appendChild(shadowButton);
+            shadow.appendChild(shadowParagraph);
+        </script>
+        </body>
+  </html>

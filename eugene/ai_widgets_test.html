@@ -343,5 +343,23 @@
         <br />
         <textarea id="reply_assistant_text" cols="100" name="reply_assistant_text" rows="10">reply assistant test</textarea>
     </div>
+    <hr>
+    <div id="rich-text editor">
+        <h3> Rich-Text editor - Quill</h3>
+        <script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css" rel="stylesheet">
+
+        <div id="editor" style="height: 200px;">
+        <p>Windows 11のタスクバー設定方法</p>
+        <p>linux media installの準備方法を教えて</p>
+        <p>CPU不具合発生時の返品ガイドラインとかあります？</p>
+        </div>
+
+        <script>
+        const quill = new Quill('#editor', {
+            theme: 'snow'
+        });
+        </script>
+    </div>
 </body>
 </html>
