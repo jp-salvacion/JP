@@ -30,6 +30,21 @@
     </style>
 </head>
 <body>
+    <div id="anchor_menu">
+        <h1>DECA AI Widgets Test page</h1>
+        <pre>Feature test quick links</pre>
+        <table>
+            <tr>
+                <td><a href="#proofreading">校正 Proofreading</a></td>
+                <td><a href="#tone_adjustment">トンマナ調整 Tone adjustment</a></td>
+                <td><a href="#translation">翻訳 Translation</a></td>
+                <td><a href="#summarization">要約 Summarzation</a></td>
+                <td><a href="#kb_search">ナレッジ検索 KB search</a></td>
+                <td><a href="#reply_assistant">返信文作成 Reply assistant</a></td>
+                <td><a href="#Explanation">解説 Explanation</a></td>
+            </tr>
+        </table>
+    </div>
     <div id="proofreading" class="header">
         <h2>【校正 Proofreading】</h2>
         <div class="original_text">
@@ -56,7 +71,7 @@
             <script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js"></script>
             <link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css" rel="stylesheet">
     
-            <div id="editor" style="height: 200px;">
+            <div id="editor_proofreading" style="height: 200px;">
                 <p>斉藤さん、会社携帯が壊れました。<br> 
                 昨日、わたしの友達と映画を見に行った。映画館は混んでいるで、チケット買うのに時間かかた。けれども、映画はとても面白いだったので、全てはそれだけで価値がありました。次の映画見たいけど、どれいいかわかんない。友達もいろんな映画を提案するけど、決めるのが難しいだ。
                 映画の後、レストランで食事したけど、料理があまりおいしくないだ。ウェイターは注文を間違い多くだし、サービスも遅いでした。帰る時にはもう遅くて、電車間に合うのが心配だった。でも、なんとか電車間に合ったし、家に着くたら、すぐ寝ました。
@@ -67,10 +82,13 @@
                 添付した申し込み表の社名のところに「株式会社resola」または株式会社無しで「RESOLA」で記入してください。星付いた欄を漏れずに正確に記入してご提出ください。</p>
                 </div>
             <script>
-                const quill = new Quill('#editor', {
+                const quill_proofreading = new Quill('#editor_proofreading', {
                     theme: 'snow'
                 });
             </script>
+            </div>
+        <div>
+            <a href="#top">Back to top</a>
             </div>
         </div>
     <hr />
@@ -84,52 +102,136 @@
         <p>----------------------------</p>
         <div id="rich_editor_tone_adjustment">
             <h3> Rich-Text editor - tone adjustment</h3>
-            <div id="editor" style="height: 200px;">
+            <div id="editor_tone_adjustment" style="height: 200px;">
                 <p>○○さん、CPUの発送ありがとうございます。返却されたCPUを受領したところ、外観に損傷が見られなかったため、新品と交換することに決定しました！明日の発送を予定しておりますので、どうぞご安心くださいね。</p>
                 </div>
             <script>
-                const quill = new Quill('#editor', {
+                const quill_tone_adjustment = new Quill('#editor_tone_adjustment', {
                     theme: 'snow'
                 });
             </script>
             </div>
+        <div>
+            <a href="#top">Back to top</a>
+            </div>
         </div>
     <hr />
-    <div id="kb_search">
-        <h2>【ナレッジ検索 KB search】</h2>
-        <div>
-            <p>KB Search keyword#1</p>
+    <div id="translation" class="header">
+        <h2>【翻訳 Translation】</h2>
+        <div class="original_text">
+            <p>メンテナンス中は、全てのオンラインサービスが一時的に停止致します。お客様には大変ご不便をお掛け致しますが、何卒ご理解とご協力を賜りますようお願い申し上げます。なお、メンテナンス終了後は、より快適にご利用頂けるようシステムの改善を図って参ります。今後とも変わらぬご愛顧を賜りますよう、重ねてお願い申し上げます。ご不明点やご質問がございましたら、弊社カスタマーサポートまでご連絡頂けますようお願い致します。何卒宜しくお願い申し上げます。</p>
+        </div>
+        <p>----------------------------</p>
+        <div id="rich_editor_translation">
+            <h3> Rich-Text editor - Translation</h3>
+            <div id="editor_translation" style="height: 200px;">
+                <p>メンテナンス中は、全てのオンラインサービスが一時的に停止致します。お客様には大変ご不便をお掛け致しますが、何卒ご理解とご協力を賜りますようお願い申し上げます。なお、メンテナンス終了後は、より快適にご利用頂けるようシステムの改善を図って参ります。今後とも変わらぬご愛顧を賜りますよう、重ねてお願い申し上げます。ご不明点やご質問がございましたら、弊社カスタマーサポートまでご連絡頂けますようお願い致します。何卒宜しくお願い申し上げます。</p>
             </div>
-    </div>
-    <hr />
-    <div id="reply_assistant">
-        <h2>【返信文作成 Reply assistant】</h2>
+            <script>
+            const quill_translation = new Quill('#editor_translation', {
+                theme: 'snow'
+            });
+            </script>
+            </div>
         <div>
+            <a href="#top">Back to top</a>
+            </div>
+        </div>
+    <hr />
+    <div id="summarization" class="header">
+        <h2>【要約 Summarzation】</h2>
+        <div class="original_text">
+            <p>メンテナンス中は、全てのオンラインサービスが一時的に停止致します。お客様には大変ご不便をお掛け致しますが、何卒ご理解とご協力を賜りますようお願い申し上げます。なお、メンテナンス終了後は、より快適にご利用頂けるようシステムの改善を図って参ります。今後とも変わらぬご愛顧を賜りますよう、重ねてお願い申し上げます。ご不明点やご質問がございましたら、弊社カスタマーサポートまでご連絡頂けますようお願い致します。何卒宜しくお願い申し上げます。新バージョンのリリースに伴い、ユーザーの皆様には、ユーザガイドを参照していただくことをお勧めします。ユーザ登録を完了した後、ユーザーネームとパスワードを使用してログインしてください。また、ユーザサポートチームが24時間体制でサポートを提供しておりますので、何か問題が発生した場合は、ユーザーサポートにご連絡ください。</p>
+        </div>
+        <p>----------------------------</p>
+        <div id="rich_editor_summarization">
+            <h3> Rich-Text editor - Summarization</h3>
+            <div id="editor_summarization" style="height: 200px;">
+                <p>メンテナンス中は、全てのオンラインサービスが一時的に停止致します。お客様には大変ご不便をお掛け致しますが、何卒ご理解とご協力を賜りますようお願い申し上げます。なお、メンテナンス終了後は、より快適にご利用頂けるようシステムの改善を図って参ります。今後とも変わらぬご愛顧を賜りますよう、重ねてお願い申し上げます。ご不明点やご質問がございましたら、弊社カスタマーサポートまでご連絡頂けますようお願い致します。何卒宜しくお願い申し上げます。新バージョンのリリースに伴い、ユーザーの皆様には、ユーザガイドを参照していただくことをお勧めします。ユーザ登録を完了した後、ユーザーネームとパスワードを使用してログインしてください。また、ユーザサポートチームが24時間体制でサポートを提供しておりますので、何か問題が発生した場合は、ユーザーサポートにご連絡ください。</p>
+            </div>
+            <script>
+                const quill_summarization = new Quill('#editor_summarization', {
+                    theme: 'snow'
+                });
+                </script>
+            </div>
+        <div>
+            <a href="#top">Back to top</a>
+            </div>
+        </div>
+    <hr />    
+    <div id="kb_search" class="header">
+        <h2>【ナレッジ検索 KB search】</h2>
+        <div class="original_text">
+            <p>Windows 11のタスクバー設定について</p>
+            <p>robot frameworkのインストール方法を教えてください。</p>
+            <p>fedora linuxのinstall mediaどのような準備方法ですか。</p>
+            </div>
+        <p>----------------------------</p>
+        <div id="rich_editor_kb_search">
+            <h3> Rich-Text editor - KB search</h3>
+            <div id="editor_kb_search" style="height: 200px;">
+                <p>Windows 11のタスクバー設定方法</p>
+                <p>linux media installの準備方法を教えて</p>
+                <p>CPU不具合発生時の返品ガイドラインとかあります？</p>
+            </div>
+            <script>
+            const quill_kb_search = new Quill('#editor_kb_search', {
+                theme: 'snow'
+            });
+            </script>
+            </div>
+        <div>
+            <a href="#top">Back to top</a>
+            </div>
+        </div>
+    <hr />
+    <div id="reply_assistant" class="header">
+        <h2>【返信文作成 Reply assistant】</h2>
+        <div class="original_text">
             <p>Windows 11のタスクバー設定について</p>
             <p>robot frameworkのインストール方法を教えてください。</p>
             <p>fedora linuxのinstall mediaどのような準備方法ですか。</p>
         </div>
-        <label for="reply_assistant_text">Reply assistant text area</label>
-        <br />
-        <textarea id="reply_assistant_text" cols="100" name="reply_assistant_text" rows="10">Windows 11のタスクバー設定について</textarea>
-    </div>
-    <hr>
-    <div id="rich-text editor">
-        <h3> Rich-Text editor - Quill</h3>
-        <script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js"></script>
-        <link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css" rel="stylesheet">
-
-        <div id="editor" style="height: 200px;">
-        <p>Windows 11のタスクバー設定方法</p>
-        <p>linux media installの準備方法を教えて</p>
-        <p>CPU不具合発生時の返品ガイドラインとかあります？</p>
+        <p>----------------------------</p>
+        <div id="rich_editor_reply_assistant">
+            <h3> Rich-Text editor - Reply assistant</h3>
+            <div id="editor_reply_assistant" style="height: 200px;">
+                <p>Windows 11のタスクバー設定方法</p>
+                <p>linux media installの準備方法を教えて</p>
+                <p>CPU不具合発生時の返品ガイドラインとかあります？</p>
+            </div>
+            <script>
+            const quill_reply_assistant = new Quill('#editor_reply_assistant', {
+                theme: 'snow'
+            });
+            </script>
+            </div>
         </div>
-
-        <script>
-        const quill = new Quill('#editor', {
-            theme: 'snow'
-        });
-        </script>
-    </div>
+        <div>
+            <a href="#top">Back to top</a>
+        </div>
+    <hr />
+    <div id="Explanation" class="header">
+        <h2>【解説 Explanation】</h2>
+        <div class="original_text">
+            <p>織田信長</p>
+        </div>
+        <p>----------------------------</p>
+        <div id="rich_editor_explanation">
+            <h3> Rich-Text editor - Explanation</h3>
+            <div id="editor_explanation" style="height: 200px;">
+                <p>織田信長</p>
+            </div>
+            <script>
+            const quill_explanation = new Quill('#editor_explanation', {
+                theme: 'snow'
+            });
+            </script>
+            </div>
+            <div>
+                <a href="#top">Back to top</a>
+                </div>
+        </div>
 </body>
 </html>
