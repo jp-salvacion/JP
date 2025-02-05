@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <title>DECA AI Widgets Test page </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: "Zen Maru Gothic", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        td {
+            padding: 10px;
+        }
+        .original_text {
+            border-width: 1px;
+            border-radius: 10px;
+            border-style: dashed;
+            padding-left: 1vh;
+            padding-right: 1vh;
+        }
+        .header > h2 {
+            background-color: rgb(215, 233, 250);
+            padding: 1vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="proofreading" class="header">
+        <h2>【校正 Proofreading】</h2>
+        <div class="original_text">
+            <p>
+                斉藤さん、会社携帯が壊れました。<br>
+                昨日、わたしの友達と映画を見に行った。映画館は混んでいるで、チケット買うのに時間かかた。けれども、映画はとても面白いだったので、全てはそれだけで価値がありました。次の映画見たいけど、どれいいかわかんない。友達もいろんな映画を提案するけど、決めるのが難しいだ。
+                <br>
+                映画の後、レストランで食事したけど、料理があまりおいしくないだ。ウェイターは注文を間違い多くだし、サービスも遅いでした。帰る時にはもう遅くて、電車間に合うのが心配だった。でも、なんとか電車間に合ったし、家に着くたら、すぐ寝ました。
+                <br>
+                今日も仕事があって、大変するけど、がんばるたい。
+                <br>
+                けど、せっかく今日頑張って頼まれた仕事を早く終わらせて帰りたさそうなのがおかしかった。
+                <br>
+                スケジュールには余裕があるが、新しいプロジェクトの提案は非常に興味深いものでしたが、予算の制約があるため、実現は難しいかもしれません。
+                <br>
+                ちなみに先週は新しいレストランに行って、たくさんの料理を食べれた。特にデザートが美味しかった。雰囲気も良くて、また行きたくなる。
+                <br>
+                添付した申し込み表の社名のところに「株式会社resola」または株式会社無しで「RESOLA」で記入してください。星付いた欄を漏れずに正確に記入してご提出ください。
+                </p>
+        </div>
+        <p>----------------------------</p>
+        <div id="rich_editor_proofreading">
+            <h3> Rich-Text editor - proofreading</h3>
+            <script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js"></script>
+            <link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css" rel="stylesheet">
+    
+            <div id="editor" style="height: 200px;">
+                <p>斉藤さん、会社携帯が壊れました。<br> 
+                昨日、わたしの友達と映画を見に行った。映画館は混んでいるで、チケット買うのに時間かかた。けれども、映画はとても面白いだったので、全てはそれだけで価値がありました。次の映画見たいけど、どれいいかわかんない。友達もいろんな映画を提案するけど、決めるのが難しいだ。
+                映画の後、レストランで食事したけど、料理があまりおいしくないだ。ウェイターは注文を間違い多くだし、サービスも遅いでした。帰る時にはもう遅くて、電車間に合うのが心配だった。でも、なんとか電車間に合ったし、家に着くたら、すぐ寝ました。
+                今日も仕事があって、大変するけど、がんばるたい。
+                けど、せっかく今日頑張って頼まれた仕事を早く終わらせて帰りたさそうなのがおかしかった。
+                スケジュールには余裕があるが、新しいプロジェクトの提案は非常に興味深いものでしたが、予算の制約があるため、実現は難しいかもしれません。
+                ちなみに先週は新しいレストランに行って、たくさんの料理を食べれた。特にデザートが美味しかった。雰囲気も良くて、また行きたくなる。
+                添付した申し込み表の社名のところに「株式会社resola」または株式会社無しで「RESOLA」で記入してください。星付いた欄を漏れずに正確に記入してご提出ください。</p>
+                </div>
+            <script>
+                const quill = new Quill('#editor', {
+                    theme: 'snow'
+                });
+            </script>
+            </div>
+        </div>
+    <hr />
+    <div id="tone_adjustment" class="header">
+        <h2>【トンマナ調整 Tone adjustment】</h2>
+        <div class="original_text">
+            <p>返品はどうすればいいのか？在庫状況の確認ほうほうを教えてください。</p>
+            <p>今週の目標は、校正、トーンとマナーの調整、そしてナレッジ検索の三つの機能を全部試して、いい成果を出すことです！</p>
+            <p>○○さん、CPUの発送ありがとうございます。返却されたCPUを受領したところ、外観に損傷が見られなかったため、新品と交換することに決定しました！明日の発送を予定しておりますので、どうぞご安心くださいね。</p>
+            </div>
+        <p>----------------------------</p>
+        <div id="rich_editor_tone_adjustment">
+            <h3> Rich-Text editor - tone adjustment</h3>
+            <div id="editor" style="height: 200px;">
+                <p>○○さん、CPUの発送ありがとうございます。返却されたCPUを受領したところ、外観に損傷が見られなかったため、新品と交換することに決定しました！明日の発送を予定しておりますので、どうぞご安心くださいね。</p>
+                </div>
+            <script>
+                const quill = new Quill('#editor', {
+                    theme: 'snow'
+                });
+            </script>
+            </div>
+        </div>
+    <hr />
+    <div id="kb_search">
+        <h2>【ナレッジ検索 KB search】</h2>
+        <div>
+            <p>KB Search keyword#1</p>
+            </div>
+    </div>
+    <hr />
+    <div id="reply_assistant">
+        <h2>【返信文作成 Reply assistant】</h2>
+        <div>
+            <p>Windows 11のタスクバー設定について</p>
+            <p>robot frameworkのインストール方法を教えてください。</p>
+            <p>fedora linuxのinstall mediaどのような準備方法ですか。</p>
+        </div>
+        <label for="reply_assistant_text">Reply assistant text area</label>
+        <br />
+        <textarea id="reply_assistant_text" cols="100" name="reply_assistant_text" rows="10">Windows 11のタスクバー設定について</textarea>
+    </div>
+    <hr>
+    <div id="rich-text editor">
+        <h3> Rich-Text editor - Quill</h3>
+        <script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css" rel="stylesheet">
+
+        <div id="editor" style="height: 200px;">
+        <p>Windows 11のタスクバー設定方法</p>
+        <p>linux media installの準備方法を教えて</p>
+        <p>CPU不具合発生時の返品ガイドラインとかあります？</p>
+        </div>
+
+        <script>
+        const quill = new Quill('#editor', {
+            theme: 'snow'
+        });
+        </script>
+    </div>
+</body>
+</html>
