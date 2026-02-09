@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>[STG][REBOT] QA Test Site for MP REBOT - Auto Custom CV</title>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KTLDDJ3Z');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body onload="window.mpAnalytics.track('cv.custom.finished', {orderId: '12345678-stg-custom-0000001',})">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTLDDJ3Z"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->e
+
+    <div id="divtitle"><H1><font color="red">REBOT</font> QA Test site for MP REBOT - Auto Custom CV</H1></div>
+    <div id="divsubtitle">
+      <h2> [Meitetsu Project Test Page]</h2>
+      </div>
+    <div id="divContent">
+      <h2> FOR MP AUTO CUSTOM CV tracking page </h2>
+      <hr>
+      <span>Hello world, This is only for <font color="yellow"><H3>STG</H3></font>!!! Make sure what environment are you testing!</span>
+      <h2> Test App Configuration </h2>
+      <pre>
+        - OID : 56074bb0cf8e41749799751abe4b7aff
+        - PID : 775449ed3af340d19b95c97c58f8ac0f
+        - MAAID :
+      </pre>
+      <h2 style="color:darkmagenta  ;">- CUSTOM CV onload event -</h2>
+      <h3> ChatBot, Campaign, MP POPUP integrated in GTM</h3>
+      <div id="userid">
+          <h3> USER ID : </h3>
+          <span id="UID1"></span>
+          <br />
+          <span id="UID2"></span>
+          </div>
+      <!-- Start of User ID Script -->
+      <script>
+        var cookies = document.cookie;
+        var cookiesArray = cookies.split(';');
+
+        for(var c of cookiesArray){
+        var cArray = c.split('=');
+
+        var pattern1 = "_rslgvry";
+        var pattern2 = " _rslgvry";  // 正規表現の条件
+        if( cArray[0] == pattern1 || cArray[0] == pattern2 ){  // keyになる文字列が正規表現にマッチしたら
+          var text1 = document.getElementById('UID1');
+          text1.textContent = cArray[1];
+          console.log(cArray[1]);
+          }
+        }
+        var uid2 = localStorage.getItem('_rslgvry');
+        var text2 = document.getElementById('UID2');
+        text2.textContent = uid2;
+        </script>
+        <!-- End of User ID Script -->
+      </div>
+</body>
+</html>
