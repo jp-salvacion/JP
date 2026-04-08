@@ -1,0 +1,24 @@
+{
+    "routes": [
+      { "routeName": "東山線" },
+      { "routeName": "名城線" },
+      { "routeName": "名港線" },
+      { "routeName": "鶴舞線" },
+      { "routeName": "桜通線" },
+      { "routeName": "上飯田線" },
+      { "routeName": "名鉄名古屋本線" },
+      { "routeName": "JR東海道本線" }
+    ],
+    "areas": [
+      { "areaName": "名古屋市中区", "isCity": true },
+      { "areaName": "名古屋市東区", "isCity": true },
+      { "areaName": "名古屋市北区", "isCity": true },
+      { "areaName": "名古屋市西区", "isCity": true },
+      { "areaName": "名古屋市中村区", "isCity": true },
+      { "areaName": "一宮市", "isCity": false },
+      { "areaName": "瀬戸市", "isCity": false },
+      { "areaName": "春日井市", "isCity": false },
+      { "areaName": "岐阜市", "isCity": false },
+      { "areaName": "四日市市", "isCity": false }
+    ]
+  }
