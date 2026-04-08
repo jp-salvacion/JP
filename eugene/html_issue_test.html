@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON 轉義錯誤重現工具</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; background: #f4f4f9; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        textarea { width: 100%; height: 100px; font-family: monospace; margin-bottom: 10px; }
+        .box { padding: 15px; border-left: 5px solid #ccc; margin-bottom: 20px; background: #eee; white-space: pre-wrap; word-break: break-all; font-family: monospace; }
+        .error { color: #d9534f; border-color: #d9534f; background: #fdf7f7; }
+        .success { color: #5cb85c; border-color: #5cb85c; background: #f7fdf7; }
+        button { padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        h3 { margin-top: 0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>為什麼你的 JSON 會解析失敗？</h2>
+    <p>這個工具模擬了後端 Jinja2 在 <code>autoescape=True</code> 情況下，將 JSON 內容錯誤填入 <code>{{ content }}</code> 的過程。</p>
+
+    <h3>1. 使用者的原始 HTML 模板</h3>
+    <textarea id="templateInput"><div class="content">{{ content }}</div></textarea>
+
+    <h3>2. 模擬後端生成的巨大 JSON (ma_json)</h3>
+    <div class="box" id="rawJsonDisplay"></div>
+
+    <button onclick="reproduceError()">執行模擬 (Simulate Render)</button>
+
+    <hr>
+
+    <h3>3. 渲染後的結果 (HTML 轉義後)</h3>
+    <div id="renderResult" class="box">等待執行...</div>
+
+    <h3>4. 嘗試執行 JSON.parse() 的結果</h3>
+    <div id="jsonStatus" class="box">尚未嘗試</div>
+</div>
+
+<script>
+    // 模擬 HTML 轉義函數 (如同 Jinja2 的預設行為)
+    function htmlEscape(str) {
+        return str.replace(/[&<>"']/g, function(m) {
+            return {
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '"': '&#34;',
+                "'": '&#39;'
+            }[m];
+        });
+    }
+
+    function reproduceError() {
+        const template = document.getElementById('templateInput').value;
+        
+        // Step 1: 建立一個正常的 JSON 物件
+        const ma_json_obj = {
+            "settings": {
+                "template": template,
+                "charset": "utf-8"
+            }
+        };
+        const ma_json_str = JSON.stringify(ma_json_obj);
+        document.getElementById('rawJsonDisplay').innerText = ma_json_str;
+
+        // Step 2: 模擬錯誤的渲染邏輯
+        // 系統找到 {{ content }}，然後把「整個 JSON 字串」塞進去，並且加上了 HTML 轉義
+        const escapedContent = htmlEscape(ma_json_str);
+        const renderedResult = ma_json_str.replace('{{ content }}', escapedContent);
+        
+        document.getElementById('renderResult').innerText = renderedResult;
+
+        // Step 3: 嘗試解析
+        try {
+            JSON.parse(renderedResult);
+            document.getElementById('jsonStatus').innerText = "✅ 解析成功！(這不應該發生在錯誤案例中)";
+            document.getElementById('jsonStatus').className = "box success";
+        } catch (e) {
+            document.getElementById('jsonStatus').innerText = "❌ 解析失敗！\n錯誤訊息: " + e.message + "\n\n原因：引號被轉換成了 &#34;，導致 JSON 格式損壞。";
+            document.getElementById('jsonStatus').className = "box error";
+        }
+    }
+
+    // 初始化執行一次
+    reproduceError();
+</script>
+
+</body>
+</html>
